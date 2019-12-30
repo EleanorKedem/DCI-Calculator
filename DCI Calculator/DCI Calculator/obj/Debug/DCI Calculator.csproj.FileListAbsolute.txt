@@ -1,0 +1,16 @@
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\bin\Debug\DCI Calculator.exe.config
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\bin\Debug\DCI Calculator.exe
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\bin\Debug\DCI Calculator.pdb
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\obj\Debug\DCI Calculator.csprojAssemblyReference.cache
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\obj\Debug\DCI_Calculator.Properties.Resources.resources
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\obj\Debug\DCI Calculator.csproj.GenerateResource.cache
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\obj\Debug\DCI Calculator.exe
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\obj\Debug\DCI Calculator.pdb
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\obj\Debug\DCI_Calculator.Intro.resources
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\obj\Debug\DCI_Calculator.Login.resources
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\bin\Debug\Credentials-temp.mdf
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\bin\Debug\Credentials-temp_log.ldf
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\obj\Debug\DCI_Calculator.Menu.resources
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\bin\Debug\bin\Debug\Credentials-temp.mdf
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\bin\Debug\bin\Debug\Credentials-temp_log.ldf
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\obj\Debug\DCI_Calculator.ParcelCalc.resources
