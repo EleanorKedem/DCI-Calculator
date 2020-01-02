@@ -14,3 +14,4 @@ C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\obj\Debug\DCI_Calcul
 C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\bin\Debug\bin\Debug\Credentials-temp.mdf
 C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\bin\Debug\bin\Debug\Credentials-temp_log.ldf
 C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\obj\Debug\DCI_Calculator.ParcelCalc.resources
+C:\Users\Eleanor\source\repos\DCI Calculator\DCI Calculator\obj\Debug\DCI_Calculator.ItemCalc.resources
