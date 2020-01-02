@@ -70,5 +70,15 @@ namespace DCI_Calculator
         {
             newsLabel.ResetText();
         }
+
+        private void analysis_MouseHover(object sender, EventArgs e)
+        {
+            analysisLabel.Text = "Analysis";
+        }
+
+        private void analysis_MouseLeave(object sender, EventArgs e)
+        {
+            analysisLabel.ResetText();
+        }
     }
 }

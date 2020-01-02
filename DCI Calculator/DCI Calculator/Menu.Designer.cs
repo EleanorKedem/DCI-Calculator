@@ -37,6 +37,8 @@
             this.stoneCalcLabel = new System.Windows.Forms.Label();
             this.parcelCalcLabel = new System.Windows.Forms.Label();
             this.newsLabel = new System.Windows.Forms.Label();
+            this.analysis = new System.Windows.Forms.Button();
+            this.analysisLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // about
@@ -149,12 +151,39 @@
             this.newsLabel.Size = new System.Drawing.Size(0, 15);
             this.newsLabel.TabIndex = 7;
             // 
+            // analysis
+            // 
+            this.analysis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("analysis.BackgroundImage")));
+            this.analysis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.analysis.FlatAppearance.BorderSize = 0;
+            this.analysis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.analysis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.analysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.analysis.Location = new System.Drawing.Point(592, 53);
+            this.analysis.Name = "analysis";
+            this.analysis.Size = new System.Drawing.Size(75, 79);
+            this.analysis.TabIndex = 8;
+            this.analysis.UseVisualStyleBackColor = true;
+            this.analysis.MouseLeave += new System.EventHandler(this.analysis_MouseLeave);
+            this.analysis.MouseHover += new System.EventHandler(this.analysis_MouseHover);
+            // 
+            // analysisLabel
+            // 
+            this.analysisLabel.AutoSize = true;
+            this.analysisLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.analysisLabel.Location = new System.Drawing.Point(603, 139);
+            this.analysisLabel.Name = "analysisLabel";
+            this.analysisLabel.Size = new System.Drawing.Size(0, 15);
+            this.analysisLabel.TabIndex = 9;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.analysisLabel);
+            this.Controls.Add(this.analysis);
             this.Controls.Add(this.newsLabel);
             this.Controls.Add(this.parcelCalcLabel);
             this.Controls.Add(this.stoneCalcLabel);
@@ -182,5 +211,7 @@
         private System.Windows.Forms.Label stoneCalcLabel;
         private System.Windows.Forms.Label parcelCalcLabel;
         private System.Windows.Forms.Label newsLabel;
+        private System.Windows.Forms.Button analysis;
+        private System.Windows.Forms.Label analysisLabel;
     }
 }

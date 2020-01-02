@@ -10,23 +10,16 @@ using System.Windows.Forms;
 
 namespace DCI_Calculator
 {
-    public partial class ParcelCalc : Form
+    public partial class ItemCalc : Form
     {
-        public ParcelCalc()
+        public ItemCalc()
         {
             InitializeComponent();
         }
 
-        private void ParcelCalc_Load(object sender, EventArgs e)
+        private void sizeComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void OKbutton_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ItemCalc item = new ItemCalc();
-            item.Show();
         }
     }
 }
