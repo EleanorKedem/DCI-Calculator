@@ -80,5 +80,12 @@ namespace DCI_Calculator
         {
             analysisLabel.ResetText();
         }
+
+        private void about_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            About aboutInfo = new About();
+            aboutInfo.Show();
+        }
     }
 }

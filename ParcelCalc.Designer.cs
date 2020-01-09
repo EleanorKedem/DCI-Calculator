@@ -37,8 +37,8 @@
             this.calcDate = new System.Windows.Forms.DateTimePicker();
             this.productionTextBox = new System.Windows.Forms.TextBox();
             this.valuerTextBox = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.mineComboBox = new System.Windows.Forms.ComboBox();
+            this.countryComboBox = new System.Windows.Forms.ComboBox();
             this.OKbutton = new System.Windows.Forms.Button();
             this.stonesLabel = new System.Windows.Forms.Label();
             this.stonesComboBox = new System.Windows.Forms.ComboBox();
@@ -120,23 +120,23 @@
             this.valuerTextBox.Size = new System.Drawing.Size(237, 22);
             this.valuerTextBox.TabIndex = 7;
             // 
-            // comboBox1
+            // mineComboBox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(295, 85);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(237, 24);
-            this.comboBox1.TabIndex = 8;
+            this.mineComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mineComboBox.FormattingEnabled = true;
+            this.mineComboBox.Location = new System.Drawing.Point(295, 85);
+            this.mineComboBox.Name = "mineComboBox";
+            this.mineComboBox.Size = new System.Drawing.Size(237, 24);
+            this.mineComboBox.TabIndex = 8;
             // 
-            // comboBox2
+            // countryComboBox
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(295, 45);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(237, 24);
-            this.comboBox2.TabIndex = 9;
+            this.countryComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.countryComboBox.FormattingEnabled = true;
+            this.countryComboBox.Location = new System.Drawing.Point(295, 45);
+            this.countryComboBox.Name = "countryComboBox";
+            this.countryComboBox.Size = new System.Drawing.Size(237, 24);
+            this.countryComboBox.TabIndex = 9;
             // 
             // OKbutton
             // 
@@ -199,8 +199,8 @@
             this.Controls.Add(this.stonesComboBox);
             this.Controls.Add(this.stonesLabel);
             this.Controls.Add(this.OKbutton);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.countryComboBox);
+            this.Controls.Add(this.mineComboBox);
             this.Controls.Add(this.valuerTextBox);
             this.Controls.Add(this.productionTextBox);
             this.Controls.Add(this.calcDate);
@@ -228,8 +228,8 @@
         private System.Windows.Forms.DateTimePicker calcDate;
         private System.Windows.Forms.TextBox productionTextBox;
         private System.Windows.Forms.TextBox valuerTextBox;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox mineComboBox;
+        private System.Windows.Forms.ComboBox countryComboBox;
         private System.Windows.Forms.Button OKbutton;
         private System.Windows.Forms.Label stonesLabel;
         private System.Windows.Forms.ComboBox stonesComboBox;

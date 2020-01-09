@@ -56,6 +56,7 @@
             this.about.TabIndex = 0;
             this.about.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.about.UseVisualStyleBackColor = true;
+            this.about.Click += new System.EventHandler(this.about_Click);
             this.about.MouseLeave += new System.EventHandler(this.about_MouseLeave);
             this.about.MouseHover += new System.EventHandler(this.about_MouseHover);
             // 
