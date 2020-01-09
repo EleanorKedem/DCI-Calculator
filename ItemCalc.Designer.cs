@@ -77,8 +77,17 @@
             this.textBox30 = new System.Windows.Forms.TextBox();
             this.textBox31 = new System.Windows.Forms.TextBox();
             this.textBox32 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.stonesCounterLabel = new System.Windows.Forms.Label();
+            this.stonesCountValueLabel = new System.Windows.Forms.Label();
+            this.caratCountLabel = new System.Windows.Forms.Label();
+            this.caratCountValueLabel = new System.Windows.Forms.Label();
+            this.averagePriceLabel = new System.Windows.Forms.Label();
+            this.averagePriceValueLabel = new System.Windows.Forms.Label();
+            this.totalLabel = new System.Windows.Forms.Label();
+            this.totalValueLabel = new System.Windows.Forms.Label();
             this.itemCalculatorTable1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // modelComboBox
@@ -705,21 +714,143 @@
             this.textBox32.Size = new System.Drawing.Size(55, 13);
             this.textBox32.TabIndex = 45;
             // 
-            // label1
+            // tableLayoutPanel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(257, 302);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "stones 0";
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.stonesCounterLabel, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.stonesCountValueLabel, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.caratCountLabel, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.caratCountValueLabel, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.averagePriceLabel, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.averagePriceValueLabel, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.totalLabel, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.totalValueLabel, 1, 3);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(61, 134);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(165, 151);
+            this.tableLayoutPanel1.TabIndex = 6;
+            // 
+            // stonesCounterLabel
+            // 
+            this.stonesCounterLabel.AutoSize = true;
+            this.stonesCounterLabel.BackColor = System.Drawing.Color.Silver;
+            this.stonesCounterLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.stonesCounterLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.stonesCounterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stonesCounterLabel.Location = new System.Drawing.Point(0, 0);
+            this.stonesCounterLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.stonesCounterLabel.Name = "stonesCounterLabel";
+            this.stonesCounterLabel.Size = new System.Drawing.Size(82, 37);
+            this.stonesCounterLabel.TabIndex = 0;
+            this.stonesCounterLabel.Text = "Stones";
+            // 
+            // stonesCountValueLabel
+            // 
+            this.stonesCountValueLabel.AutoSize = true;
+            this.stonesCountValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.stonesCountValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.stonesCountValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.stonesCountValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stonesCountValueLabel.Location = new System.Drawing.Point(82, 0);
+            this.stonesCountValueLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.stonesCountValueLabel.Name = "stonesCountValueLabel";
+            this.stonesCountValueLabel.Size = new System.Drawing.Size(83, 37);
+            this.stonesCountValueLabel.TabIndex = 1;
+            // 
+            // caratCountLabel
+            // 
+            this.caratCountLabel.AutoSize = true;
+            this.caratCountLabel.BackColor = System.Drawing.Color.Silver;
+            this.caratCountLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.caratCountLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.caratCountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.caratCountLabel.Location = new System.Drawing.Point(0, 37);
+            this.caratCountLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.caratCountLabel.Name = "caratCountLabel";
+            this.caratCountLabel.Size = new System.Drawing.Size(82, 37);
+            this.caratCountLabel.TabIndex = 2;
+            this.caratCountLabel.Text = "Carats Valued";
+            // 
+            // caratCountValueLabel
+            // 
+            this.caratCountValueLabel.AutoSize = true;
+            this.caratCountValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.caratCountValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.caratCountValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.caratCountValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.caratCountValueLabel.Location = new System.Drawing.Point(82, 37);
+            this.caratCountValueLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.caratCountValueLabel.Name = "caratCountValueLabel";
+            this.caratCountValueLabel.Size = new System.Drawing.Size(83, 37);
+            this.caratCountValueLabel.TabIndex = 3;
+            // 
+            // averagePriceLabel
+            // 
+            this.averagePriceLabel.AutoSize = true;
+            this.averagePriceLabel.BackColor = System.Drawing.Color.Silver;
+            this.averagePriceLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.averagePriceLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.averagePriceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.averagePriceLabel.Location = new System.Drawing.Point(0, 74);
+            this.averagePriceLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.averagePriceLabel.Name = "averagePriceLabel";
+            this.averagePriceLabel.Size = new System.Drawing.Size(82, 37);
+            this.averagePriceLabel.TabIndex = 4;
+            this.averagePriceLabel.Text = "Average Price";
+            // 
+            // averagePriceValueLabel
+            // 
+            this.averagePriceValueLabel.AutoSize = true;
+            this.averagePriceValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.averagePriceValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.averagePriceValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.averagePriceValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.averagePriceValueLabel.Location = new System.Drawing.Point(82, 74);
+            this.averagePriceValueLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.averagePriceValueLabel.Name = "averagePriceValueLabel";
+            this.averagePriceValueLabel.Size = new System.Drawing.Size(83, 37);
+            this.averagePriceValueLabel.TabIndex = 5;
+            // 
+            // totalLabel
+            // 
+            this.totalLabel.AutoSize = true;
+            this.totalLabel.BackColor = System.Drawing.Color.Silver;
+            this.totalLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totalLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.totalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalLabel.Location = new System.Drawing.Point(0, 111);
+            this.totalLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.totalLabel.Name = "totalLabel";
+            this.totalLabel.Size = new System.Drawing.Size(82, 40);
+            this.totalLabel.TabIndex = 6;
+            this.totalLabel.Text = "Total Value";
+            // 
+            // totalValueLabel
+            // 
+            this.totalValueLabel.AutoSize = true;
+            this.totalValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.totalValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totalValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.totalValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalValueLabel.Location = new System.Drawing.Point(82, 111);
+            this.totalValueLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.totalValueLabel.Name = "totalValueLabel";
+            this.totalValueLabel.Size = new System.Drawing.Size(83, 40);
+            this.totalValueLabel.TabIndex = 7;
             // 
             // ItemCalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.itemCalculatorTable1);
             this.Controls.Add(this.stonesLabel);
             this.Controls.Add(this.modelComboBox);
@@ -728,6 +859,8 @@
             this.Text = "Item Calculator";
             this.itemCalculatorTable1.ResumeLayout(false);
             this.itemCalculatorTable1.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -783,6 +916,14 @@
         private System.Windows.Forms.TextBox textBox30;
         private System.Windows.Forms.TextBox textBox31;
         private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label stonesCounterLabel;
+        private System.Windows.Forms.Label stonesCountValueLabel;
+        private System.Windows.Forms.Label caratCountLabel;
+        private System.Windows.Forms.Label caratCountValueLabel;
+        private System.Windows.Forms.Label averagePriceLabel;
+        private System.Windows.Forms.Label averagePriceValueLabel;
+        private System.Windows.Forms.Label totalLabel;
+        private System.Windows.Forms.Label totalValueLabel;
     }
 }

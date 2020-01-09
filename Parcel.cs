@@ -8,8 +8,18 @@ namespace DCI_Calculator
 {
     class Parcel
     {
-        int totalWeight;
-        Dictionary<Stone, int> parcel = new Dictionary<Stone, int>();
+        private int totalWeight;
+        private int totalValue;
+        private int averageValue;
+        private string mine;
+        private string country;
+
+        Dictionary<Stone, int> parcel;
+
+        Parcel()
+        {
+            parcel = new Dictionary<Stone, int>();
+        }
 
         public int AddStone (Stone s)
         {

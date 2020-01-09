@@ -73,6 +73,7 @@
     <Compile Include="Intro.Designer.cs">
       <DependentUpon>Intro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item.cs" />
     <Compile Include="ItemCalc.cs">
       <SubType>Form</SubType>
     </Compile>
