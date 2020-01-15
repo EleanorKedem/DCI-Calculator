@@ -62,10 +62,12 @@ namespace DCI_Calculator
         private Clarity stoneClarity;
         private int stonePrice;
         private int key;
+        private int stoneWeight;
 
         public Stone()
         {
             //empty constructor
+            stoneWeight = -1;
         }
 
         public Stone(Size size, Model model, char colour, Clarity clarity)
@@ -74,7 +76,18 @@ namespace DCI_Calculator
             stoneModel = model;
             stoneColour = colour;
             stoneClarity = clarity;
+            stoneWeight = -1;
         }
+
+        public Stone(Size size, Model model, char colour, Clarity clarity, int weight)
+        {
+            stoneSize = size;
+            stoneModel = model;
+            stoneColour = colour;
+            stoneClarity = clarity;
+            stoneWeight = weight;
+        }
+
 
         private void SetKey()
         {

@@ -113,7 +113,7 @@
             "BOART",
             "BROWN Z",
             "BROWN SAWABLE"});
-            this.modelComboBox.Location = new System.Drawing.Point(422, 35);
+            this.modelComboBox.Location = new System.Drawing.Point(60, 93);
             this.modelComboBox.Name = "modelComboBox";
             this.modelComboBox.Size = new System.Drawing.Size(166, 28);
             this.modelComboBox.TabIndex = 0;

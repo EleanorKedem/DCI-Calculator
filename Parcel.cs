@@ -14,18 +14,18 @@ namespace DCI_Calculator
         private string mine;
         private string country;
 
-        Dictionary<Stone, int> parcel;
+        Dictionary<Item, int> parcel;
 
         Parcel()
         {
-            parcel = new Dictionary<Stone, int>();
+            parcel = new Dictionary<Item, int>();
         }
 
-        public int AddStone (Stone s)
+        public int AddItem (Item i)
         {
             int sum;
 
-            if (parcel.TryGetValue(s, out sum))
+            if (parcel.TryGetValue(i, out sum))
             {
                 ++sum;
             }
@@ -33,7 +33,7 @@ namespace DCI_Calculator
             {
                 sum = 1;
             }
-            parcel.Add(s, sum);
+            parcel.Add(i, sum);
 
             return sum;
         }
