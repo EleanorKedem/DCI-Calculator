@@ -856,7 +856,7 @@
             this.Controls.Add(this.modelComboBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ItemCalc";
-            this.Text = "Item Calculator";
+            this.Text = "Calculator";
             this.itemCalculatorTable1.ResumeLayout(false);
             this.itemCalculatorTable1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
