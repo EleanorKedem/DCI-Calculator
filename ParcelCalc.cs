@@ -19,8 +19,7 @@ namespace DCI_Calculator
         public static string SetValueProdction = string.Empty;
         //TODO set a global variable for the date
         public static string SetValueValuer = string.Empty;
-        public static string SetValueStone = string.Empty;
-
+     
         #endregion
         public ParcelCalc()
         {
@@ -38,11 +37,13 @@ namespace DCI_Calculator
             SetValueMine = mineComboBox.Text;
             SetValueProdction = productionTextBox.Text;
             SetValueValuer = valuerTextBox.Text;
-            SetValueStone = stonesComboBox.Text;
-           
+            
             this.Hide();
-            ItemCalc item = new ItemCalc();
-            item.Show();
+            Summary sumWindow = new Summary();
+            sumWindow.Show();
+
+            StoneSelector stoneWindow = new StoneSelector();
+            stoneWindow.Show();
         }
     }
 }

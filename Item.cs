@@ -12,8 +12,8 @@ namespace DCI_Calculator
         private int totalValue;
         private int averageValue;
         private int totalStonesNum;
-        private Model model;
-        private Size size;
+        private StoneModel model;
+        private StoneSize size;
 
         Dictionary<Stone, int> item;
 
@@ -26,7 +26,7 @@ namespace DCI_Calculator
             totalWeight = 0;
         }
 
-        Item(Model m, Size s)
+        Item(StoneModel m, StoneSize s)
         {
             item = new Dictionary<Stone, int>();
             totalStonesNum = 0;

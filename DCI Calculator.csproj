@@ -114,6 +114,18 @@
       <DependentUpon>SpecialsCalc.cs</DependentUpon>
     </Compile>
     <Compile Include="Stone.cs" />
+    <Compile Include="StoneSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoneSelector.Designer.cs">
+      <DependentUpon>StoneSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Summary.Designer.cs">
+      <DependentUpon>Summary.cs</DependentUpon>
+    </Compile>
     <Compile Include="_Credentials_tempDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -155,6 +167,10 @@
     <EmbeddedResource Include="SpecialsCalc.resx">
       <DependentUpon>SpecialsCalc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StoneSelector.resx">
+      <DependentUpon>StoneSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Summary.resx" />
     <None Include="bin\Debug\DCI Calculator.exe.config" />
     <None Include="obj\Debug\DCI Calculator.csproj.GenerateResource.cache" />
     <None Include="obj\Debug\DCI Calculator.csprojAssemblyReference.cache" />

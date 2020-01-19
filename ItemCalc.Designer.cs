@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ItemCalc));
-            this.modelComboBox = new System.Windows.Forms.ComboBox();
             this.stonesLabel = new System.Windows.Forms.Label();
             this.colourLabelDE = new System.Windows.Forms.Label();
             this.colourLabelF = new System.Windows.Forms.Label();
@@ -86,39 +85,28 @@
             this.averagePriceValueLabel = new System.Windows.Forms.Label();
             this.totalLabel = new System.Windows.Forms.Label();
             this.totalValueLabel = new System.Windows.Forms.Label();
+            this.downButton = new System.Windows.Forms.Button();
+            this.upButton = new System.Windows.Forms.Button();
+            this.summeryTable = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.totalCtsLabel = new System.Windows.Forms.Label();
+            this.avgPriceLabel = new System.Windows.Forms.Label();
+            this.totalValLabel = new System.Windows.Forms.Label();
+            this.percentLabel = new System.Windows.Forms.Label();
+            this.ctsValLabel = new System.Windows.Forms.Label();
+            this.noStonesLabel = new System.Windows.Forms.Label();
+            this.totalCtsValueLabel = new System.Windows.Forms.Label();
+            this.avgPriceValueLabel = new System.Windows.Forms.Label();
+            this.totalValValueLabel = new System.Windows.Forms.Label();
+            this.percentValueLabel = new System.Windows.Forms.Label();
+            this.ctsValValueLabel = new System.Windows.Forms.Label();
+            this.noStonesValueLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.itemCalculatorTable1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.summeryTable.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // modelComboBox
-            // 
-            this.modelComboBox.AllowDrop = true;
-            this.modelComboBox.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.modelComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modelComboBox.FormattingEnabled = true;
-            this.modelComboBox.Items.AddRange(new object[] {
-            "CRYSTALS",
-            "Z / MB 50%",
-            "Z HIGH",
-            "Z / MB 40%",
-            "Z LOW",
-            "SELECT & Z",
-            "SAWABLE",
-            "MAKEABLE",
-            "SPOTTED Z",
-            "SPOTTED",
-            "SPOTTED / MB",
-            "CLIVAGE",
-            "REJECTIONS",
-            "BOART",
-            "BROWN Z",
-            "BROWN SAWABLE"});
-            this.modelComboBox.Location = new System.Drawing.Point(60, 93);
-            this.modelComboBox.Name = "modelComboBox";
-            this.modelComboBox.Size = new System.Drawing.Size(166, 28);
-            this.modelComboBox.TabIndex = 0;
-            this.modelComboBox.Text = "Model";
-            this.modelComboBox.SelectedIndexChanged += new System.EventHandler(this.sizeComboBox_SelectedIndexChanged);
             // 
             // stonesLabel
             // 
@@ -135,10 +123,10 @@
             this.colourLabelDE.BackColor = System.Drawing.Color.Silver;
             this.colourLabelDE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.colourLabelDE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colourLabelDE.Location = new System.Drawing.Point(57, 0);
+            this.colourLabelDE.Location = new System.Drawing.Point(59, 0);
             this.colourLabelDE.Margin = new System.Windows.Forms.Padding(0);
             this.colourLabelDE.Name = "colourLabelDE";
-            this.colourLabelDE.Size = new System.Drawing.Size(57, 38);
+            this.colourLabelDE.Size = new System.Drawing.Size(59, 38);
             this.colourLabelDE.TabIndex = 2;
             this.colourLabelDE.Text = "D/E";
             this.colourLabelDE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -149,10 +137,10 @@
             this.colourLabelF.BackColor = System.Drawing.Color.Silver;
             this.colourLabelF.Dock = System.Windows.Forms.DockStyle.Fill;
             this.colourLabelF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colourLabelF.Location = new System.Drawing.Point(114, 0);
+            this.colourLabelF.Location = new System.Drawing.Point(118, 0);
             this.colourLabelF.Margin = new System.Windows.Forms.Padding(0);
             this.colourLabelF.Name = "colourLabelF";
-            this.colourLabelF.Size = new System.Drawing.Size(57, 38);
+            this.colourLabelF.Size = new System.Drawing.Size(59, 38);
             this.colourLabelF.TabIndex = 3;
             this.colourLabelF.Text = "F";
             this.colourLabelF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -163,10 +151,10 @@
             this.colourLabelGH.BackColor = System.Drawing.Color.Silver;
             this.colourLabelGH.Dock = System.Windows.Forms.DockStyle.Fill;
             this.colourLabelGH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colourLabelGH.Location = new System.Drawing.Point(171, 0);
+            this.colourLabelGH.Location = new System.Drawing.Point(177, 0);
             this.colourLabelGH.Margin = new System.Windows.Forms.Padding(0);
             this.colourLabelGH.Name = "colourLabelGH";
-            this.colourLabelGH.Size = new System.Drawing.Size(57, 38);
+            this.colourLabelGH.Size = new System.Drawing.Size(59, 38);
             this.colourLabelGH.TabIndex = 4;
             this.colourLabelGH.Text = "G/H";
             this.colourLabelGH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -231,7 +219,7 @@
             this.itemCalculatorTable1.Controls.Add(this.textBox30, 6, 4);
             this.itemCalculatorTable1.Controls.Add(this.textBox31, 7, 4);
             this.itemCalculatorTable1.Controls.Add(this.textBox32, 8, 4);
-            this.itemCalculatorTable1.Location = new System.Drawing.Point(254, 93);
+            this.itemCalculatorTable1.Location = new System.Drawing.Point(253, 320);
             this.itemCalculatorTable1.Name = "itemCalculatorTable1";
             this.itemCalculatorTable1.RowCount = 5;
             this.itemCalculatorTable1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -239,7 +227,7 @@
             this.itemCalculatorTable1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.itemCalculatorTable1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.itemCalculatorTable1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.itemCalculatorTable1.Size = new System.Drawing.Size(517, 192);
+            this.itemCalculatorTable1.Size = new System.Drawing.Size(534, 192);
             this.itemCalculatorTable1.TabIndex = 5;
             // 
             // clarityLabel3
@@ -251,7 +239,7 @@
             this.clarityLabel3.Location = new System.Drawing.Point(0, 114);
             this.clarityLabel3.Margin = new System.Windows.Forms.Padding(0);
             this.clarityLabel3.Name = "clarityLabel3";
-            this.clarityLabel3.Size = new System.Drawing.Size(57, 38);
+            this.clarityLabel3.Size = new System.Drawing.Size(59, 38);
             this.clarityLabel3.TabIndex = 6;
             this.clarityLabel3.Text = "3QU";
             this.clarityLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -264,7 +252,7 @@
             this.fillerLabel.Location = new System.Drawing.Point(0, 0);
             this.fillerLabel.Margin = new System.Windows.Forms.Padding(0);
             this.fillerLabel.Name = "fillerLabel";
-            this.fillerLabel.Size = new System.Drawing.Size(57, 38);
+            this.fillerLabel.Size = new System.Drawing.Size(59, 38);
             this.fillerLabel.TabIndex = 5;
             // 
             // colourLabelI
@@ -273,10 +261,10 @@
             this.colourLabelI.BackColor = System.Drawing.Color.Silver;
             this.colourLabelI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.colourLabelI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colourLabelI.Location = new System.Drawing.Point(228, 0);
+            this.colourLabelI.Location = new System.Drawing.Point(236, 0);
             this.colourLabelI.Margin = new System.Windows.Forms.Padding(0);
             this.colourLabelI.Name = "colourLabelI";
-            this.colourLabelI.Size = new System.Drawing.Size(57, 38);
+            this.colourLabelI.Size = new System.Drawing.Size(59, 38);
             this.colourLabelI.TabIndex = 6;
             this.colourLabelI.Text = "I";
             this.colourLabelI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -287,10 +275,10 @@
             this.colourLabelJ.BackColor = System.Drawing.Color.Silver;
             this.colourLabelJ.Dock = System.Windows.Forms.DockStyle.Fill;
             this.colourLabelJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colourLabelJ.Location = new System.Drawing.Point(285, 0);
+            this.colourLabelJ.Location = new System.Drawing.Point(295, 0);
             this.colourLabelJ.Margin = new System.Windows.Forms.Padding(0);
             this.colourLabelJ.Name = "colourLabelJ";
-            this.colourLabelJ.Size = new System.Drawing.Size(57, 38);
+            this.colourLabelJ.Size = new System.Drawing.Size(59, 38);
             this.colourLabelJ.TabIndex = 7;
             this.colourLabelJ.Text = "J";
             this.colourLabelJ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -301,10 +289,10 @@
             this.colourLabelK.BackColor = System.Drawing.Color.Silver;
             this.colourLabelK.Dock = System.Windows.Forms.DockStyle.Fill;
             this.colourLabelK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colourLabelK.Location = new System.Drawing.Point(342, 0);
+            this.colourLabelK.Location = new System.Drawing.Point(354, 0);
             this.colourLabelK.Margin = new System.Windows.Forms.Padding(0);
             this.colourLabelK.Name = "colourLabelK";
-            this.colourLabelK.Size = new System.Drawing.Size(57, 38);
+            this.colourLabelK.Size = new System.Drawing.Size(59, 38);
             this.colourLabelK.TabIndex = 8;
             this.colourLabelK.Text = "K";
             this.colourLabelK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -315,10 +303,10 @@
             this.colourLabelLightCape.BackColor = System.Drawing.Color.Silver;
             this.colourLabelLightCape.Dock = System.Windows.Forms.DockStyle.Fill;
             this.colourLabelLightCape.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colourLabelLightCape.Location = new System.Drawing.Point(399, 0);
+            this.colourLabelLightCape.Location = new System.Drawing.Point(413, 0);
             this.colourLabelLightCape.Margin = new System.Windows.Forms.Padding(0);
             this.colourLabelLightCape.Name = "colourLabelLightCape";
-            this.colourLabelLightCape.Size = new System.Drawing.Size(57, 38);
+            this.colourLabelLightCape.Size = new System.Drawing.Size(59, 38);
             this.colourLabelLightCape.TabIndex = 9;
             this.colourLabelLightCape.Text = "Light Cape";
             this.colourLabelLightCape.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -329,10 +317,10 @@
             this.colourLabelCape.BackColor = System.Drawing.Color.Silver;
             this.colourLabelCape.Dock = System.Windows.Forms.DockStyle.Fill;
             this.colourLabelCape.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colourLabelCape.Location = new System.Drawing.Point(456, 0);
+            this.colourLabelCape.Location = new System.Drawing.Point(472, 0);
             this.colourLabelCape.Margin = new System.Windows.Forms.Padding(0);
             this.colourLabelCape.Name = "colourLabelCape";
-            this.colourLabelCape.Size = new System.Drawing.Size(61, 38);
+            this.colourLabelCape.Size = new System.Drawing.Size(62, 38);
             this.colourLabelCape.TabIndex = 10;
             this.colourLabelCape.Text = "Cape";
             this.colourLabelCape.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -346,7 +334,7 @@
             this.clarityLabel2.Location = new System.Drawing.Point(0, 76);
             this.clarityLabel2.Margin = new System.Windows.Forms.Padding(0);
             this.clarityLabel2.Name = "clarityLabel2";
-            this.clarityLabel2.Size = new System.Drawing.Size(57, 38);
+            this.clarityLabel2.Size = new System.Drawing.Size(59, 38);
             this.clarityLabel2.TabIndex = 11;
             this.clarityLabel2.Text = "2QU";
             this.clarityLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -360,7 +348,7 @@
             this.clarityLabel1.Location = new System.Drawing.Point(0, 38);
             this.clarityLabel1.Margin = new System.Windows.Forms.Padding(0);
             this.clarityLabel1.Name = "clarityLabel1";
-            this.clarityLabel1.Size = new System.Drawing.Size(57, 38);
+            this.clarityLabel1.Size = new System.Drawing.Size(59, 38);
             this.clarityLabel1.TabIndex = 12;
             this.clarityLabel1.Text = "1QU";
             this.clarityLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -374,7 +362,7 @@
             this.clarityLabel4.Location = new System.Drawing.Point(0, 152);
             this.clarityLabel4.Margin = new System.Windows.Forms.Padding(0);
             this.clarityLabel4.Name = "clarityLabel4";
-            this.clarityLabel4.Size = new System.Drawing.Size(57, 40);
+            this.clarityLabel4.Size = new System.Drawing.Size(59, 40);
             this.clarityLabel4.TabIndex = 13;
             this.clarityLabel4.Text = "4QU";
             this.clarityLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -384,9 +372,9 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(60, 41);
+            this.textBox1.Location = new System.Drawing.Point(62, 41);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(51, 13);
+            this.textBox1.Size = new System.Drawing.Size(53, 13);
             this.textBox1.TabIndex = 14;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -395,9 +383,9 @@
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(117, 41);
+            this.textBox2.Location = new System.Drawing.Point(121, 41);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(51, 13);
+            this.textBox2.Size = new System.Drawing.Size(53, 13);
             this.textBox2.TabIndex = 15;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -406,9 +394,9 @@
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(174, 41);
+            this.textBox3.Location = new System.Drawing.Point(180, 41);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(51, 13);
+            this.textBox3.Size = new System.Drawing.Size(53, 13);
             this.textBox3.TabIndex = 16;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -417,9 +405,9 @@
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(231, 41);
+            this.textBox4.Location = new System.Drawing.Point(239, 41);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(51, 13);
+            this.textBox4.Size = new System.Drawing.Size(53, 13);
             this.textBox4.TabIndex = 17;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -428,9 +416,9 @@
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Location = new System.Drawing.Point(288, 41);
+            this.textBox5.Location = new System.Drawing.Point(298, 41);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(51, 13);
+            this.textBox5.Size = new System.Drawing.Size(53, 13);
             this.textBox5.TabIndex = 18;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
@@ -439,9 +427,9 @@
             this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Location = new System.Drawing.Point(345, 41);
+            this.textBox6.Location = new System.Drawing.Point(357, 41);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(51, 13);
+            this.textBox6.Size = new System.Drawing.Size(53, 13);
             this.textBox6.TabIndex = 19;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
@@ -450,9 +438,9 @@
             this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox7.Location = new System.Drawing.Point(402, 41);
+            this.textBox7.Location = new System.Drawing.Point(416, 41);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(51, 13);
+            this.textBox7.Size = new System.Drawing.Size(53, 13);
             this.textBox7.TabIndex = 20;
             this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
@@ -461,9 +449,9 @@
             this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox8.Location = new System.Drawing.Point(459, 41);
+            this.textBox8.Location = new System.Drawing.Point(475, 41);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(55, 13);
+            this.textBox8.Size = new System.Drawing.Size(56, 13);
             this.textBox8.TabIndex = 21;
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
@@ -472,9 +460,9 @@
             this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox9.Location = new System.Drawing.Point(60, 79);
+            this.textBox9.Location = new System.Drawing.Point(62, 79);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(51, 13);
+            this.textBox9.Size = new System.Drawing.Size(53, 13);
             this.textBox9.TabIndex = 22;
             // 
             // textBox10
@@ -482,9 +470,9 @@
             this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox10.Location = new System.Drawing.Point(117, 79);
+            this.textBox10.Location = new System.Drawing.Point(121, 79);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(51, 13);
+            this.textBox10.Size = new System.Drawing.Size(53, 13);
             this.textBox10.TabIndex = 23;
             this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
@@ -493,9 +481,9 @@
             this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox11.Location = new System.Drawing.Point(174, 79);
+            this.textBox11.Location = new System.Drawing.Point(180, 79);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(51, 13);
+            this.textBox11.Size = new System.Drawing.Size(53, 13);
             this.textBox11.TabIndex = 24;
             this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
@@ -504,9 +492,9 @@
             this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox12.Location = new System.Drawing.Point(231, 79);
+            this.textBox12.Location = new System.Drawing.Point(239, 79);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(51, 13);
+            this.textBox12.Size = new System.Drawing.Size(53, 13);
             this.textBox12.TabIndex = 25;
             this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
@@ -515,9 +503,9 @@
             this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox13.Location = new System.Drawing.Point(288, 79);
+            this.textBox13.Location = new System.Drawing.Point(298, 79);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(51, 13);
+            this.textBox13.Size = new System.Drawing.Size(53, 13);
             this.textBox13.TabIndex = 26;
             this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
@@ -526,9 +514,9 @@
             this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox14.Location = new System.Drawing.Point(345, 79);
+            this.textBox14.Location = new System.Drawing.Point(357, 79);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(51, 13);
+            this.textBox14.Size = new System.Drawing.Size(53, 13);
             this.textBox14.TabIndex = 27;
             this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
             // 
@@ -537,9 +525,9 @@
             this.textBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox15.Location = new System.Drawing.Point(402, 79);
+            this.textBox15.Location = new System.Drawing.Point(416, 79);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(51, 13);
+            this.textBox15.Size = new System.Drawing.Size(53, 13);
             this.textBox15.TabIndex = 28;
             this.textBox15.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
             // 
@@ -548,9 +536,9 @@
             this.textBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox16.Location = new System.Drawing.Point(459, 79);
+            this.textBox16.Location = new System.Drawing.Point(475, 79);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(55, 13);
+            this.textBox16.Size = new System.Drawing.Size(56, 13);
             this.textBox16.TabIndex = 29;
             this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
             // 
@@ -559,9 +547,9 @@
             this.textBox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox17.Location = new System.Drawing.Point(60, 117);
+            this.textBox17.Location = new System.Drawing.Point(62, 117);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(51, 13);
+            this.textBox17.Size = new System.Drawing.Size(53, 13);
             this.textBox17.TabIndex = 30;
             // 
             // textBox18
@@ -569,9 +557,9 @@
             this.textBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox18.Location = new System.Drawing.Point(117, 117);
+            this.textBox18.Location = new System.Drawing.Point(121, 117);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(51, 13);
+            this.textBox18.Size = new System.Drawing.Size(53, 13);
             this.textBox18.TabIndex = 31;
             // 
             // textBox19
@@ -579,9 +567,9 @@
             this.textBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox19.Location = new System.Drawing.Point(174, 117);
+            this.textBox19.Location = new System.Drawing.Point(180, 117);
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(51, 13);
+            this.textBox19.Size = new System.Drawing.Size(53, 13);
             this.textBox19.TabIndex = 32;
             // 
             // textBox20
@@ -589,9 +577,9 @@
             this.textBox20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox20.Location = new System.Drawing.Point(231, 117);
+            this.textBox20.Location = new System.Drawing.Point(239, 117);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(51, 13);
+            this.textBox20.Size = new System.Drawing.Size(53, 13);
             this.textBox20.TabIndex = 33;
             // 
             // textBox21
@@ -599,9 +587,9 @@
             this.textBox21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox21.Location = new System.Drawing.Point(288, 117);
+            this.textBox21.Location = new System.Drawing.Point(298, 117);
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(51, 13);
+            this.textBox21.Size = new System.Drawing.Size(53, 13);
             this.textBox21.TabIndex = 34;
             // 
             // textBox22
@@ -609,9 +597,9 @@
             this.textBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox22.Location = new System.Drawing.Point(345, 117);
+            this.textBox22.Location = new System.Drawing.Point(357, 117);
             this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(51, 13);
+            this.textBox22.Size = new System.Drawing.Size(53, 13);
             this.textBox22.TabIndex = 35;
             // 
             // textBox23
@@ -619,9 +607,9 @@
             this.textBox23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox23.Location = new System.Drawing.Point(402, 117);
+            this.textBox23.Location = new System.Drawing.Point(416, 117);
             this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(51, 13);
+            this.textBox23.Size = new System.Drawing.Size(53, 13);
             this.textBox23.TabIndex = 36;
             // 
             // textBox24
@@ -629,9 +617,9 @@
             this.textBox24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox24.Location = new System.Drawing.Point(459, 117);
+            this.textBox24.Location = new System.Drawing.Point(475, 117);
             this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(55, 13);
+            this.textBox24.Size = new System.Drawing.Size(56, 13);
             this.textBox24.TabIndex = 37;
             // 
             // textBox25
@@ -639,9 +627,9 @@
             this.textBox25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox25.Location = new System.Drawing.Point(60, 155);
+            this.textBox25.Location = new System.Drawing.Point(62, 155);
             this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(51, 13);
+            this.textBox25.Size = new System.Drawing.Size(53, 13);
             this.textBox25.TabIndex = 38;
             // 
             // textBox26
@@ -649,9 +637,9 @@
             this.textBox26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox26.Location = new System.Drawing.Point(117, 155);
+            this.textBox26.Location = new System.Drawing.Point(121, 155);
             this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(51, 13);
+            this.textBox26.Size = new System.Drawing.Size(53, 13);
             this.textBox26.TabIndex = 39;
             // 
             // textBox27
@@ -659,9 +647,9 @@
             this.textBox27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox27.Location = new System.Drawing.Point(174, 155);
+            this.textBox27.Location = new System.Drawing.Point(180, 155);
             this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(51, 13);
+            this.textBox27.Size = new System.Drawing.Size(53, 13);
             this.textBox27.TabIndex = 40;
             // 
             // textBox28
@@ -669,9 +657,9 @@
             this.textBox28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox28.Location = new System.Drawing.Point(231, 155);
+            this.textBox28.Location = new System.Drawing.Point(239, 155);
             this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(51, 13);
+            this.textBox28.Size = new System.Drawing.Size(53, 13);
             this.textBox28.TabIndex = 41;
             // 
             // textBox29
@@ -679,9 +667,9 @@
             this.textBox29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox29.Location = new System.Drawing.Point(288, 155);
+            this.textBox29.Location = new System.Drawing.Point(298, 155);
             this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(51, 13);
+            this.textBox29.Size = new System.Drawing.Size(53, 13);
             this.textBox29.TabIndex = 42;
             // 
             // textBox30
@@ -689,9 +677,9 @@
             this.textBox30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox30.Location = new System.Drawing.Point(345, 155);
+            this.textBox30.Location = new System.Drawing.Point(357, 155);
             this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(51, 13);
+            this.textBox30.Size = new System.Drawing.Size(53, 13);
             this.textBox30.TabIndex = 43;
             // 
             // textBox31
@@ -699,9 +687,9 @@
             this.textBox31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox31.Location = new System.Drawing.Point(402, 155);
+            this.textBox31.Location = new System.Drawing.Point(416, 155);
             this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(51, 13);
+            this.textBox31.Size = new System.Drawing.Size(53, 13);
             this.textBox31.TabIndex = 44;
             // 
             // textBox32
@@ -709,9 +697,9 @@
             this.textBox32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox32.Location = new System.Drawing.Point(459, 155);
+            this.textBox32.Location = new System.Drawing.Point(475, 155);
             this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(55, 13);
+            this.textBox32.Size = new System.Drawing.Size(56, 13);
             this.textBox32.TabIndex = 45;
             // 
             // tableLayoutPanel1
@@ -727,13 +715,14 @@
             this.tableLayoutPanel1.Controls.Add(this.averagePriceValueLabel, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.totalLabel, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.totalValueLabel, 1, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(61, 134);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(40, 361);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(165, 151);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
@@ -845,15 +834,298 @@
             this.totalValueLabel.Size = new System.Drawing.Size(83, 40);
             this.totalValueLabel.TabIndex = 7;
             // 
+            // downButton
+            // 
+            this.downButton.BackColor = System.Drawing.Color.Silver;
+            this.downButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.downButton.Font = new System.Drawing.Font("Webdings", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.downButton.Location = new System.Drawing.Point(91, 185);
+            this.downButton.Name = "downButton";
+            this.downButton.Size = new System.Drawing.Size(32, 16);
+            this.downButton.TabIndex = 9;
+            this.downButton.Text = "6";
+            this.downButton.UseVisualStyleBackColor = false;
+            // 
+            // upButton
+            // 
+            this.upButton.BackColor = System.Drawing.Color.Silver;
+            this.upButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.upButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.upButton.Font = new System.Drawing.Font("Webdings", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.upButton.Location = new System.Drawing.Point(91, 170);
+            this.upButton.Name = "upButton";
+            this.upButton.Size = new System.Drawing.Size(32, 16);
+            this.upButton.TabIndex = 8;
+            this.upButton.Text = "5";
+            this.upButton.UseVisualStyleBackColor = false;
+            // 
+            // summeryTable
+            // 
+            this.summeryTable.ColumnCount = 2;
+            this.summeryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.summeryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.summeryTable.Controls.Add(this.label3, 0, 6);
+            this.summeryTable.Controls.Add(this.label2, 0, 6);
+            this.summeryTable.Controls.Add(this.totalCtsLabel, 0, 0);
+            this.summeryTable.Controls.Add(this.avgPriceLabel, 0, 1);
+            this.summeryTable.Controls.Add(this.totalValLabel, 0, 2);
+            this.summeryTable.Controls.Add(this.percentLabel, 0, 3);
+            this.summeryTable.Controls.Add(this.ctsValLabel, 0, 4);
+            this.summeryTable.Controls.Add(this.noStonesLabel, 0, 5);
+            this.summeryTable.Controls.Add(this.totalCtsValueLabel, 1, 0);
+            this.summeryTable.Controls.Add(this.avgPriceValueLabel, 1, 1);
+            this.summeryTable.Controls.Add(this.totalValValueLabel, 1, 2);
+            this.summeryTable.Controls.Add(this.percentValueLabel, 1, 3);
+            this.summeryTable.Controls.Add(this.ctsValValueLabel, 1, 4);
+            this.summeryTable.Controls.Add(this.noStonesValueLabel, 1, 5);
+            this.summeryTable.Location = new System.Drawing.Point(123, 95);
+            this.summeryTable.Name = "summeryTable";
+            this.summeryTable.RowCount = 7;
+            this.summeryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.summeryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.summeryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.summeryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.summeryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.summeryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.summeryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.summeryTable.Size = new System.Drawing.Size(476, 186);
+            this.summeryTable.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Silver;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(0, 156);
+            this.label3.Margin = new System.Windows.Forms.Padding(0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(238, 30);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Difference +/- Summary";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(238, 156);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(238, 30);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "0.00";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // totalCtsLabel
+            // 
+            this.totalCtsLabel.AutoSize = true;
+            this.totalCtsLabel.BackColor = System.Drawing.Color.Silver;
+            this.totalCtsLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totalCtsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.totalCtsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalCtsLabel.Location = new System.Drawing.Point(0, 0);
+            this.totalCtsLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.totalCtsLabel.Name = "totalCtsLabel";
+            this.totalCtsLabel.Size = new System.Drawing.Size(238, 26);
+            this.totalCtsLabel.TabIndex = 0;
+            this.totalCtsLabel.Text = "Total Carats";
+            this.totalCtsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // avgPriceLabel
+            // 
+            this.avgPriceLabel.AutoSize = true;
+            this.avgPriceLabel.BackColor = System.Drawing.Color.Silver;
+            this.avgPriceLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.avgPriceLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.avgPriceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.avgPriceLabel.Location = new System.Drawing.Point(0, 26);
+            this.avgPriceLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.avgPriceLabel.Name = "avgPriceLabel";
+            this.avgPriceLabel.Size = new System.Drawing.Size(238, 26);
+            this.avgPriceLabel.TabIndex = 1;
+            this.avgPriceLabel.Text = "Average Price";
+            this.avgPriceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // totalValLabel
+            // 
+            this.totalValLabel.AutoSize = true;
+            this.totalValLabel.BackColor = System.Drawing.Color.Silver;
+            this.totalValLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totalValLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.totalValLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalValLabel.Location = new System.Drawing.Point(0, 52);
+            this.totalValLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.totalValLabel.Name = "totalValLabel";
+            this.totalValLabel.Size = new System.Drawing.Size(238, 26);
+            this.totalValLabel.TabIndex = 2;
+            this.totalValLabel.Text = "Total VALUE";
+            this.totalValLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // percentLabel
+            // 
+            this.percentLabel.AutoSize = true;
+            this.percentLabel.BackColor = System.Drawing.Color.Silver;
+            this.percentLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.percentLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.percentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.percentLabel.Location = new System.Drawing.Point(0, 78);
+            this.percentLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.percentLabel.Name = "percentLabel";
+            this.percentLabel.Size = new System.Drawing.Size(238, 26);
+            this.percentLabel.TabIndex = 3;
+            this.percentLabel.Text = "%CTS Valued";
+            this.percentLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ctsValLabel
+            // 
+            this.ctsValLabel.AutoSize = true;
+            this.ctsValLabel.BackColor = System.Drawing.Color.Silver;
+            this.ctsValLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ctsValLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctsValLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctsValLabel.Location = new System.Drawing.Point(0, 104);
+            this.ctsValLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.ctsValLabel.Name = "ctsValLabel";
+            this.ctsValLabel.Size = new System.Drawing.Size(238, 26);
+            this.ctsValLabel.TabIndex = 4;
+            this.ctsValLabel.Text = "Carats Valued";
+            this.ctsValLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // noStonesLabel
+            // 
+            this.noStonesLabel.AutoSize = true;
+            this.noStonesLabel.BackColor = System.Drawing.Color.Silver;
+            this.noStonesLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.noStonesLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.noStonesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noStonesLabel.Location = new System.Drawing.Point(0, 130);
+            this.noStonesLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.noStonesLabel.Name = "noStonesLabel";
+            this.noStonesLabel.Size = new System.Drawing.Size(238, 26);
+            this.noStonesLabel.TabIndex = 5;
+            this.noStonesLabel.Text = "No, Stones Valued";
+            this.noStonesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // totalCtsValueLabel
+            // 
+            this.totalCtsValueLabel.AutoSize = true;
+            this.totalCtsValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.totalCtsValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totalCtsValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.totalCtsValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalCtsValueLabel.Location = new System.Drawing.Point(238, 0);
+            this.totalCtsValueLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.totalCtsValueLabel.Name = "totalCtsValueLabel";
+            this.totalCtsValueLabel.Size = new System.Drawing.Size(238, 26);
+            this.totalCtsValueLabel.TabIndex = 6;
+            this.totalCtsValueLabel.Text = "0.00";
+            this.totalCtsValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // avgPriceValueLabel
+            // 
+            this.avgPriceValueLabel.AutoSize = true;
+            this.avgPriceValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.avgPriceValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.avgPriceValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.avgPriceValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.avgPriceValueLabel.Location = new System.Drawing.Point(238, 26);
+            this.avgPriceValueLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.avgPriceValueLabel.Name = "avgPriceValueLabel";
+            this.avgPriceValueLabel.Size = new System.Drawing.Size(238, 26);
+            this.avgPriceValueLabel.TabIndex = 7;
+            this.avgPriceValueLabel.Text = "$0.00";
+            this.avgPriceValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // totalValValueLabel
+            // 
+            this.totalValValueLabel.AutoSize = true;
+            this.totalValValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.totalValValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totalValValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.totalValValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalValValueLabel.Location = new System.Drawing.Point(238, 52);
+            this.totalValValueLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.totalValValueLabel.Name = "totalValValueLabel";
+            this.totalValValueLabel.Size = new System.Drawing.Size(238, 26);
+            this.totalValValueLabel.TabIndex = 8;
+            this.totalValValueLabel.Text = "$0.00";
+            this.totalValValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // percentValueLabel
+            // 
+            this.percentValueLabel.AutoSize = true;
+            this.percentValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.percentValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.percentValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.percentValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.percentValueLabel.Location = new System.Drawing.Point(238, 78);
+            this.percentValueLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.percentValueLabel.Name = "percentValueLabel";
+            this.percentValueLabel.Size = new System.Drawing.Size(238, 26);
+            this.percentValueLabel.TabIndex = 9;
+            this.percentValueLabel.Text = "0%";
+            this.percentValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // ctsValValueLabel
+            // 
+            this.ctsValValueLabel.AutoSize = true;
+            this.ctsValValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ctsValValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ctsValValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctsValValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctsValValueLabel.Location = new System.Drawing.Point(238, 104);
+            this.ctsValValueLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.ctsValValueLabel.Name = "ctsValValueLabel";
+            this.ctsValValueLabel.Size = new System.Drawing.Size(238, 26);
+            this.ctsValValueLabel.TabIndex = 10;
+            this.ctsValValueLabel.Text = "0.00";
+            this.ctsValValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // noStonesValueLabel
+            // 
+            this.noStonesValueLabel.AutoSize = true;
+            this.noStonesValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.noStonesValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.noStonesValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.noStonesValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noStonesValueLabel.Location = new System.Drawing.Point(238, 130);
+            this.noStonesValueLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.noStonesValueLabel.Name = "noStonesValueLabel";
+            this.noStonesValueLabel.Size = new System.Drawing.Size(238, 26);
+            this.noStonesValueLabel.TabIndex = 11;
+            this.noStonesValueLabel.Text = "0";
+            this.noStonesValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(87, 320);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 20);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Crystals";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ItemCalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(800, 615);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.downButton);
+            this.Controls.Add(this.upButton);
+            this.Controls.Add(this.summeryTable);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.itemCalculatorTable1);
             this.Controls.Add(this.stonesLabel);
-            this.Controls.Add(this.modelComboBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ItemCalc";
             this.Text = "Calculator";
@@ -861,14 +1133,14 @@
             this.itemCalculatorTable1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.summeryTable.ResumeLayout(false);
+            this.summeryTable.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox modelComboBox;
         private System.Windows.Forms.Label stonesLabel;
         private System.Windows.Forms.Label colourLabelDE;
         private System.Windows.Forms.Label colourLabelF;
@@ -925,5 +1197,23 @@
         private System.Windows.Forms.Label averagePriceValueLabel;
         private System.Windows.Forms.Label totalLabel;
         private System.Windows.Forms.Label totalValueLabel;
+        private System.Windows.Forms.Button downButton;
+        private System.Windows.Forms.Button upButton;
+        private System.Windows.Forms.TableLayoutPanel summeryTable;
+        private System.Windows.Forms.Label totalCtsLabel;
+        private System.Windows.Forms.Label avgPriceLabel;
+        private System.Windows.Forms.Label totalValLabel;
+        private System.Windows.Forms.Label percentLabel;
+        private System.Windows.Forms.Label ctsValLabel;
+        private System.Windows.Forms.Label noStonesLabel;
+        private System.Windows.Forms.Label totalCtsValueLabel;
+        private System.Windows.Forms.Label avgPriceValueLabel;
+        private System.Windows.Forms.Label totalValValueLabel;
+        private System.Windows.Forms.Label percentValueLabel;
+        private System.Windows.Forms.Label ctsValValueLabel;
+        private System.Windows.Forms.Label noStonesValueLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

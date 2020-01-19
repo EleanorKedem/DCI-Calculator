@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DCI_Calculator
 {
-    enum Size
+    public enum StoneSize
     {
         Specials,
         CT10,
@@ -27,7 +27,7 @@ namespace DCI_Calculator
         minus9plus7,
         minus7plus5
     }
-    enum Model
+    public enum StoneModel
     {
         Crystals,
         ZMB50,
@@ -47,7 +47,7 @@ namespace DCI_Calculator
         BrownSawable
     }
 
-    enum Clarity
+    public enum StoneClarity
     {
         QU1,
         QU2,
@@ -56,11 +56,12 @@ namespace DCI_Calculator
     }
     class Stone
     {
-        private Size stoneSize;
-        private Model stoneModel;
+        private StoneSize stoneSize;
+        private StoneModel stoneModel;
         private char stoneColour;
-        private Clarity stoneClarity;
+        private StoneClarity stoneClarity;
         private int stonePrice;
+        private int stonePricePerCT;
         private int key;
         private int stoneWeight;
 
@@ -70,22 +71,24 @@ namespace DCI_Calculator
             stoneWeight = -1;
         }
 
-        public Stone(Size size, Model model, char colour, Clarity clarity)
+        public Stone(StoneSize size, StoneModel model, char colour, StoneClarity clarity)
         {
             stoneSize = size;
             stoneModel = model;
             stoneColour = colour;
             stoneClarity = clarity;
             stoneWeight = -1;
+            stonePrice = -1;
         }
 
-        public Stone(Size size, Model model, char colour, Clarity clarity, int weight)
+        public Stone(StoneSize size, StoneModel model, char colour, StoneClarity clarity, int weight)
         {
             stoneSize = size;
             stoneModel = model;
             stoneColour = colour;
             stoneClarity = clarity;
             stoneWeight = weight;
+            stonePrice = -1;
         }
 
 
@@ -98,7 +101,7 @@ namespace DCI_Calculator
             return key;
         }
 
-        public void UpdateStone(Size size, Model model, char colour, Clarity clarity) 
+        public void UpdateStone(StoneSize size, StoneModel model, char colour, StoneClarity clarity) 
         {
             stoneSize = size;
             stoneModel = model;

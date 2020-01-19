@@ -27,15 +27,5 @@ namespace DCI_Calculator
         {
 
         }
-
-        private void label97_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label149_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
