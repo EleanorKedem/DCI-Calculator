@@ -29,10 +29,25 @@ namespace DCI_Calculator
                 specials.Show();
             }
 
-            else
+            else if (SetValueStone.Equals(StoneSize.CT10) ||
+                     SetValueStone.Equals(StoneSize.CT9)  ||
+                     SetValueStone.Equals(StoneSize.CT8)  ||
+                     SetValueStone.Equals(StoneSize.CT7)  ||
+                     SetValueStone.Equals(StoneSize.CT6)  ||
+                     SetValueStone.Equals(StoneSize.CT5)  ||
+                     SetValueStone.Equals(StoneSize.CT4)  ||
+                     SetValueStone.Equals(StoneSize.CT3)  ||
+                     SetValueStone.Equals(StoneSize.GR10) ||
+                     SetValueStone.Equals(StoneSize.GR8))
             {
                 ItemCalc item = new ItemCalc();
                 item.Show();
+            }
+
+            else 
+            {
+                SmallItemCalc smallItem = new SmallItemCalc();
+                smallItem.Show();
             }
         }
     }

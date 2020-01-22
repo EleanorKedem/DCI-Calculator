@@ -17,7 +17,7 @@ namespace DCI_Calculator
         public static string SetValueCountry = string.Empty;
         public static string SetValueMine = string.Empty;
         public static string SetValueProdction = string.Empty;
-        //TODO set a global variable for the date
+        //TODO set a global variable for the date and move valuer into the size selection form 
         public static string SetValueValuer = string.Empty;
      
         #endregion
@@ -36,7 +36,8 @@ namespace DCI_Calculator
             SetValueCountry = countryComboBox.Text;
             SetValueMine = mineComboBox.Text;
             SetValueProdction = productionTextBox.Text;
-            SetValueValuer = valuerTextBox.Text;
+        
+            Parcel parcel = new Parcel(SetValueMine,SetValueCountry,SetValueProdction);
             
             this.Hide();
             Summary sumWindow = new Summary();

@@ -6,36 +6,64 @@ using System.Threading.Tasks;
 
 namespace DCI_Calculator
 {
-    class Parcel
+    public class Parcel
     {
         private int totalWeight;
         private int totalValue;
         private int averageValue;
-        private string mine;
-        private string country;
+        private String mine;
+        private String country;
+        private String productionNum;
 
-        Dictionary<Item, int> parcel;
+        SortedList<SizeAssortment, int> parcel;
 
-        Parcel()
+        #region Constructors
+        public Parcel()
         {
-            parcel = new Dictionary<Item, int>();
+            parcel = new SortedList<SizeAssortment, int>();
+            totalValue = 0;
+            totalWeight = 0;
+            averageValue = 0;
         }
 
-        public int AddItem (Item i)
+        public Parcel(String m, String c, String p)
         {
-            int sum;
+            mine = m;
+            country = c;
+            productionNum = p;
+            parcel = new SortedList<SizeAssortment, int>();
+            totalValue = 0;
+            totalWeight = 0;
+            averageValue = 0;
+        }
 
-            if (parcel.TryGetValue(i, out sum))
-            {
-                ++sum;
-            }
-            else
-            {
-                sum = 1;
-            }
-            parcel.Add(i, sum);
+        #endregion
 
-            return sum;
+        #region Properties
+
+        public int TotalWeight
+        {
+            get { return totalWeight; }
+            set { totalWeight = value; }
+        }
+
+        public int TotalValue
+        {
+            get { return totalValue; }
+            set { totalValue = value; }
+        }
+
+        public int AverageValue
+        {
+            get { return averageValue; }
+            set { averageValue = value; }
+        }
+
+        #endregion
+
+        public int AddSize (StoneSize size)
+        {
+            return 0;
         }
     }
 }

@@ -15,7 +15,39 @@ namespace DCI_Calculator
         public Summary()
         {
             InitializeComponent();
-            this.headingLabel.Text = ParcelCalc.SetValueMine + "  Production " + ParcelCalc.SetValueProdction + "  Valuation Summary";       
+            this.headingLabel.Text = ParcelCalc.SetValueMine + "  Production " + ParcelCalc.SetValueProdction + "  Valuation Summary";
+            foreach(Control c in this.summaryTable.Controls)
+            {
+                if(c is TextBox)
+                {
+                    c.Text = "0";
+                }
+            }
+        }
+
+        private void specialsTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateGrandTotal ()
+        {
+           
+        }
+
+        private void AllowOnlyNumbers (KeyPressEventArgs e)
+        {
+            Char c = e.KeyChar;
+            if(!Char.IsDigit(c) && c != 8)
+            {
+                e.Handled = true;
+                MessageBox.Show("Invalid input");
+            }
+        }
+
+        private void SummaryTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            AllowOnlyNumbers(e);
         }
     }
 }

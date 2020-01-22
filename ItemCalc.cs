@@ -15,7 +15,7 @@ namespace DCI_Calculator
         public ItemCalc()
         {
             InitializeComponent();
-            this.stonesLabel.Text = ParcelCalc.SetValueStone + " Valuation    " + ParcelCalc.SetValueMine;
+            this.stonesLabel.Text = StoneSelector.SetValueStone + " Valuation    " + ParcelCalc.SetValueMine;
         }
 
         private void sizeComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -95,7 +95,7 @@ namespace DCI_Calculator
 
         private void textBox10_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

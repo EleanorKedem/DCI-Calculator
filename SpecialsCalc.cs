@@ -15,7 +15,7 @@ namespace DCI_Calculator
         public SpecialsCalc()
         {
             InitializeComponent();
-            this.stonesLabel.Text = ParcelCalc.SetValueStone + " Valuation    " + ParcelCalc.SetValueMine;
+            this.stonesLabel.Text = StoneSelector.SetValueStone + " Valuation    " + ParcelCalc.SetValueMine;
         }
 
         private void SpecialsCalc_Load(object sender, EventArgs e)
