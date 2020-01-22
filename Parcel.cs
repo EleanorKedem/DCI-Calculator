@@ -15,12 +15,12 @@ namespace DCI_Calculator
         private String country;
         private String productionNum;
 
-        SortedList<SizeAssortment, int> parcel;
+        SortedList<StoneSize, SizeAssortment> MyParcel;
 
         #region Constructors
         public Parcel()
         {
-            parcel = new SortedList<SizeAssortment, int>();
+            MyParcel = new SortedList<StoneSize, SizeAssortment>();
             totalValue = 0;
             totalWeight = 0;
             averageValue = 0;
@@ -31,7 +31,7 @@ namespace DCI_Calculator
             mine = m;
             country = c;
             productionNum = p;
-            parcel = new SortedList<SizeAssortment, int>();
+            MyParcel = new SortedList<StoneSize, SizeAssortment>();
             totalValue = 0;
             totalWeight = 0;
             averageValue = 0;
@@ -61,9 +61,18 @@ namespace DCI_Calculator
 
         #endregion
 
-        public int AddSize (StoneSize size)
+        public void AddSize (StoneSize key, SizeAssortment value)
         {
-            return 0;
+            if(MyParcel.ContainsKey(key))
+            {
+                //TODO check in what way to update value
+                MyParcel[key].TotalWeight = value.TotalWeight;
+            }
+
+            else
+            {
+                MyParcel.Add(key, value);
+            }
         }
     }
 }

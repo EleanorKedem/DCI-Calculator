@@ -12,9 +12,15 @@ namespace DCI_Calculator
 {
     public partial class Summary : Form
     {
+        private int [] subtotalRows;
+        private int[] activeRows;
+
+        public Parcel parcel;
         public Summary()
         {
             InitializeComponent();
+            subtotalRows = new int[] {8,12,18};
+            activeRows = new int[] { 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24 };
             this.headingLabel.Text = ParcelCalc.SetValueMine + "  Production " + ParcelCalc.SetValueProdction + "  Valuation Summary";
             foreach(Control c in this.summaryTable.Controls)
             {
@@ -27,12 +33,15 @@ namespace DCI_Calculator
 
         private void specialsTextBox_TextChanged(object sender, EventArgs e)
         {
-
+            int weight = Convert.ToInt32(specialsTextBox.Text);
+            SizeAssortment value = new SizeAssortment(StoneSize.Specials, weight/*add name*/);
+            parcel.AddSize(StoneSize.Specials, value);
         }
 
         private void UpdateGrandTotal ()
         {
-           
+            int sum = 0;
+            //foreach (StoneSize key in parcel.)
         }
 
         private void AllowOnlyNumbers (KeyPressEventArgs e)

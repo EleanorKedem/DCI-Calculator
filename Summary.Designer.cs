@@ -2502,7 +2502,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(825, 403);
+            this.ClientSize = new System.Drawing.Size(842, 403);
             this.Controls.Add(this.headingLabel);
             this.Controls.Add(this.summaryTable);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
