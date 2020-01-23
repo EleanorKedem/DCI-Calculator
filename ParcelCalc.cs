@@ -38,12 +38,14 @@ namespace DCI_Calculator
             SetValueCountry = countryComboBox.Text;
             SetValueMine = mineComboBox.Text;
             SetValueProdction = productionTextBox.Text;
+            SetValueValuer = valuerTextBox.Text;
         
             parcel = new Parcel(SetValueMine,SetValueCountry,SetValueProdction);
             
             this.Hide();
             Summary sumWindow = new Summary();
             sumWindow.parcel = parcel;
+            sumWindow.valuer = SetValueValuer;
             sumWindow.Show();
 
             StoneSelector stoneWindow = new StoneSelector();

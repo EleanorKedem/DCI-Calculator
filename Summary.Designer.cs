@@ -2125,6 +2125,7 @@
             this.textBox8CT.Name = "textBox8CT";
             this.textBox8CT.Size = new System.Drawing.Size(102, 26);
             this.textBox8CT.TabIndex = 26;
+            this.textBox8CT.TextChanged += new System.EventHandler(this.textBox8CT_TextChanged);
             this.textBox8CT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
             // label8CT
@@ -2204,6 +2205,7 @@
             this.textBox9CT.Name = "textBox9CT";
             this.textBox9CT.Size = new System.Drawing.Size(102, 26);
             this.textBox9CT.TabIndex = 20;
+            this.textBox9CT.TextChanged += new System.EventHandler(this.textBox9CT_TextChanged);
             this.textBox9CT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
             // label9CT
@@ -2283,6 +2285,7 @@
             this.textBox10CT.Name = "textBox10CT";
             this.textBox10CT.Size = new System.Drawing.Size(102, 26);
             this.textBox10CT.TabIndex = 14;
+            this.textBox10CT.TextChanged += new System.EventHandler(this.textBox10CT_TextChanged);
             this.textBox10CT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
             // specialsTotalPriceLabel
@@ -2501,6 +2504,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.AutoScrollMargin = new System.Drawing.Size(0, 100);
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(842, 403);
             this.Controls.Add(this.headingLabel);

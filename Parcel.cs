@@ -61,6 +61,7 @@ namespace DCI_Calculator
 
         #endregion
 
+        #region ParcelMethods
         public void AddSize (StoneSize key, SizeAssortment value)
         {
             if(MyParcel.ContainsKey(key))
@@ -73,6 +74,63 @@ namespace DCI_Calculator
             {
                 MyParcel.Add(key, value);
             }
+
+            CalculateTotalWeight();
+            CalculateAverageValue();
+        }
+        public bool SizeInParcel(StoneSize s)
+        {
+            return MyParcel.ContainsKey(s);
+        }
+
+        public bool UpdateSizeWeight(StoneSize s, int w)
+        {
+            if (MyParcel.ContainsKey(s))
+            {
+                MyParcel[s].TotalWeight = w;
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
+        }
+
+        #endregion
+
+        public int CalculateTotalWeight()
+        {
+            totalWeight = 0;
+
+            foreach (StoneSize key in MyParcel.Keys)
+            {
+                totalWeight += MyParcel[key].TotalWeight;
+            }
+
+            return totalWeight;
+        }
+
+        public int CalculateTotalValue()
+        {
+            totalValue = 0;
+
+            foreach (StoneSize key in MyParcel.Keys)
+            {
+                totalValue += MyParcel[key].TotalValue;
+            }
+
+            return totalValue;
+        }
+
+        public int CalculateAverageValue()
+        {
+            if(totalWeight != 0)
+            {
+                averageValue = totalValue / totalWeight;
+            }
+
+            return averageValue;
         }
     }
 }
