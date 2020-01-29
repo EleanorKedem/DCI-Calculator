@@ -12,10 +12,13 @@ namespace DCI_Calculator
 {
     public partial class SmallItemCalc : Form
     {
-        public SmallItemCalc()
+        public String stoneSizeValue;
+        public SmallItemCalc(String s)
         {
+            stoneSizeValue = s;
             InitializeComponent();
-            this.stonesLabel.Text = StoneSelector.SetValueStone + " Valuation    " + ParcelCalc.SetValueMine;
+            this.stonesLabel.Text = stoneSizeValue + " Valuation    " + ParcelCalc.SetValueMine;
+            this.Show();
         }
 
         private void SmallItemCalc_Load(object sender, EventArgs e)

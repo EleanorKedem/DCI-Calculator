@@ -10,9 +10,9 @@ namespace DCI_Calculator
     {
         private StoneSize key;
         private List<Item> items;
-        private int totalWeight;
-        private int totalValue;
-        private int averageValue;
+        private double totalWeight;
+        private double totalValue;
+        private double averageValue;
         private int numStones;
         private String valuer;
 
@@ -27,7 +27,7 @@ namespace DCI_Calculator
             valuer = "";
         }
 
-        public SizeAssortment(StoneSize k, int w)
+        public SizeAssortment(StoneSize k, double w)
         {
             key = k;
             totalWeight = w;
@@ -36,7 +36,7 @@ namespace DCI_Calculator
             valuer = "";
         }
 
-        public SizeAssortment(StoneSize k, int w, String name)
+        public SizeAssortment(StoneSize k, double w, String name)
         {
             key = k;
             totalWeight = w;
@@ -55,19 +55,19 @@ namespace DCI_Calculator
             set { key = value; }
         }
 
-        public int TotalWeight
+        public double TotalWeight
         {
             get { return totalWeight; }
             set { totalWeight = value; }
         }
 
-        public int TotalValue
+        public double TotalValue
         {
             get { return totalValue; }
             set { totalValue = value; }
         }
 
-        public int AverageValue
+        public double AverageValue
         {
             get { return averageValue; }
             set { averageValue = value; }

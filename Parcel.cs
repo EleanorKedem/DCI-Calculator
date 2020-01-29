@@ -8,9 +8,9 @@ namespace DCI_Calculator
 {
     public class Parcel
     {
-        private int totalWeight;
-        private int totalValue;
-        private int averageValue;
+        private double totalWeight;
+        private double totalValue;
+        private double averageValue;
         private String mine;
         private String country;
         private String productionNum;
@@ -41,19 +41,19 @@ namespace DCI_Calculator
 
         #region Properties
 
-        public int TotalWeight
+        public double TotalWeight
         {
             get { return totalWeight; }
             set { totalWeight = value; }
         }
 
-        public int TotalValue
+        public double TotalValue
         {
             get { return totalValue; }
             set { totalValue = value; }
         }
 
-        public int AverageValue
+        public double AverageValue
         {
             get { return averageValue; }
             set { averageValue = value; }
@@ -83,7 +83,7 @@ namespace DCI_Calculator
             return MyParcel.ContainsKey(s);
         }
 
-        public bool UpdateSizeWeight(StoneSize s, int w)
+        public bool UpdateSizeWeight(StoneSize s, double w)
         {
             if (MyParcel.ContainsKey(s))
             {
@@ -99,7 +99,7 @@ namespace DCI_Calculator
 
         #endregion
 
-        public int CalculateTotalWeight()
+        public double CalculateTotalWeight()
         {
             totalWeight = 0;
 
@@ -111,7 +111,7 @@ namespace DCI_Calculator
             return totalWeight;
         }
 
-        public int CalculateTotalValue()
+        public double CalculateTotalValue()
         {
             totalValue = 0;
 
@@ -123,7 +123,7 @@ namespace DCI_Calculator
             return totalValue;
         }
 
-        public int CalculateAverageValue()
+        public double CalculateAverageValue()
         {
             if(totalWeight != 0)
             {

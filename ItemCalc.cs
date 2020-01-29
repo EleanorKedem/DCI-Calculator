@@ -12,10 +12,15 @@ namespace DCI_Calculator
 {
     public partial class ItemCalc : Form
     {
-        public ItemCalc()
+        bool showPriceList;
+
+        public String stoneSizeValue;
+        public ItemCalc(String s)
         {
+            stoneSizeValue = s;
             InitializeComponent();
-            this.stonesLabel.Text = StoneSelector.SetValueStone + " Valuation    " + ParcelCalc.SetValueMine;
+            this.stonesLabel.Text = Summary.SetValueStone + " Valuation    " + ParcelCalc.SetValueMine;
+            this.Show();
         }
 
         private void sizeComboBox_SelectedIndexChanged(object sender, EventArgs e)

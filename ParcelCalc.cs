@@ -47,9 +47,6 @@ namespace DCI_Calculator
             sumWindow.parcel = parcel;
             sumWindow.valuer = SetValueValuer;
             sumWindow.Show();
-
-            StoneSelector stoneWindow = new StoneSelector();
-            stoneWindow.Show();
         }
     }
 }
