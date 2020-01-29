@@ -18,9 +18,11 @@ namespace DCI_Calculator
         public ItemCalc(String s)
         {
             stoneSizeValue = s;
+            showPriceList = false;
             InitializeComponent();
             this.stonesLabel.Text = Summary.SetValueStone + " Valuation    " + ParcelCalc.SetValueMine;
             this.Show();
+            PriceListHide();
         }
 
         private void sizeComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -101,6 +103,63 @@ namespace DCI_Calculator
         private void textBox10_TextChanged(object sender, EventArgs e)
         {
             
+        }
+        private void priceListButton_Click(object sender, EventArgs e)
+        {
+            showPriceList = !showPriceList;
+
+            if (showPriceList)
+            {
+                PriceListShow();
+            }
+            else
+            {
+                PriceListHide();
+            }
+        }
+
+        private void PriceListShow()
+        {
+            crystalsGroupBox.Size = new Size(1242, 178);
+            pricesCrystalsTableLayoutPanel.Show();
+            MB50GroupBox.Size = new Size(1242, 178);
+            pricesMB50TableLayoutPanel.Show();
+            MB40GroupBox.Size = new Size(1242, 178);
+            pricesMB40TableLayoutPanel.Show();
+            makeableGroupBox.Size = new Size(1242, 178);
+            pricesMakeableTableLayoutPanel.Show();
+            spottedZGroupBox.Size = new Size(1242, 178);
+            pricesSpottedTableLayoutPanel.Show();
+            clivageGroupBox.Size = new Size(1242, 178);
+            pricesClivageTableLayoutPanel.Show();
+            rejectionsGroupBox.Size = new Size(1242, 178);
+            pricesRejectionsTableLayoutPanel.Show();
+            boartGroupBox.Size = new Size(1242, 178);
+            pricesBoartTableLayoutPanel.Show();
+            brownGroupBox.Size = new Size(1242, 178);
+            pricesBrownZTableLayoutPanel.Show();
+        }
+
+        private void PriceListHide()
+        {
+            pricesCrystalsTableLayoutPanel.Hide();
+            crystalsGroupBox.Size = new Size(740, 178);
+            pricesMB50TableLayoutPanel.Hide();
+            MB50GroupBox.Size = new Size(740, 178);
+            pricesMB40TableLayoutPanel.Hide();
+            MB40GroupBox.Size = new Size(740, 178);
+            pricesMakeableTableLayoutPanel.Hide();
+            makeableGroupBox.Size = new Size(740, 178);
+            pricesSpottedTableLayoutPanel.Hide();
+            spottedZGroupBox.Size = new Size(740, 178);
+            pricesClivageTableLayoutPanel.Hide();
+            clivageGroupBox.Size = new Size(740, 178);
+            pricesRejectionsTableLayoutPanel.Hide();
+            rejectionsGroupBox.Size = new Size(740, 178);
+            pricesBoartTableLayoutPanel.Hide();
+            boartGroupBox.Size = new Size(740, 178);
+            pricesBrownZTableLayoutPanel.Hide();
+            brownGroupBox.Size = new Size(740, 178);
         }
     }
 }
