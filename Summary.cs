@@ -7,39 +7,93 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Linq;
+
+/// <summary>
+/// TODO enter command moves focus to the next line
+/// </summary>
 
 namespace DCI_Calculator
 {
     public partial class Summary : Form
     {
         private int [] subtotalRows;
-        private int[] activeRows;
-
+        
         public Parcel parcel;
         public String valuer;
-
-        public static string SetValueStone;
 
         public Summary()
         {
             InitializeComponent();
             subtotalRows = new int[] {8,12,18};
-            activeRows = new int[] { 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24 };
             this.headingLabel.Text = ParcelCalc.SetValueMine + "  Production " + ParcelCalc.SetValueProdction + "  Valuation Summary";
- /*           foreach(Control c in this.summaryTable.Controls)
+        }
+
+        private void Summary_Activated(object sender, EventArgs e)
+        {
+            SummaryUpdate();
+        }
+
+        private void SummaryUpdate()
+        {
+            for(int row=1, size = 0; row<summaryTable.RowCount; ++row, ++size)
             {
-                if(c is TextBox)
+                if (subtotalRows.Contains(row))
                 {
-                    c.Text = "0";
+                    continue;
                 }
-            }*/
+                else
+                {
+                    if (parcel.MyParcel.ContainsKey((StoneSize)size))
+                    {
+                        var label = summaryTable.GetControlFromPosition(2, row); //average value column
+                        label.Text = "$" + parcel.MyParcel[(StoneSize)size].AverageValue.ToString("0.##");
+                        label = summaryTable.GetControlFromPosition(3, row); //Total value column
+                        label.Text = "$" + parcel.MyParcel[(StoneSize)size].TotalValue.ToString("0.##");
+                        label = summaryTable.GetControlFromPosition(4, row); //percent of weight
+                        label.Text = parcel.MyParcel[(StoneSize)size].PercentWeight.ToString("0.##") + "%";
+                        label = summaryTable.GetControlFromPosition(5, row); //percent of value
+                        label.Text = parcel.MyParcel[(StoneSize)size].PercentValue.ToString("0.##") + "%";
+                    }
+                }
+            }
+
+            UpdateGrandTotal();
         }
 
         private void UpdateGrandTotal ()
         {
-            this.labelGrandTotalCarats.Text = parcel.CalculateTotalWeight().ToString();
-            this.labelGrandTotalValue.Text = "$ " + parcel.CalculateTotalValue().ToString();
-            this.labelGrandTotalAvPrice.Text = "$ " + parcel.CalculateAverageValue().ToString();
+            this.labelGrandTotalCarats.Text = parcel.CalculateTotalWeight().ToString("0.##");
+            this.labelGrandTotalValue.Text = "$ " + parcel.CalculateTotalValue().ToString("0.##");
+            this.labelGrandTotalAvPrice.Text = "$ " + parcel.CalculateAverageValue().ToString("0.##");
+            this.labelGrandTotalPrice.Text = parcel.SumPercentValue().ToString("0.##");
+        }
+
+        private void UpdatePercent()
+        {
+            int row, size;
+            parcel.CalculateAllPercent();
+
+            for (row = 1, size = 0; (row < summaryTable.RowCount) && (size < Enum.GetNames(typeof(StoneSize)).Length); ++row)
+            {
+                if (subtotalRows.Contains(row))
+                    continue;
+
+                else
+                {
+                    if (parcel.MyParcel.ContainsKey((StoneSize)size))
+                    {
+                        summaryTable.GetControlFromPosition(4, row).Text = parcel.MyParcel[(StoneSize)size].PercentWeight.ToString("0.##") + "%";
+                    }
+                    else
+                    {
+                        summaryTable.GetControlFromPosition(4, row).Text = "0%";
+                    }
+                    ++size;
+                }
+                this.labelGrandTotalCaratsPC.Text = parcel.SumPercent().ToString() + "%";
+
+            }
         }
 
         private void AllowOnlyNumbers (KeyPressEventArgs e)
@@ -56,7 +110,22 @@ namespace DCI_Calculator
         {
             if (e.KeyChar == 13)
             {
-                UpdateGrandTotal();
+                e.Handled = true;
+                var textbox = (TextBox)sender;
+                var table = (TableLayoutPanel)textbox.Parent;
+                int row = table.GetRow(textbox);
+                int col = table.GetColumn(textbox);
+
+                if (subtotalRows.Contains(row+1))
+                    ++row;
+
+                if (row == (table.RowCount-2)) //we reached the last row
+                    return;
+
+                var nextTextbox = (TextBox)table.GetControlFromPosition(col, row + 1);
+                nextTextbox.Focus();
+
+                UpdateGrandTotal(); //at the moment this line is redundant
             }
             else
             {
@@ -64,123 +133,473 @@ namespace DCI_Calculator
             }
         }
 
-        private double InsertingWeights(StoneSize s, double w)
+        private void InsertingWeightsSize(StoneSize s, double w)
         {
-            double percent = 0;
-
             if (!(parcel.UpdateSizeWeight(s, w)))
             {
                 SizeAssortment newSize = new SizeAssortment(s, w, valuer);
                 parcel.AddSize(s, newSize);
             }
 
-            if (parcel.TotalWeight != 0)
-            {
-                percent = (w / parcel.TotalWeight) * 100;
-            }
-            
             UpdateGrandTotal();
-
-            return percent;
-
         }
+
+        #region TextBoxChange
 
         private void specialsTextBox_TextChanged(object sender, EventArgs e)
         {
-            double percent;
-            double weight = Convert.ToDouble(specialsTextBox.Text);
+            double weight;
+            
+            if (specialsTextBox.Text != "")
+            {
+                weight = Convert.ToDouble(specialsTextBox.Text);
+            }
 
-            percent = InsertingWeights(StoneSize.Specials, weight);
+            else
+            {
+                weight = 0;
+            }
 
-            //this.specialsCaratsLabel.Text = percent.ToString() + "%";
+            InsertingWeightsSize(StoneSize.Specials, weight);
+
+            UpdatePercent();
         }
 
 
         private void textBox10CT_TextChanged(object sender, EventArgs e)
         {
-            double percent = 0;
-            double weight = Convert.ToDouble(textBox10CT.Text);
+            double weight;
+            
+            if (textBox10CT.Text != "")
+            {
+                weight = Convert.ToDouble(textBox10CT.Text);
+            }
 
-            percent = InsertingWeights(StoneSize.CT10, weight);
-  
-            //this.caratsLabel10CT.Text = percent.ToString() + "%";
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.CT10, weight);
+
+            UpdatePercent();
         }
 
         private void textBox9CT_TextChanged(object sender, EventArgs e)
         {
-            double percent = 0;
-            double weight = Convert.ToDouble(textBox9CT.Text);
+            double weight;
 
-            percent = InsertingWeights(StoneSize.CT9, weight);
+            if (textBox9CT.Text != "")
+            {
+                weight = Convert.ToDouble(textBox9CT.Text);
+            }
 
-            //this.caratsLabel9CT.Text = percent.ToString() + "%";
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.CT9, weight);
+
+            UpdatePercent();
         }
 
         private void textBox8CT_TextChanged(object sender, EventArgs e)
         {
-            double percent = 0;
-            double weight = Convert.ToDouble(textBox8CT.Text);
+            double weight;
 
-            percent = InsertingWeights(StoneSize.CT8, weight);
+            if(textBox8CT.Text != "")
+            {
+                weight = Convert.ToDouble(textBox8CT.Text);
+            }
 
-            //this.caratsLabel8CT.Text = percent.ToString() + "%";
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.CT8, weight);
+
+            UpdatePercent();
         }
 
         private void textBox7CT_TextChanged(object sender, EventArgs e)
         {
-            double percent = 0;
-            double weight = Convert.ToDouble(textBox7CT.Text);
+            double weight;
 
-            percent = InsertingWeights(StoneSize.CT7, weight);
+            if (textBox7CT.Text != "")
+            {
+                weight = Convert.ToDouble(textBox7CT.Text);
+            }
 
-            //this.caratsLabel7CT.Text = percent.ToString() + "%";
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.CT7, weight);
+
+            UpdatePercent();
         }
 
         private void textBox6CT_TextChanged(object sender, EventArgs e)
         {
-            double percent = 0;
-            double weight = Convert.ToDouble(textBox6CT.Text);
+            double weight;
 
-            percent = InsertingWeights(StoneSize.CT6, weight);
+            if (textBox6CT.Text != "")
+            {
+                weight = Convert.ToDouble(textBox6CT.Text);
+            }
 
-            //this.caratsLabel6CT.Text = percent.ToString() + "%";
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.CT6, weight);
+
+            UpdatePercent();
         }
-
         private void textBox5CT_TextChanged(object sender, EventArgs e)
         {
-            double percent = 0;
-            double weight = Convert.ToDouble(textBox5CT.Text);
+            double weight;
 
-            percent = InsertingWeights(StoneSize.CT5, weight);
+            if (textBox5CT.Text != "")
+            {
+                weight = Convert.ToDouble(textBox5CT.Text);
+            }
 
-            //this.caratsLabel5CT.Text = percent.ToString() + "%";
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.CT5, weight);
+
+            UpdatePercent();
         }
+
+        private void textBox4CT_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBox4CT.Text != "")
+            {
+                weight = Convert.ToDouble(textBox4CT.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.CT4, weight);
+
+            UpdatePercent();
+        }
+
+        private void textBox3CT_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBox3CT.Text != "")
+            {
+                weight = Convert.ToDouble(textBox3CT.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.CT3, weight);
+
+            UpdatePercent();
+        }
+
+        private void textBox10GR_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBox10GR.Text != "")
+            {
+                weight = Convert.ToDouble(textBox10GR.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.GR10, weight);
+
+            UpdatePercent();
+        }
+
+        private void textBox8GR_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBox8GR.Text != "")
+            {
+                weight = Convert.ToDouble(textBox8GR.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.GR8, weight);
+
+            UpdatePercent();
+        }
+
+        private void textBox6GR_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBox6GR.Text != "")
+            {
+                weight = Convert.ToDouble(textBox6GR.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.GR6, weight);
+
+            UpdatePercent();
+        }
+
+        private void textBox5GR_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBox5GR.Text != "")
+            {
+                weight = Convert.ToDouble(textBox5GR.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.GR5, weight);
+
+            UpdatePercent();
+        }
+
+        private void textBox4GR_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBox4GR.Text != "")
+            {
+                weight = Convert.ToDouble(textBox4GR.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.GR4, weight);
+
+            UpdatePercent();
+        }
+        private void textBox3GR_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBox3GR.Text != "")
+            {
+                weight = Convert.ToDouble(textBox3GR.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.GR3, weight);
+
+            UpdatePercent();
+        }
+
+        private void textBoxPCT2_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBox2perCT.Text != "")
+            {
+                weight = Convert.ToDouble(textBox2perCT.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.PCT2, weight);
+
+            UpdatePercent();
+        }
+
+        private void textBoxPCT4_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBox4perCT.Text != "")
+            {
+                weight = Convert.ToDouble(textBox4perCT.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.PCT4, weight);
+
+            UpdatePercent();
+        }
+
+        private void textBoxMinus9plus7_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBoxminus9plus7.Text != "")
+            {
+                weight = Convert.ToDouble(textBoxminus9plus7.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.minus9plus7, weight);
+
+            UpdatePercent();
+        }
+
+        private void textBoxMinus7plus5_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBoxminus7plus5.Text != "")
+            {
+                weight = Convert.ToDouble(textBoxminus7plus5.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.minus7plus5, weight);
+
+            UpdatePercent();
+        }
+        private void textBoxMinus5plus3_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBoxminus5plus3.Text != "")
+            {
+                weight = Convert.ToDouble(textBoxminus5plus3.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.minus5plus3, weight);
+
+            UpdatePercent();
+        }
+
+        private void textBoxMinus3plus1_TextChanged(object sender, EventArgs e)
+        {
+            double weight;
+
+            if (textBoxminus3plus1.Text != "")
+            {
+                weight = Convert.ToDouble(textBoxminus3plus1.Text);
+            }
+
+            else
+            {
+                weight = 0;
+            }
+
+            InsertingWeightsSize(StoneSize.minus3plus1, weight);
+
+            UpdatePercent();
+        }
+
+        #endregion
 
         private void specialsLabel_Click(object sender, EventArgs e)
         {
             var label = (Label)sender;
-            SetValueStone = label.Text.ToString();
-            SpecialsCalc specials = new SpecialsCalc(SetValueStone);
-            specials.Show();
+            StoneSize key = (StoneSize)Enum.Parse(typeof(StoneSize), label.Tag.ToString());
+
+            if(parcel.MyParcel.ContainsKey(key) && (parcel.MyParcel[key].TotalWeight > 0))
+            {
+                SpecialsCalc specials = new SpecialsCalc(parcel.MyParcel[key]);
+                specials.Show();
+            }
+
+
+            else
+            {
+                MessageBox.Show("Value not inserted for the chosen size");
+            }            
         }
 
         private void itemLabel_Click(object sender, EventArgs e)
         {
             var label = (Label)sender;
-            SetValueStone = label.Text.ToString();
-            ItemCalc item = new ItemCalc(SetValueStone);
-            item.Show();
+            StoneSize key = (StoneSize)Enum.Parse(typeof(StoneSize), label.Tag.ToString());
+
+            if (parcel.MyParcel.ContainsKey(key) && (parcel.MyParcel[key].TotalWeight > 0))
+            {
+                ItemCalc item = new ItemCalc(parcel.MyParcel[key]);
+                item.Show();
+            }
+
+
+            else
+            {
+                MessageBox.Show("Value not inserted for the chosen size");
+            }
         }
 
         private void smallItemLabel_Click(object sender, EventArgs e)
         {
             var label = (Label)sender;
-            SetValueStone = label.Text.ToString();
-            SmallItemCalc smallItem = new SmallItemCalc(SetValueStone);
-            smallItem.Show();
+            StoneSize key = (StoneSize)Enum.Parse(typeof(StoneSize), label.Tag.ToString());
+
+            if (parcel.MyParcel.ContainsKey(key) && (parcel.MyParcel[key].TotalWeight > 0))
+            {
+                SmallItemCalc item = new SmallItemCalc(parcel.MyParcel[key]);
+                item.Show();
+            }
+
+
+            else
+            {
+                MessageBox.Show("Value not inserted for the chosen size");
+            }
         }
 
-        #region Labels Mouse Events
+        #region LabelsMouseEvents
         private void specialsLabel_MouseEnter(object sender, EventArgs e)
         {
             specialsLabel.ForeColor = Color.Red;
@@ -358,5 +777,6 @@ namespace DCI_Calculator
             labelminus3plus1.ForeColor = Color.Black;
         }
         #endregion
+
     }
 }

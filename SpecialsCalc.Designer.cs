@@ -664,6 +664,7 @@
             this.noStonesLot3TextBox = new System.Windows.Forms.TextBox();
             this.lot14Label = new System.Windows.Forms.Label();
             this.lot59Label = new System.Windows.Forms.Label();
+            this.addRowButton = new System.Windows.Forms.Button();
             this.summeryTable.SuspendLayout();
             this.stonesTable.SuspendLayout();
             this.SuspendLayout();
@@ -9802,12 +9803,25 @@
             this.lot59Label.Text = "Lot 59";
             this.lot59Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // addRowButton
+            // 
+            this.addRowButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.addRowButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addRowButton.Location = new System.Drawing.Point(678, 2496);
+            this.addRowButton.Name = "addRowButton";
+            this.addRowButton.Size = new System.Drawing.Size(75, 35);
+            this.addRowButton.TabIndex = 5;
+            this.addRowButton.Text = "Add Row";
+            this.addRowButton.UseVisualStyleBackColor = false;
+            this.addRowButton.Click += new System.EventHandler(this.addRowButton_Click);
+            // 
             // SpecialsCalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(780, 733);
+            this.Controls.Add(this.addRowButton);
             this.Controls.Add(this.stonesTable);
             this.Controls.Add(this.downButton);
             this.Controls.Add(this.upButton);
@@ -10463,5 +10477,6 @@
         private System.Windows.Forms.Label descriptionTotalLabel;
         private System.Windows.Forms.Label noStonesTotalLabel;
         private System.Windows.Forms.Label totalLabel;
+        private System.Windows.Forms.Button addRowButton;
     }
 }

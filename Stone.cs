@@ -20,12 +20,15 @@ namespace DCI_Calculator
         GR10,
         GR8,
         GR6,
+        GR5,
         GR4,
         GR3,
         PCT2,
         PCT4,
         minus9plus7,
-        minus7plus5
+        minus7plus5,
+        minus5plus3,
+        minus3plus1
     }
     public enum StoneModel
     {
@@ -54,21 +57,29 @@ namespace DCI_Calculator
         QU3,
         QU4
     }
-    class Stone
+    public class Stone
     {
         private StoneSize stoneSize;
         private StoneModel stoneModel;
         private char stoneColour;
         private StoneClarity stoneClarity;
-        private int stonePrice;
-        private int stonePricePerCT;
+        private double stonePrice;
         private int key;
         private int stoneWeight;
 
+        #region Constructors
         public Stone()
         {
             //empty constructor
             stoneWeight = -1;
+        }
+
+        public Stone (StoneSize size, StoneModel model, int position, double price)
+        {
+            stoneSize = size;
+            stoneModel = model;
+            key = position;
+            stonePrice = price;
         }
 
         public Stone(StoneSize size, StoneModel model, char colour, StoneClarity clarity)
@@ -91,15 +102,36 @@ namespace DCI_Calculator
             stonePrice = -1;
         }
 
+        #endregion
 
-        private void SetKey()
+        #region Properties
+
+        public StoneSize SSize
         {
-            //TODO calculate the key
+            get { return stoneSize; }
+            set { stoneSize = value; }
         }
-        public int GetKey()
+
+        public StoneModel SModel
         {
-            return key;
+            get { return stoneModel; }
+            set { stoneModel = value; }
         }
+
+        public double SPrice
+        {
+            get { return stonePrice; }
+            set { stonePrice = value; }
+        }
+
+        public int Key
+        {
+            get { return key; }
+            set { key = value; }
+        }
+
+        #endregion
+
 
         public void UpdateStone(StoneSize size, StoneModel model, char colour, StoneClarity clarity) 
         {
@@ -109,12 +141,5 @@ namespace DCI_Calculator
             stoneClarity = clarity;
         }
 
-        public int ReturnPrice ()
-        {
-            //TODO send sql query to database
-            //stonePrice = ..
-
-            return stonePrice;
-        }
     }
 }

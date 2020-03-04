@@ -15,7 +15,7 @@ namespace DCI_Calculator
         private String country;
         private String productionNum;
 
-        SortedList<StoneSize, SizeAssortment> MyParcel;
+        public SortedList<StoneSize, SizeAssortment> MyParcel;
 
         #region Constructors
         public Parcel()
@@ -77,10 +77,18 @@ namespace DCI_Calculator
 
             CalculateTotalWeight();
             CalculateAverageValue();
+            CalculatePercent(value);
         }
         public bool SizeInParcel(StoneSize s)
         {
             return MyParcel.ContainsKey(s);
+        }
+
+        public SizeAssortment GetSizeAssortment (StoneSize key)
+        {
+            SizeAssortment value;
+            MyParcel.TryGetValue(key, out value);
+            return value;
         }
 
         public bool UpdateSizeWeight(StoneSize s, double w)
@@ -99,6 +107,7 @@ namespace DCI_Calculator
 
         #endregion
 
+        #region MembersCalculations
         public double CalculateTotalWeight()
         {
             totalWeight = 0;
@@ -132,5 +141,56 @@ namespace DCI_Calculator
 
             return averageValue;
         }
+
+        public void CalculatePercent(SizeAssortment value)
+        {
+            if (totalWeight != 0)
+            {
+                value.PercentWeight = (value.TotalWeight / totalWeight) * 100;
+            }
+
+            else
+            {
+                value.PercentWeight = 0;
+            }
+        }
+
+        public void CalculateAllPercent()
+        {
+            foreach(SizeAssortment value in this.MyParcel.Values)
+            {
+                CalculatePercent(value);
+            }
+        }
+
+        public double SumPercent()
+        {
+            double sum = 0;
+            foreach(SizeAssortment value in MyParcel.Values)
+            {
+                sum += value.PercentWeight;
+            }
+            return sum;
+        }
+
+        public void UpdatePercentValue()
+        {
+            foreach (SizeAssortment value in MyParcel.Values)
+            {
+                value.PercentValue = (value.TotalValue/totalValue)*100;
+            }
+        }
+
+        public double SumPercentValue()
+        {
+            double sum = 0;
+            UpdatePercentValue();
+            foreach (SizeAssortment value in MyParcel.Values)
+            {
+                sum += value.PercentValue;
+            }
+            return sum;
+        }
+        #endregion
     }
 }

@@ -13,11 +13,11 @@ namespace DCI_Calculator
     public partial class SpecialsCalc : Form
     {
         public String stoneSizeValue;
-        public SpecialsCalc(String s)
+        public SpecialsCalc(SizeAssortment stone)
         {
-            stoneSizeValue = s;
             InitializeComponent();
-            this.stonesLabel.Text = stoneSizeValue + " Valuation    " + ParcelCalc.SetValueMine;
+            this.stonesLabel.Text = stone.Key.ToString() + " Valuation    " + ParcelCalc.SetValueMine;
+            this.totalCtsValueLabel.Text = stone.TotalWeight.ToString();
             this.Show();
         }
 
@@ -29,6 +29,11 @@ namespace DCI_Calculator
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void addRowButton_Click(object sender, EventArgs e)
+        {
+            //TODO add a row to the table - tableLayoutPanel1
         }
     }
 }

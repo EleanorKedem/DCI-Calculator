@@ -49,7 +49,7 @@
             this.ctsValValueLabel = new System.Windows.Forms.Label();
             this.noStonesValueLabel = new System.Windows.Forms.Label();
             this.ZHighGroupBox = new System.Windows.Forms.GroupBox();
-            this.pricesZHighTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.ZHighTableLayoutPanelPrices = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -68,11 +68,11 @@
             this.textBox163 = new System.Windows.Forms.TextBox();
             this.textBox164 = new System.Windows.Forms.TextBox();
             this.textBox172 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.ZHighTable = new System.Windows.Forms.TableLayoutPanel();
+            this.ZHighCaratCountValueTextbox = new System.Windows.Forms.TextBox();
             this.crystalsStonesCounterLabel = new System.Windows.Forms.Label();
             this.crystalStonesCountValueLabel = new System.Windows.Forms.Label();
             this.crystalCaratCountLabel = new System.Windows.Forms.Label();
-            this.crystalCaratCountValueLabel = new System.Windows.Forms.Label();
             this.crystalAveragePriceLabel = new System.Windows.Forms.Label();
             this.crystalAveragePriceValueLabel = new System.Windows.Forms.Label();
             this.crystalTotalLabel = new System.Windows.Forms.Label();
@@ -97,7 +97,7 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.crystalsGroupBox = new System.Windows.Forms.GroupBox();
-            this.pricesCrystalsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.crystalsTableLayoutPanelPrices = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -116,11 +116,11 @@
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.CrystalsTable = new System.Windows.Forms.TableLayoutPanel();
+            this.crystalsCaratCountValueTextbox = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -145,7 +145,7 @@
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.textBox30 = new System.Windows.Forms.TextBox();
             this.ZLowGroupBox = new System.Windows.Forms.GroupBox();
-            this.pricesZLowTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.ZLowTableLayoutPanelPrices = new System.Windows.Forms.TableLayoutPanel();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
@@ -164,11 +164,11 @@
             this.textBox38 = new System.Windows.Forms.TextBox();
             this.textBox39 = new System.Windows.Forms.TextBox();
             this.textBox40 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.ZLowTable = new System.Windows.Forms.TableLayoutPanel();
+            this.ZLowCaratCountValueTextbox = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
@@ -193,7 +193,7 @@
             this.textBox49 = new System.Windows.Forms.TextBox();
             this.textBox50 = new System.Windows.Forms.TextBox();
             this.makeableGroupBox = new System.Windows.Forms.GroupBox();
-            this.pricesMakeableTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.makeableTableLayoutPanelPrices = new System.Windows.Forms.TableLayoutPanel();
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
@@ -212,11 +212,11 @@
             this.textBox58 = new System.Windows.Forms.TextBox();
             this.textBox59 = new System.Windows.Forms.TextBox();
             this.textBox60 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.MakeableTable = new System.Windows.Forms.TableLayoutPanel();
+            this.makeableCaratCountValueTextbox = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
@@ -241,7 +241,7 @@
             this.textBox69 = new System.Windows.Forms.TextBox();
             this.textBox70 = new System.Windows.Forms.TextBox();
             this.spottedZGroupBox = new System.Windows.Forms.GroupBox();
-            this.pricesSpottedTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.spottedTableLayoutPanelPrices = new System.Windows.Forms.TableLayoutPanel();
             this.label81 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
@@ -252,11 +252,11 @@
             this.textBox286 = new System.Windows.Forms.TextBox();
             this.textBox287 = new System.Windows.Forms.TextBox();
             this.textBox289 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.SpottedTable = new System.Windows.Forms.TableLayoutPanel();
+            this.spottedCaratCountValueTextbox = new System.Windows.Forms.TextBox();
             this.spottedZStonesCounterLabel = new System.Windows.Forms.Label();
             this.spottedZStonesCounterValueLabel = new System.Windows.Forms.Label();
             this.spottedZCaratCountLabel = new System.Windows.Forms.Label();
-            this.spottedZCaratCountValueLabel = new System.Windows.Forms.Label();
             this.spottedZAveragePriceLabel = new System.Windows.Forms.Label();
             this.spottedZAveragePriceValueLabel = new System.Windows.Forms.Label();
             this.spottedZTotalLabel = new System.Windows.Forms.Label();
@@ -273,7 +273,7 @@
             this.textBox131 = new System.Windows.Forms.TextBox();
             this.textBox133 = new System.Windows.Forms.TextBox();
             this.clivageGroupBox = new System.Windows.Forms.GroupBox();
-            this.pricesClivageTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.clivageTableLayoutPanelPrices = new System.Windows.Forms.TableLayoutPanel();
             this.label85 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
@@ -282,11 +282,11 @@
             this.textBox290 = new System.Windows.Forms.TextBox();
             this.textBox291 = new System.Windows.Forms.TextBox();
             this.textBox292 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.ClivageTable = new System.Windows.Forms.TableLayoutPanel();
+            this.clivageCaratCountValueTextbox = new System.Windows.Forms.TextBox();
             this.clivageStonesCounterLabel = new System.Windows.Forms.Label();
             this.clivageStonesCounterValueLabel = new System.Windows.Forms.Label();
             this.clivageCaratCountLabel = new System.Windows.Forms.Label();
-            this.clivageCaratCountValueLabel = new System.Windows.Forms.Label();
             this.clivageAveragePriceLabel = new System.Windows.Forms.Label();
             this.clivageAveragePriceValueLabel = new System.Windows.Forms.Label();
             this.clivageTotalLabel = new System.Windows.Forms.Label();
@@ -301,7 +301,7 @@
             this.textBox142 = new System.Windows.Forms.TextBox();
             this.textBox150 = new System.Windows.Forms.TextBox();
             this.rejectionsGroupBox = new System.Windows.Forms.GroupBox();
-            this.pricesRejectionsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.rejectionsTableLayoutPanelPrices = new System.Windows.Forms.TableLayoutPanel();
             this.label92 = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
@@ -319,26 +319,26 @@
             this.textBox137 = new System.Windows.Forms.TextBox();
             this.textBox293 = new System.Windows.Forms.TextBox();
             this.textBox294 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
+            this.RejectionsTable = new System.Windows.Forms.TableLayoutPanel();
+            this.rejectionsCaratCountValueTextbox = new System.Windows.Forms.TextBox();
             this.rejectStonesCounterLabel = new System.Windows.Forms.Label();
             this.rejectStonesCounterValueLabel = new System.Windows.Forms.Label();
             this.rejectCaratCountLabel = new System.Windows.Forms.Label();
-            this.rejectCaratCountValueLabel = new System.Windows.Forms.Label();
             this.rejectAveragePriceLabel = new System.Windows.Forms.Label();
             this.rejectAveragePriceValueLabel = new System.Windows.Forms.Label();
             this.rejectTotalLabel = new System.Windows.Forms.Label();
             this.rejectTotalValueLabel = new System.Windows.Forms.Label();
             this.boartGroupBox = new System.Windows.Forms.GroupBox();
-            this.pricesBoartTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.boartTableLayoutPanelPrices = new System.Windows.Forms.TableLayoutPanel();
             this.label102 = new System.Windows.Forms.Label();
             this.label103 = new System.Windows.Forms.Label();
             this.label104 = new System.Windows.Forms.Label();
             this.textBox296 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
+            this.BoartTable = new System.Windows.Forms.TableLayoutPanel();
+            this.boartCaratCountValueTextbox = new System.Windows.Forms.TextBox();
             this.boartStonesCounterLabel = new System.Windows.Forms.Label();
             this.boartStonesCounterValueLabel = new System.Windows.Forms.Label();
             this.boartCaratCountLabel = new System.Windows.Forms.Label();
-            this.boartCaratCountValueLabel = new System.Windows.Forms.Label();
             this.boartAveragePriceLabel = new System.Windows.Forms.Label();
             this.boartAveragePriceValueLabel = new System.Windows.Forms.Label();
             this.boartTotalLabel = new System.Windows.Forms.Label();
@@ -349,7 +349,7 @@
             this.boartClarityLabel = new System.Windows.Forms.Label();
             this.textBox138 = new System.Windows.Forms.TextBox();
             this.brownGroupBox = new System.Windows.Forms.GroupBox();
-            this.pricesBrownZTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.brownZTableLayoutPanelPrices = new System.Windows.Forms.TableLayoutPanel();
             this.label106 = new System.Windows.Forms.Label();
             this.label107 = new System.Windows.Forms.Label();
             this.label108 = new System.Windows.Forms.Label();
@@ -365,11 +365,11 @@
             this.textBox302 = new System.Windows.Forms.TextBox();
             this.textBox303 = new System.Windows.Forms.TextBox();
             this.textBox304 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
+            this.BrownZTable = new System.Windows.Forms.TableLayoutPanel();
+            this.brownZCaratCountValueTextbox = new System.Windows.Forms.TextBox();
             this.brownStonesCounterLabel = new System.Windows.Forms.Label();
             this.brownStonesCounterValueLabel = new System.Windows.Forms.Label();
             this.brownCaratCountLabel = new System.Windows.Forms.Label();
-            this.brownCaratCountValueLabel = new System.Windows.Forms.Label();
             this.brownAveragePriceLabel = new System.Windows.Forms.Label();
             this.brownAveragePriceValueLabel = new System.Windows.Forms.Label();
             this.brownTotalLabel = new System.Windows.Forms.Label();
@@ -392,40 +392,40 @@
             this.textBox152 = new System.Windows.Forms.TextBox();
             this.summeryTable.SuspendLayout();
             this.ZHighGroupBox.SuspendLayout();
-            this.pricesZHighTableLayoutPanel.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.ZHighTableLayoutPanelPrices.SuspendLayout();
+            this.ZHighTable.SuspendLayout();
             this.ZHighTableLayoutPanel.SuspendLayout();
             this.crystalsGroupBox.SuspendLayout();
-            this.pricesCrystalsTableLayoutPanel.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
+            this.crystalsTableLayoutPanelPrices.SuspendLayout();
+            this.CrystalsTable.SuspendLayout();
             this.crystalsLableLayoutPanel.SuspendLayout();
             this.ZLowGroupBox.SuspendLayout();
-            this.pricesZLowTableLayoutPanel.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
+            this.ZLowTableLayoutPanelPrices.SuspendLayout();
+            this.ZLowTable.SuspendLayout();
             this.ZLowTableLayoutPanel.SuspendLayout();
             this.makeableGroupBox.SuspendLayout();
-            this.pricesMakeableTableLayoutPanel.SuspendLayout();
-            this.tableLayoutPanel9.SuspendLayout();
+            this.makeableTableLayoutPanelPrices.SuspendLayout();
+            this.MakeableTable.SuspendLayout();
             this.makeableTableLayoutPanel.SuspendLayout();
             this.spottedZGroupBox.SuspendLayout();
-            this.pricesSpottedTableLayoutPanel.SuspendLayout();
-            this.tableLayoutPanel11.SuspendLayout();
+            this.spottedTableLayoutPanelPrices.SuspendLayout();
+            this.SpottedTable.SuspendLayout();
             this.spottedTableLayoutPanel.SuspendLayout();
             this.clivageGroupBox.SuspendLayout();
-            this.pricesClivageTableLayoutPanel.SuspendLayout();
-            this.tableLayoutPanel13.SuspendLayout();
+            this.clivageTableLayoutPanelPrices.SuspendLayout();
+            this.ClivageTable.SuspendLayout();
             this.clivageTableLayoutPanel.SuspendLayout();
             this.rejectionsGroupBox.SuspendLayout();
-            this.pricesRejectionsTableLayoutPanel.SuspendLayout();
+            this.rejectionsTableLayoutPanelPrices.SuspendLayout();
             this.rejectionsTableLayoutPanel.SuspendLayout();
-            this.tableLayoutPanel16.SuspendLayout();
+            this.RejectionsTable.SuspendLayout();
             this.boartGroupBox.SuspendLayout();
-            this.pricesBoartTableLayoutPanel.SuspendLayout();
-            this.tableLayoutPanel17.SuspendLayout();
+            this.boartTableLayoutPanelPrices.SuspendLayout();
+            this.BoartTable.SuspendLayout();
             this.boartTableLayoutPanel.SuspendLayout();
             this.brownGroupBox.SuspendLayout();
-            this.pricesBrownZTableLayoutPanel.SuspendLayout();
-            this.tableLayoutPanel20.SuspendLayout();
+            this.brownZTableLayoutPanelPrices.SuspendLayout();
+            this.BrownZTable.SuspendLayout();
             this.brownZTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -731,8 +731,8 @@
             // ZHighGroupBox
             // 
             this.ZHighGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ZHighGroupBox.Controls.Add(this.pricesZHighTableLayoutPanel);
-            this.ZHighGroupBox.Controls.Add(this.tableLayoutPanel1);
+            this.ZHighGroupBox.Controls.Add(this.ZHighTableLayoutPanelPrices);
+            this.ZHighGroupBox.Controls.Add(this.ZHighTable);
             this.ZHighGroupBox.Controls.Add(this.ZHighTableLayoutPanel);
             this.ZHighGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ZHighGroupBox.Location = new System.Drawing.Point(12, 491);
@@ -740,49 +740,50 @@
             this.ZHighGroupBox.Size = new System.Drawing.Size(1030, 178);
             this.ZHighGroupBox.TabIndex = 22;
             this.ZHighGroupBox.TabStop = false;
+            this.ZHighGroupBox.Tag = "ZHigh";
             this.ZHighGroupBox.Text = "Z HIGH";
             // 
-            // pricesZHighTableLayoutPanel
+            // ZHighTableLayoutPanelPrices
             // 
-            this.pricesZHighTableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.ZHighTableLayoutPanelPrices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pricesZHighTableLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pricesZHighTableLayoutPanel.ColumnCount = 6;
-            this.pricesZHighTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.pricesZHighTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesZHighTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesZHighTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesZHighTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesZHighTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.pricesZHighTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesZHighTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesZHighTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.label2, 1, 0);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.label3, 3, 0);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.label4, 2, 0);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.label5, 0, 0);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.label6, 4, 0);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.label10, 5, 0);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.label11, 0, 2);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.label12, 0, 1);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.textBox144, 1, 1);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.textBox145, 2, 1);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.textBox146, 3, 1);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.textBox147, 4, 1);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.textBox156, 5, 1);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.textBox161, 1, 2);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.textBox162, 2, 2);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.textBox163, 3, 2);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.textBox164, 4, 2);
-            this.pricesZHighTableLayoutPanel.Controls.Add(this.textBox172, 5, 2);
-            this.pricesZHighTableLayoutPanel.Location = new System.Drawing.Point(640, 58);
-            this.pricesZHighTableLayoutPanel.Name = "pricesZHighTableLayoutPanel";
-            this.pricesZHighTableLayoutPanel.RowCount = 3;
-            this.pricesZHighTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pricesZHighTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pricesZHighTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pricesZHighTableLayoutPanel.Size = new System.Drawing.Size(370, 103);
-            this.pricesZHighTableLayoutPanel.TabIndex = 7;
+            this.ZHighTableLayoutPanelPrices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ZHighTableLayoutPanelPrices.ColumnCount = 6;
+            this.ZHighTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
+            this.ZHighTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.ZHighTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.ZHighTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.ZHighTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.ZHighTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
+            this.ZHighTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ZHighTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ZHighTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.label2, 1, 0);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.label3, 3, 0);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.label4, 2, 0);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.label5, 0, 0);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.label6, 4, 0);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.label10, 5, 0);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.label11, 0, 2);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.label12, 0, 1);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.textBox144, 1, 1);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.textBox145, 2, 1);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.textBox146, 3, 1);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.textBox147, 4, 1);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.textBox156, 5, 1);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.textBox161, 1, 2);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.textBox162, 2, 2);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.textBox163, 3, 2);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.textBox164, 4, 2);
+            this.ZHighTableLayoutPanelPrices.Controls.Add(this.textBox172, 5, 2);
+            this.ZHighTableLayoutPanelPrices.Location = new System.Drawing.Point(640, 58);
+            this.ZHighTableLayoutPanelPrices.Name = "ZHighTableLayoutPanelPrices";
+            this.ZHighTableLayoutPanelPrices.RowCount = 3;
+            this.ZHighTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.ZHighTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.ZHighTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.ZHighTableLayoutPanelPrices.Size = new System.Drawing.Size(370, 103);
+            this.ZHighTableLayoutPanelPrices.TabIndex = 7;
             // 
             // label2
             // 
@@ -1031,28 +1032,45 @@
             this.textBox172.Text = "318";
             this.textBox172.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tableLayoutPanel1
+            // ZHighTable
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.Controls.Add(this.crystalsStonesCounterLabel, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.crystalStonesCountValueLabel, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.crystalCaratCountLabel, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.crystalCaratCountValueLabel, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.crystalAveragePriceLabel, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.crystalAveragePriceValueLabel, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.crystalTotalLabel, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.crystalTotalValueLabel, 1, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(15, 58);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(165, 103);
-            this.tableLayoutPanel1.TabIndex = 6;
+            this.ZHighTable.ColumnCount = 2;
+            this.ZHighTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.ZHighTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.ZHighTable.Controls.Add(this.ZHighCaratCountValueTextbox, 1, 1);
+            this.ZHighTable.Controls.Add(this.crystalsStonesCounterLabel, 0, 0);
+            this.ZHighTable.Controls.Add(this.crystalStonesCountValueLabel, 1, 0);
+            this.ZHighTable.Controls.Add(this.crystalCaratCountLabel, 0, 1);
+            this.ZHighTable.Controls.Add(this.crystalAveragePriceLabel, 0, 2);
+            this.ZHighTable.Controls.Add(this.crystalAveragePriceValueLabel, 1, 2);
+            this.ZHighTable.Controls.Add(this.crystalTotalLabel, 0, 3);
+            this.ZHighTable.Controls.Add(this.crystalTotalValueLabel, 1, 3);
+            this.ZHighTable.Location = new System.Drawing.Point(15, 58);
+            this.ZHighTable.Name = "ZHighTable";
+            this.ZHighTable.RowCount = 4;
+            this.ZHighTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ZHighTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ZHighTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ZHighTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ZHighTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ZHighTable.Size = new System.Drawing.Size(165, 103);
+            this.ZHighTable.TabIndex = 6;
+            // 
+            // ZHighCaratCountValueTextbox
+            // 
+            this.ZHighCaratCountValueTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ZHighCaratCountValueTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZHighCaratCountValueTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ZHighCaratCountValueTextbox.Location = new System.Drawing.Point(99, 25);
+            this.ZHighCaratCountValueTextbox.Margin = new System.Windows.Forms.Padding(0);
+            this.ZHighCaratCountValueTextbox.Multiline = true;
+            this.ZHighCaratCountValueTextbox.Name = "ZHighCaratCountValueTextbox";
+            this.ZHighCaratCountValueTextbox.Size = new System.Drawing.Size(66, 25);
+            this.ZHighCaratCountValueTextbox.TabIndex = 10;
+            this.ZHighCaratCountValueTextbox.Tag = "ZHigh";
+            this.ZHighCaratCountValueTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ZHighCaratCountValueTextbox.TextChanged += new System.EventHandler(this.CaratCountValueTextbox_TextChanged);
+            this.ZHighCaratCountValueTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SmallItemCalcTextBox_KeyPress);
             // 
             // crystalsStonesCounterLabel
             // 
@@ -1094,19 +1112,6 @@
             this.crystalCaratCountLabel.Size = new System.Drawing.Size(99, 25);
             this.crystalCaratCountLabel.TabIndex = 2;
             this.crystalCaratCountLabel.Text = "Carats Valued";
-            // 
-            // crystalCaratCountValueLabel
-            // 
-            this.crystalCaratCountValueLabel.AutoSize = true;
-            this.crystalCaratCountValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.crystalCaratCountValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalCaratCountValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalCaratCountValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.crystalCaratCountValueLabel.Location = new System.Drawing.Point(99, 25);
-            this.crystalCaratCountValueLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.crystalCaratCountValueLabel.Name = "crystalCaratCountValueLabel";
-            this.crystalCaratCountValueLabel.Size = new System.Drawing.Size(66, 25);
-            this.crystalCaratCountValueLabel.TabIndex = 3;
             // 
             // crystalAveragePriceLabel
             // 
@@ -1201,6 +1206,7 @@
             this.ZHighTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.ZHighTableLayoutPanel.Size = new System.Drawing.Size(370, 103);
             this.ZHighTableLayoutPanel.TabIndex = 5;
+            this.ZHighTableLayoutPanel.Tag = "ZHigh";
             // 
             // crystalColourLabelDE
             // 
@@ -1336,6 +1342,7 @@
             this.textBox2.Size = new System.Drawing.Size(55, 28);
             this.textBox2.TabIndex = 15;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox3
             // 
@@ -1349,6 +1356,7 @@
             this.textBox3.Size = new System.Drawing.Size(55, 28);
             this.textBox3.TabIndex = 16;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox4
             // 
@@ -1362,6 +1370,7 @@
             this.textBox4.Size = new System.Drawing.Size(55, 28);
             this.textBox4.TabIndex = 17;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox8
             // 
@@ -1375,6 +1384,7 @@
             this.textBox8.Size = new System.Drawing.Size(59, 28);
             this.textBox8.TabIndex = 21;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox9
             // 
@@ -1401,6 +1411,7 @@
             this.textBox10.Size = new System.Drawing.Size(55, 29);
             this.textBox10.TabIndex = 23;
             this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox10.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox11
             // 
@@ -1414,6 +1425,7 @@
             this.textBox11.Size = new System.Drawing.Size(55, 29);
             this.textBox11.TabIndex = 24;
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox11.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox12
             // 
@@ -1427,6 +1439,7 @@
             this.textBox12.Size = new System.Drawing.Size(55, 29);
             this.textBox12.TabIndex = 25;
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox12.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox16
             // 
@@ -1440,12 +1453,13 @@
             this.textBox16.Size = new System.Drawing.Size(59, 29);
             this.textBox16.TabIndex = 29;
             this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox16.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // crystalsGroupBox
             // 
             this.crystalsGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.crystalsGroupBox.Controls.Add(this.pricesCrystalsTableLayoutPanel);
-            this.crystalsGroupBox.Controls.Add(this.tableLayoutPanel3);
+            this.crystalsGroupBox.Controls.Add(this.crystalsTableLayoutPanelPrices);
+            this.crystalsGroupBox.Controls.Add(this.CrystalsTable);
             this.crystalsGroupBox.Controls.Add(this.crystalsLableLayoutPanel);
             this.crystalsGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.crystalsGroupBox.Location = new System.Drawing.Point(12, 307);
@@ -1453,49 +1467,50 @@
             this.crystalsGroupBox.Size = new System.Drawing.Size(1030, 178);
             this.crystalsGroupBox.TabIndex = 23;
             this.crystalsGroupBox.TabStop = false;
+            this.crystalsGroupBox.Tag = "Crystals";
             this.crystalsGroupBox.Text = "CRYSTALS";
             // 
-            // pricesCrystalsTableLayoutPanel
+            // crystalsTableLayoutPanelPrices
             // 
-            this.pricesCrystalsTableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.crystalsTableLayoutPanelPrices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pricesCrystalsTableLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pricesCrystalsTableLayoutPanel.ColumnCount = 6;
-            this.pricesCrystalsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.pricesCrystalsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesCrystalsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesCrystalsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesCrystalsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesCrystalsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.pricesCrystalsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesCrystalsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesCrystalsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.label1, 1, 0);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.label7, 3, 0);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.label8, 2, 0);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.label9, 0, 0);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.label13, 4, 0);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.label14, 5, 0);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.label15, 0, 2);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.label16, 0, 1);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.textBox5, 1, 1);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.textBox6, 2, 1);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.textBox7, 3, 1);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.textBox13, 4, 1);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.textBox14, 5, 1);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.textBox15, 1, 2);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.textBox17, 2, 2);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.textBox18, 3, 2);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.textBox19, 4, 2);
-            this.pricesCrystalsTableLayoutPanel.Controls.Add(this.textBox20, 5, 2);
-            this.pricesCrystalsTableLayoutPanel.Location = new System.Drawing.Point(640, 58);
-            this.pricesCrystalsTableLayoutPanel.Name = "pricesCrystalsTableLayoutPanel";
-            this.pricesCrystalsTableLayoutPanel.RowCount = 3;
-            this.pricesCrystalsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pricesCrystalsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pricesCrystalsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pricesCrystalsTableLayoutPanel.Size = new System.Drawing.Size(370, 103);
-            this.pricesCrystalsTableLayoutPanel.TabIndex = 7;
+            this.crystalsTableLayoutPanelPrices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.crystalsTableLayoutPanelPrices.ColumnCount = 6;
+            this.crystalsTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
+            this.crystalsTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.crystalsTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.crystalsTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.crystalsTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.crystalsTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
+            this.crystalsTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.crystalsTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.crystalsTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.label1, 1, 0);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.label7, 3, 0);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.label8, 2, 0);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.label9, 0, 0);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.label13, 4, 0);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.label14, 5, 0);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.label15, 0, 2);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.label16, 0, 1);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.textBox5, 1, 1);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.textBox6, 2, 1);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.textBox7, 3, 1);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.textBox13, 4, 1);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.textBox14, 5, 1);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.textBox15, 1, 2);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.textBox17, 2, 2);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.textBox18, 3, 2);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.textBox19, 4, 2);
+            this.crystalsTableLayoutPanelPrices.Controls.Add(this.textBox20, 5, 2);
+            this.crystalsTableLayoutPanelPrices.Location = new System.Drawing.Point(640, 58);
+            this.crystalsTableLayoutPanelPrices.Name = "crystalsTableLayoutPanelPrices";
+            this.crystalsTableLayoutPanelPrices.RowCount = 3;
+            this.crystalsTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.crystalsTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.crystalsTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.crystalsTableLayoutPanelPrices.Size = new System.Drawing.Size(370, 103);
+            this.crystalsTableLayoutPanelPrices.TabIndex = 7;
             // 
             // label1
             // 
@@ -1744,28 +1759,45 @@
             this.textBox20.Text = "342";
             this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tableLayoutPanel3
+            // CrystalsTable
             // 
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel3.Controls.Add(this.label17, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label18, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label19, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.label20, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.label21, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.label22, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.label23, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.label24, 1, 3);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(15, 58);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 4;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(165, 103);
-            this.tableLayoutPanel3.TabIndex = 6;
+            this.CrystalsTable.ColumnCount = 2;
+            this.CrystalsTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.CrystalsTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.CrystalsTable.Controls.Add(this.crystalsCaratCountValueTextbox, 1, 1);
+            this.CrystalsTable.Controls.Add(this.label17, 0, 0);
+            this.CrystalsTable.Controls.Add(this.label18, 1, 0);
+            this.CrystalsTable.Controls.Add(this.label19, 0, 1);
+            this.CrystalsTable.Controls.Add(this.label21, 0, 2);
+            this.CrystalsTable.Controls.Add(this.label22, 1, 2);
+            this.CrystalsTable.Controls.Add(this.label23, 0, 3);
+            this.CrystalsTable.Controls.Add(this.label24, 1, 3);
+            this.CrystalsTable.Location = new System.Drawing.Point(15, 58);
+            this.CrystalsTable.Name = "CrystalsTable";
+            this.CrystalsTable.RowCount = 4;
+            this.CrystalsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.CrystalsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.CrystalsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.CrystalsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.CrystalsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.CrystalsTable.Size = new System.Drawing.Size(165, 103);
+            this.CrystalsTable.TabIndex = 6;
+            // 
+            // crystalsCaratCountValueTextbox
+            // 
+            this.crystalsCaratCountValueTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.crystalsCaratCountValueTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalsCaratCountValueTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crystalsCaratCountValueTextbox.Location = new System.Drawing.Point(99, 25);
+            this.crystalsCaratCountValueTextbox.Margin = new System.Windows.Forms.Padding(0);
+            this.crystalsCaratCountValueTextbox.Multiline = true;
+            this.crystalsCaratCountValueTextbox.Name = "crystalsCaratCountValueTextbox";
+            this.crystalsCaratCountValueTextbox.Size = new System.Drawing.Size(66, 25);
+            this.crystalsCaratCountValueTextbox.TabIndex = 9;
+            this.crystalsCaratCountValueTextbox.Tag = "Crystals";
+            this.crystalsCaratCountValueTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.crystalsCaratCountValueTextbox.TextChanged += new System.EventHandler(this.CaratCountValueTextbox_TextChanged);
+            this.crystalsCaratCountValueTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SmallItemCalcTextBox_KeyPress);
             // 
             // label17
             // 
@@ -1807,19 +1839,6 @@
             this.label19.Size = new System.Drawing.Size(99, 25);
             this.label19.TabIndex = 2;
             this.label19.Text = "Carats Valued";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(99, 25);
-            this.label20.Margin = new System.Windows.Forms.Padding(0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(66, 25);
-            this.label20.TabIndex = 3;
             // 
             // label21
             // 
@@ -1914,6 +1933,7 @@
             this.crystalsLableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.crystalsLableLayoutPanel.Size = new System.Drawing.Size(370, 103);
             this.crystalsLableLayoutPanel.TabIndex = 5;
+            this.crystalsLableLayoutPanel.Tag = "Crystals";
             // 
             // label25
             // 
@@ -2049,6 +2069,7 @@
             this.textBox22.Size = new System.Drawing.Size(55, 28);
             this.textBox22.TabIndex = 15;
             this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox22.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox23
             // 
@@ -2062,6 +2083,7 @@
             this.textBox23.Size = new System.Drawing.Size(55, 28);
             this.textBox23.TabIndex = 16;
             this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox23.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox24
             // 
@@ -2075,6 +2097,7 @@
             this.textBox24.Size = new System.Drawing.Size(55, 28);
             this.textBox24.TabIndex = 17;
             this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox24.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox25
             // 
@@ -2088,6 +2111,7 @@
             this.textBox25.Size = new System.Drawing.Size(59, 28);
             this.textBox25.TabIndex = 21;
             this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox25.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox26
             // 
@@ -2114,6 +2138,7 @@
             this.textBox27.Size = new System.Drawing.Size(55, 29);
             this.textBox27.TabIndex = 23;
             this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox27.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox28
             // 
@@ -2127,6 +2152,7 @@
             this.textBox28.Size = new System.Drawing.Size(55, 29);
             this.textBox28.TabIndex = 24;
             this.textBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox28.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox29
             // 
@@ -2140,6 +2166,7 @@
             this.textBox29.Size = new System.Drawing.Size(55, 29);
             this.textBox29.TabIndex = 25;
             this.textBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox29.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox30
             // 
@@ -2153,12 +2180,13 @@
             this.textBox30.Size = new System.Drawing.Size(59, 29);
             this.textBox30.TabIndex = 29;
             this.textBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox30.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // ZLowGroupBox
             // 
             this.ZLowGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ZLowGroupBox.Controls.Add(this.pricesZLowTableLayoutPanel);
-            this.ZLowGroupBox.Controls.Add(this.tableLayoutPanel6);
+            this.ZLowGroupBox.Controls.Add(this.ZLowTableLayoutPanelPrices);
+            this.ZLowGroupBox.Controls.Add(this.ZLowTable);
             this.ZLowGroupBox.Controls.Add(this.ZLowTableLayoutPanel);
             this.ZLowGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ZLowGroupBox.Location = new System.Drawing.Point(12, 675);
@@ -2166,49 +2194,50 @@
             this.ZLowGroupBox.Size = new System.Drawing.Size(1030, 178);
             this.ZLowGroupBox.TabIndex = 24;
             this.ZLowGroupBox.TabStop = false;
+            this.ZLowGroupBox.Tag = "ZLow";
             this.ZLowGroupBox.Text = "Z LOW";
             // 
-            // pricesZLowTableLayoutPanel
+            // ZLowTableLayoutPanelPrices
             // 
-            this.pricesZLowTableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.ZLowTableLayoutPanelPrices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pricesZLowTableLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pricesZLowTableLayoutPanel.ColumnCount = 6;
-            this.pricesZLowTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.pricesZLowTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesZLowTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesZLowTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesZLowTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesZLowTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.pricesZLowTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesZLowTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesZLowTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.label33, 1, 0);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.label34, 3, 0);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.label35, 2, 0);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.label36, 0, 0);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.label37, 4, 0);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.label38, 5, 0);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.label39, 0, 2);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.label40, 0, 1);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.textBox31, 1, 1);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.textBox32, 2, 1);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.textBox33, 3, 1);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.textBox34, 4, 1);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.textBox35, 5, 1);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.textBox36, 1, 2);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.textBox37, 2, 2);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.textBox38, 3, 2);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.textBox39, 4, 2);
-            this.pricesZLowTableLayoutPanel.Controls.Add(this.textBox40, 5, 2);
-            this.pricesZLowTableLayoutPanel.Location = new System.Drawing.Point(640, 58);
-            this.pricesZLowTableLayoutPanel.Name = "pricesZLowTableLayoutPanel";
-            this.pricesZLowTableLayoutPanel.RowCount = 3;
-            this.pricesZLowTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pricesZLowTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pricesZLowTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pricesZLowTableLayoutPanel.Size = new System.Drawing.Size(370, 103);
-            this.pricesZLowTableLayoutPanel.TabIndex = 7;
+            this.ZLowTableLayoutPanelPrices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ZLowTableLayoutPanelPrices.ColumnCount = 6;
+            this.ZLowTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
+            this.ZLowTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.ZLowTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.ZLowTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.ZLowTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.ZLowTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
+            this.ZLowTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ZLowTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ZLowTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.label33, 1, 0);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.label34, 3, 0);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.label35, 2, 0);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.label36, 0, 0);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.label37, 4, 0);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.label38, 5, 0);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.label39, 0, 2);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.label40, 0, 1);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.textBox31, 1, 1);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.textBox32, 2, 1);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.textBox33, 3, 1);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.textBox34, 4, 1);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.textBox35, 5, 1);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.textBox36, 1, 2);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.textBox37, 2, 2);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.textBox38, 3, 2);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.textBox39, 4, 2);
+            this.ZLowTableLayoutPanelPrices.Controls.Add(this.textBox40, 5, 2);
+            this.ZLowTableLayoutPanelPrices.Location = new System.Drawing.Point(640, 58);
+            this.ZLowTableLayoutPanelPrices.Name = "ZLowTableLayoutPanelPrices";
+            this.ZLowTableLayoutPanelPrices.RowCount = 3;
+            this.ZLowTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.ZLowTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.ZLowTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.ZLowTableLayoutPanelPrices.Size = new System.Drawing.Size(370, 103);
+            this.ZLowTableLayoutPanelPrices.TabIndex = 7;
             // 
             // label33
             // 
@@ -2457,28 +2486,45 @@
             this.textBox40.Text = "249";
             this.textBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tableLayoutPanel6
+            // ZLowTable
             // 
-            this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel6.Controls.Add(this.label41, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.label42, 1, 0);
-            this.tableLayoutPanel6.Controls.Add(this.label43, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.label44, 1, 1);
-            this.tableLayoutPanel6.Controls.Add(this.label45, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.label46, 1, 2);
-            this.tableLayoutPanel6.Controls.Add(this.label47, 0, 3);
-            this.tableLayoutPanel6.Controls.Add(this.label48, 1, 3);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(15, 58);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 4;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(165, 103);
-            this.tableLayoutPanel6.TabIndex = 6;
+            this.ZLowTable.ColumnCount = 2;
+            this.ZLowTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.ZLowTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.ZLowTable.Controls.Add(this.ZLowCaratCountValueTextbox, 1, 1);
+            this.ZLowTable.Controls.Add(this.label41, 0, 0);
+            this.ZLowTable.Controls.Add(this.label42, 1, 0);
+            this.ZLowTable.Controls.Add(this.label43, 0, 1);
+            this.ZLowTable.Controls.Add(this.label45, 0, 2);
+            this.ZLowTable.Controls.Add(this.label46, 1, 2);
+            this.ZLowTable.Controls.Add(this.label47, 0, 3);
+            this.ZLowTable.Controls.Add(this.label48, 1, 3);
+            this.ZLowTable.Location = new System.Drawing.Point(15, 58);
+            this.ZLowTable.Name = "ZLowTable";
+            this.ZLowTable.RowCount = 4;
+            this.ZLowTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ZLowTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ZLowTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ZLowTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ZLowTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ZLowTable.Size = new System.Drawing.Size(165, 103);
+            this.ZLowTable.TabIndex = 6;
+            // 
+            // ZLowCaratCountValueTextbox
+            // 
+            this.ZLowCaratCountValueTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ZLowCaratCountValueTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZLowCaratCountValueTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ZLowCaratCountValueTextbox.Location = new System.Drawing.Point(99, 25);
+            this.ZLowCaratCountValueTextbox.Margin = new System.Windows.Forms.Padding(0);
+            this.ZLowCaratCountValueTextbox.Multiline = true;
+            this.ZLowCaratCountValueTextbox.Name = "ZLowCaratCountValueTextbox";
+            this.ZLowCaratCountValueTextbox.Size = new System.Drawing.Size(66, 25);
+            this.ZLowCaratCountValueTextbox.TabIndex = 10;
+            this.ZLowCaratCountValueTextbox.Tag = "ZLow";
+            this.ZLowCaratCountValueTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ZLowCaratCountValueTextbox.TextChanged += new System.EventHandler(this.CaratCountValueTextbox_TextChanged);
+            this.ZLowCaratCountValueTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SmallItemCalcTextBox_KeyPress);
             // 
             // label41
             // 
@@ -2520,19 +2566,6 @@
             this.label43.Size = new System.Drawing.Size(99, 25);
             this.label43.TabIndex = 2;
             this.label43.Text = "Carats Valued";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(99, 25);
-            this.label44.Margin = new System.Windows.Forms.Padding(0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(66, 25);
-            this.label44.TabIndex = 3;
             // 
             // label45
             // 
@@ -2627,6 +2660,7 @@
             this.ZLowTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.ZLowTableLayoutPanel.Size = new System.Drawing.Size(370, 103);
             this.ZLowTableLayoutPanel.TabIndex = 5;
+            this.ZLowTableLayoutPanel.Tag = "ZLow";
             // 
             // label49
             // 
@@ -2762,6 +2796,7 @@
             this.textBox42.Size = new System.Drawing.Size(55, 28);
             this.textBox42.TabIndex = 15;
             this.textBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox42.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox43
             // 
@@ -2775,6 +2810,7 @@
             this.textBox43.Size = new System.Drawing.Size(55, 28);
             this.textBox43.TabIndex = 16;
             this.textBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox43.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox44
             // 
@@ -2788,6 +2824,7 @@
             this.textBox44.Size = new System.Drawing.Size(55, 28);
             this.textBox44.TabIndex = 17;
             this.textBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox44.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox45
             // 
@@ -2801,6 +2838,7 @@
             this.textBox45.Size = new System.Drawing.Size(59, 28);
             this.textBox45.TabIndex = 21;
             this.textBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox45.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox46
             // 
@@ -2827,6 +2865,7 @@
             this.textBox47.Size = new System.Drawing.Size(55, 29);
             this.textBox47.TabIndex = 23;
             this.textBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox47.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox48
             // 
@@ -2840,6 +2879,7 @@
             this.textBox48.Size = new System.Drawing.Size(55, 29);
             this.textBox48.TabIndex = 24;
             this.textBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox48.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox49
             // 
@@ -2853,6 +2893,7 @@
             this.textBox49.Size = new System.Drawing.Size(55, 29);
             this.textBox49.TabIndex = 25;
             this.textBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox49.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox50
             // 
@@ -2866,12 +2907,13 @@
             this.textBox50.Size = new System.Drawing.Size(59, 29);
             this.textBox50.TabIndex = 29;
             this.textBox50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox50.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // makeableGroupBox
             // 
             this.makeableGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.makeableGroupBox.Controls.Add(this.pricesMakeableTableLayoutPanel);
-            this.makeableGroupBox.Controls.Add(this.tableLayoutPanel9);
+            this.makeableGroupBox.Controls.Add(this.makeableTableLayoutPanelPrices);
+            this.makeableGroupBox.Controls.Add(this.MakeableTable);
             this.makeableGroupBox.Controls.Add(this.makeableTableLayoutPanel);
             this.makeableGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.makeableGroupBox.Location = new System.Drawing.Point(12, 859);
@@ -2879,49 +2921,50 @@
             this.makeableGroupBox.Size = new System.Drawing.Size(1030, 178);
             this.makeableGroupBox.TabIndex = 25;
             this.makeableGroupBox.TabStop = false;
+            this.makeableGroupBox.Tag = "Makeable";
             this.makeableGroupBox.Text = "MAKEABLE";
             // 
-            // pricesMakeableTableLayoutPanel
+            // makeableTableLayoutPanelPrices
             // 
-            this.pricesMakeableTableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.makeableTableLayoutPanelPrices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pricesMakeableTableLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pricesMakeableTableLayoutPanel.ColumnCount = 6;
-            this.pricesMakeableTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.pricesMakeableTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesMakeableTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesMakeableTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesMakeableTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.pricesMakeableTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.pricesMakeableTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesMakeableTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesMakeableTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.label57, 1, 0);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.label58, 3, 0);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.label59, 2, 0);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.label60, 0, 0);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.label61, 4, 0);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.label62, 5, 0);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.label63, 0, 2);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.label64, 0, 1);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.textBox51, 1, 1);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.textBox52, 2, 1);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.textBox53, 3, 1);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.textBox54, 4, 1);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.textBox55, 5, 1);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.textBox56, 1, 2);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.textBox57, 2, 2);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.textBox58, 3, 2);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.textBox59, 4, 2);
-            this.pricesMakeableTableLayoutPanel.Controls.Add(this.textBox60, 5, 2);
-            this.pricesMakeableTableLayoutPanel.Location = new System.Drawing.Point(640, 58);
-            this.pricesMakeableTableLayoutPanel.Name = "pricesMakeableTableLayoutPanel";
-            this.pricesMakeableTableLayoutPanel.RowCount = 3;
-            this.pricesMakeableTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pricesMakeableTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pricesMakeableTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.pricesMakeableTableLayoutPanel.Size = new System.Drawing.Size(370, 103);
-            this.pricesMakeableTableLayoutPanel.TabIndex = 7;
+            this.makeableTableLayoutPanelPrices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.makeableTableLayoutPanelPrices.ColumnCount = 6;
+            this.makeableTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
+            this.makeableTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.makeableTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.makeableTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.makeableTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.makeableTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
+            this.makeableTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.makeableTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.makeableTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.label57, 1, 0);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.label58, 3, 0);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.label59, 2, 0);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.label60, 0, 0);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.label61, 4, 0);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.label62, 5, 0);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.label63, 0, 2);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.label64, 0, 1);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.textBox51, 1, 1);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.textBox52, 2, 1);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.textBox53, 3, 1);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.textBox54, 4, 1);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.textBox55, 5, 1);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.textBox56, 1, 2);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.textBox57, 2, 2);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.textBox58, 3, 2);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.textBox59, 4, 2);
+            this.makeableTableLayoutPanelPrices.Controls.Add(this.textBox60, 5, 2);
+            this.makeableTableLayoutPanelPrices.Location = new System.Drawing.Point(640, 58);
+            this.makeableTableLayoutPanelPrices.Name = "makeableTableLayoutPanelPrices";
+            this.makeableTableLayoutPanelPrices.RowCount = 3;
+            this.makeableTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.makeableTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.makeableTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.makeableTableLayoutPanelPrices.Size = new System.Drawing.Size(370, 103);
+            this.makeableTableLayoutPanelPrices.TabIndex = 7;
             // 
             // label57
             // 
@@ -3170,28 +3213,45 @@
             this.textBox60.Text = "110";
             this.textBox60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tableLayoutPanel9
+            // MakeableTable
             // 
-            this.tableLayoutPanel9.ColumnCount = 2;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel9.Controls.Add(this.label65, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.label66, 1, 0);
-            this.tableLayoutPanel9.Controls.Add(this.label67, 0, 1);
-            this.tableLayoutPanel9.Controls.Add(this.label68, 1, 1);
-            this.tableLayoutPanel9.Controls.Add(this.label69, 0, 2);
-            this.tableLayoutPanel9.Controls.Add(this.label70, 1, 2);
-            this.tableLayoutPanel9.Controls.Add(this.label71, 0, 3);
-            this.tableLayoutPanel9.Controls.Add(this.label72, 1, 3);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(15, 58);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 4;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(165, 103);
-            this.tableLayoutPanel9.TabIndex = 6;
+            this.MakeableTable.ColumnCount = 2;
+            this.MakeableTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.MakeableTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.MakeableTable.Controls.Add(this.makeableCaratCountValueTextbox, 1, 1);
+            this.MakeableTable.Controls.Add(this.label65, 0, 0);
+            this.MakeableTable.Controls.Add(this.label66, 1, 0);
+            this.MakeableTable.Controls.Add(this.label67, 0, 1);
+            this.MakeableTable.Controls.Add(this.label69, 0, 2);
+            this.MakeableTable.Controls.Add(this.label70, 1, 2);
+            this.MakeableTable.Controls.Add(this.label71, 0, 3);
+            this.MakeableTable.Controls.Add(this.label72, 1, 3);
+            this.MakeableTable.Location = new System.Drawing.Point(15, 58);
+            this.MakeableTable.Name = "MakeableTable";
+            this.MakeableTable.RowCount = 4;
+            this.MakeableTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.MakeableTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.MakeableTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.MakeableTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.MakeableTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.MakeableTable.Size = new System.Drawing.Size(165, 103);
+            this.MakeableTable.TabIndex = 6;
+            // 
+            // makeableCaratCountValueTextbox
+            // 
+            this.makeableCaratCountValueTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.makeableCaratCountValueTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.makeableCaratCountValueTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.makeableCaratCountValueTextbox.Location = new System.Drawing.Point(99, 25);
+            this.makeableCaratCountValueTextbox.Margin = new System.Windows.Forms.Padding(0);
+            this.makeableCaratCountValueTextbox.Multiline = true;
+            this.makeableCaratCountValueTextbox.Name = "makeableCaratCountValueTextbox";
+            this.makeableCaratCountValueTextbox.Size = new System.Drawing.Size(66, 25);
+            this.makeableCaratCountValueTextbox.TabIndex = 10;
+            this.makeableCaratCountValueTextbox.Tag = "Makeable";
+            this.makeableCaratCountValueTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.makeableCaratCountValueTextbox.TextChanged += new System.EventHandler(this.CaratCountValueTextbox_TextChanged);
+            this.makeableCaratCountValueTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SmallItemCalcTextBox_KeyPress);
             // 
             // label65
             // 
@@ -3233,19 +3293,6 @@
             this.label67.Size = new System.Drawing.Size(99, 25);
             this.label67.TabIndex = 2;
             this.label67.Text = "Carats Valued";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label68.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(99, 25);
-            this.label68.Margin = new System.Windows.Forms.Padding(0);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(66, 25);
-            this.label68.TabIndex = 3;
             // 
             // label69
             // 
@@ -3340,6 +3387,7 @@
             this.makeableTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.makeableTableLayoutPanel.Size = new System.Drawing.Size(370, 103);
             this.makeableTableLayoutPanel.TabIndex = 5;
+            this.makeableTableLayoutPanel.Tag = "Makeable";
             // 
             // label73
             // 
@@ -3475,6 +3523,7 @@
             this.textBox62.Size = new System.Drawing.Size(55, 28);
             this.textBox62.TabIndex = 15;
             this.textBox62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox62.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox63
             // 
@@ -3488,6 +3537,7 @@
             this.textBox63.Size = new System.Drawing.Size(55, 28);
             this.textBox63.TabIndex = 16;
             this.textBox63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox63.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox64
             // 
@@ -3501,6 +3551,7 @@
             this.textBox64.Size = new System.Drawing.Size(55, 28);
             this.textBox64.TabIndex = 17;
             this.textBox64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox64.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox65
             // 
@@ -3514,6 +3565,7 @@
             this.textBox65.Size = new System.Drawing.Size(59, 28);
             this.textBox65.TabIndex = 21;
             this.textBox65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox65.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox66
             // 
@@ -3540,6 +3592,7 @@
             this.textBox67.Size = new System.Drawing.Size(55, 29);
             this.textBox67.TabIndex = 23;
             this.textBox67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox67.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox68
             // 
@@ -3553,6 +3606,7 @@
             this.textBox68.Size = new System.Drawing.Size(55, 29);
             this.textBox68.TabIndex = 24;
             this.textBox68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox68.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox69
             // 
@@ -3566,6 +3620,7 @@
             this.textBox69.Size = new System.Drawing.Size(55, 29);
             this.textBox69.TabIndex = 25;
             this.textBox69.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox69.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox70
             // 
@@ -3579,12 +3634,13 @@
             this.textBox70.Size = new System.Drawing.Size(59, 29);
             this.textBox70.TabIndex = 29;
             this.textBox70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox70.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // spottedZGroupBox
             // 
             this.spottedZGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.spottedZGroupBox.Controls.Add(this.pricesSpottedTableLayoutPanel);
-            this.spottedZGroupBox.Controls.Add(this.tableLayoutPanel11);
+            this.spottedZGroupBox.Controls.Add(this.spottedTableLayoutPanelPrices);
+            this.spottedZGroupBox.Controls.Add(this.SpottedTable);
             this.spottedZGroupBox.Controls.Add(this.spottedTableLayoutPanel);
             this.spottedZGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spottedZGroupBox.Location = new System.Drawing.Point(12, 1043);
@@ -3592,37 +3648,38 @@
             this.spottedZGroupBox.Size = new System.Drawing.Size(1030, 178);
             this.spottedZGroupBox.TabIndex = 26;
             this.spottedZGroupBox.TabStop = false;
+            this.spottedZGroupBox.Tag = "Spotted";
             this.spottedZGroupBox.Text = "SPOTTED";
             // 
-            // pricesSpottedTableLayoutPanel
+            // spottedTableLayoutPanelPrices
             // 
-            this.pricesSpottedTableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.spottedTableLayoutPanelPrices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pricesSpottedTableLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pricesSpottedTableLayoutPanel.ColumnCount = 5;
-            this.pricesSpottedTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesSpottedTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesSpottedTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesSpottedTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesSpottedTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesSpottedTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesSpottedTableLayoutPanel.Controls.Add(this.label81, 1, 0);
-            this.pricesSpottedTableLayoutPanel.Controls.Add(this.label82, 3, 0);
-            this.pricesSpottedTableLayoutPanel.Controls.Add(this.label83, 2, 0);
-            this.pricesSpottedTableLayoutPanel.Controls.Add(this.label84, 0, 0);
-            this.pricesSpottedTableLayoutPanel.Controls.Add(this.label86, 4, 0);
-            this.pricesSpottedTableLayoutPanel.Controls.Add(this.label87, 0, 1);
-            this.pricesSpottedTableLayoutPanel.Controls.Add(this.textBox285, 1, 1);
-            this.pricesSpottedTableLayoutPanel.Controls.Add(this.textBox286, 2, 1);
-            this.pricesSpottedTableLayoutPanel.Controls.Add(this.textBox287, 3, 1);
-            this.pricesSpottedTableLayoutPanel.Controls.Add(this.textBox289, 4, 1);
-            this.pricesSpottedTableLayoutPanel.Location = new System.Drawing.Point(640, 58);
-            this.pricesSpottedTableLayoutPanel.Name = "pricesSpottedTableLayoutPanel";
-            this.pricesSpottedTableLayoutPanel.RowCount = 2;
-            this.pricesSpottedTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.pricesSpottedTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.pricesSpottedTableLayoutPanel.Size = new System.Drawing.Size(370, 80);
-            this.pricesSpottedTableLayoutPanel.TabIndex = 7;
+            this.spottedTableLayoutPanelPrices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.spottedTableLayoutPanelPrices.ColumnCount = 5;
+            this.spottedTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.spottedTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.spottedTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.spottedTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.spottedTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.spottedTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.spottedTableLayoutPanelPrices.Controls.Add(this.label81, 1, 0);
+            this.spottedTableLayoutPanelPrices.Controls.Add(this.label82, 3, 0);
+            this.spottedTableLayoutPanelPrices.Controls.Add(this.label83, 2, 0);
+            this.spottedTableLayoutPanelPrices.Controls.Add(this.label84, 0, 0);
+            this.spottedTableLayoutPanelPrices.Controls.Add(this.label86, 4, 0);
+            this.spottedTableLayoutPanelPrices.Controls.Add(this.label87, 0, 1);
+            this.spottedTableLayoutPanelPrices.Controls.Add(this.textBox285, 1, 1);
+            this.spottedTableLayoutPanelPrices.Controls.Add(this.textBox286, 2, 1);
+            this.spottedTableLayoutPanelPrices.Controls.Add(this.textBox287, 3, 1);
+            this.spottedTableLayoutPanelPrices.Controls.Add(this.textBox289, 4, 1);
+            this.spottedTableLayoutPanelPrices.Location = new System.Drawing.Point(640, 58);
+            this.spottedTableLayoutPanelPrices.Name = "spottedTableLayoutPanelPrices";
+            this.spottedTableLayoutPanelPrices.RowCount = 2;
+            this.spottedTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.spottedTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.spottedTableLayoutPanelPrices.Size = new System.Drawing.Size(370, 80);
+            this.spottedTableLayoutPanelPrices.TabIndex = 7;
             // 
             // label81
             // 
@@ -3761,29 +3818,46 @@
             this.textBox289.Text = "124";
             this.textBox289.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tableLayoutPanel11
+            // SpottedTable
             // 
-            this.tableLayoutPanel11.ColumnCount = 2;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel11.Controls.Add(this.spottedZStonesCounterLabel, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.spottedZStonesCounterValueLabel, 1, 0);
-            this.tableLayoutPanel11.Controls.Add(this.spottedZCaratCountLabel, 0, 1);
-            this.tableLayoutPanel11.Controls.Add(this.spottedZCaratCountValueLabel, 1, 1);
-            this.tableLayoutPanel11.Controls.Add(this.spottedZAveragePriceLabel, 0, 2);
-            this.tableLayoutPanel11.Controls.Add(this.spottedZAveragePriceValueLabel, 1, 2);
-            this.tableLayoutPanel11.Controls.Add(this.spottedZTotalLabel, 0, 3);
-            this.tableLayoutPanel11.Controls.Add(this.spottedZTotalValueLabel, 1, 3);
-            this.tableLayoutPanel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(15, 58);
-            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 4;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(165, 103);
-            this.tableLayoutPanel11.TabIndex = 6;
+            this.SpottedTable.ColumnCount = 2;
+            this.SpottedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.SpottedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.SpottedTable.Controls.Add(this.spottedCaratCountValueTextbox, 1, 1);
+            this.SpottedTable.Controls.Add(this.spottedZStonesCounterLabel, 0, 0);
+            this.SpottedTable.Controls.Add(this.spottedZStonesCounterValueLabel, 1, 0);
+            this.SpottedTable.Controls.Add(this.spottedZCaratCountLabel, 0, 1);
+            this.SpottedTable.Controls.Add(this.spottedZAveragePriceLabel, 0, 2);
+            this.SpottedTable.Controls.Add(this.spottedZAveragePriceValueLabel, 1, 2);
+            this.SpottedTable.Controls.Add(this.spottedZTotalLabel, 0, 3);
+            this.SpottedTable.Controls.Add(this.spottedZTotalValueLabel, 1, 3);
+            this.SpottedTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SpottedTable.Location = new System.Drawing.Point(15, 58);
+            this.SpottedTable.Name = "SpottedTable";
+            this.SpottedTable.RowCount = 4;
+            this.SpottedTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.SpottedTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.SpottedTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.SpottedTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.SpottedTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.SpottedTable.Size = new System.Drawing.Size(165, 103);
+            this.SpottedTable.TabIndex = 6;
+            // 
+            // spottedCaratCountValueTextbox
+            // 
+            this.spottedCaratCountValueTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.spottedCaratCountValueTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.spottedCaratCountValueTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.spottedCaratCountValueTextbox.Location = new System.Drawing.Point(99, 25);
+            this.spottedCaratCountValueTextbox.Margin = new System.Windows.Forms.Padding(0);
+            this.spottedCaratCountValueTextbox.Multiline = true;
+            this.spottedCaratCountValueTextbox.Name = "spottedCaratCountValueTextbox";
+            this.spottedCaratCountValueTextbox.Size = new System.Drawing.Size(66, 25);
+            this.spottedCaratCountValueTextbox.TabIndex = 10;
+            this.spottedCaratCountValueTextbox.Tag = "Spotted";
+            this.spottedCaratCountValueTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.spottedCaratCountValueTextbox.TextChanged += new System.EventHandler(this.CaratCountValueTextbox_TextChanged);
+            this.spottedCaratCountValueTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SmallItemCalcTextBox_KeyPress);
             // 
             // spottedZStonesCounterLabel
             // 
@@ -3825,19 +3899,6 @@
             this.spottedZCaratCountLabel.Size = new System.Drawing.Size(99, 25);
             this.spottedZCaratCountLabel.TabIndex = 2;
             this.spottedZCaratCountLabel.Text = "Carats Valued";
-            // 
-            // spottedZCaratCountValueLabel
-            // 
-            this.spottedZCaratCountValueLabel.AutoSize = true;
-            this.spottedZCaratCountValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.spottedZCaratCountValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.spottedZCaratCountValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.spottedZCaratCountValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spottedZCaratCountValueLabel.Location = new System.Drawing.Point(99, 25);
-            this.spottedZCaratCountValueLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.spottedZCaratCountValueLabel.Name = "spottedZCaratCountValueLabel";
-            this.spottedZCaratCountValueLabel.Size = new System.Drawing.Size(66, 25);
-            this.spottedZCaratCountValueLabel.TabIndex = 3;
             // 
             // spottedZAveragePriceLabel
             // 
@@ -3920,6 +3981,7 @@
             this.spottedTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.spottedTableLayoutPanel.Size = new System.Drawing.Size(370, 80);
             this.spottedTableLayoutPanel.TabIndex = 5;
+            this.spottedTableLayoutPanel.Tag = "Spotted";
             // 
             // sptdZColourlabel1
             // 
@@ -4014,6 +4076,7 @@
             this.textBox129.Size = new System.Drawing.Size(68, 34);
             this.textBox129.TabIndex = 14;
             this.textBox129.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox129.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox130
             // 
@@ -4027,6 +4090,7 @@
             this.textBox130.Size = new System.Drawing.Size(68, 34);
             this.textBox130.TabIndex = 15;
             this.textBox130.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox130.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox131
             // 
@@ -4040,6 +4104,7 @@
             this.textBox131.Size = new System.Drawing.Size(68, 34);
             this.textBox131.TabIndex = 16;
             this.textBox131.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox131.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox133
             // 
@@ -4053,12 +4118,13 @@
             this.textBox133.Size = new System.Drawing.Size(68, 34);
             this.textBox133.TabIndex = 18;
             this.textBox133.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox133.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // clivageGroupBox
             // 
             this.clivageGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.clivageGroupBox.Controls.Add(this.pricesClivageTableLayoutPanel);
-            this.clivageGroupBox.Controls.Add(this.tableLayoutPanel13);
+            this.clivageGroupBox.Controls.Add(this.clivageTableLayoutPanelPrices);
+            this.clivageGroupBox.Controls.Add(this.ClivageTable);
             this.clivageGroupBox.Controls.Add(this.clivageTableLayoutPanel);
             this.clivageGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clivageGroupBox.Location = new System.Drawing.Point(12, 1227);
@@ -4066,34 +4132,35 @@
             this.clivageGroupBox.Size = new System.Drawing.Size(1030, 178);
             this.clivageGroupBox.TabIndex = 27;
             this.clivageGroupBox.TabStop = false;
+            this.clivageGroupBox.Tag = "Clivage";
             this.clivageGroupBox.Text = "CLIVAGE";
             // 
-            // pricesClivageTableLayoutPanel
+            // clivageTableLayoutPanelPrices
             // 
-            this.pricesClivageTableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.clivageTableLayoutPanelPrices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pricesClivageTableLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pricesClivageTableLayoutPanel.ColumnCount = 2;
-            this.pricesClivageTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.pricesClivageTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.pricesClivageTableLayoutPanel.Controls.Add(this.label85, 0, 3);
-            this.pricesClivageTableLayoutPanel.Controls.Add(this.label88, 1, 0);
-            this.pricesClivageTableLayoutPanel.Controls.Add(this.label89, 0, 0);
-            this.pricesClivageTableLayoutPanel.Controls.Add(this.label90, 0, 2);
-            this.pricesClivageTableLayoutPanel.Controls.Add(this.label91, 0, 1);
-            this.pricesClivageTableLayoutPanel.Controls.Add(this.textBox290, 1, 1);
-            this.pricesClivageTableLayoutPanel.Controls.Add(this.textBox291, 1, 2);
-            this.pricesClivageTableLayoutPanel.Controls.Add(this.textBox292, 1, 3);
-            this.pricesClivageTableLayoutPanel.Location = new System.Drawing.Point(640, 58);
-            this.pricesClivageTableLayoutPanel.Name = "pricesClivageTableLayoutPanel";
-            this.pricesClivageTableLayoutPanel.RowCount = 4;
-            this.pricesClivageTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesClivageTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesClivageTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesClivageTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesClivageTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesClivageTableLayoutPanel.Size = new System.Drawing.Size(156, 103);
-            this.pricesClivageTableLayoutPanel.TabIndex = 7;
+            this.clivageTableLayoutPanelPrices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.clivageTableLayoutPanelPrices.ColumnCount = 2;
+            this.clivageTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.clivageTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.clivageTableLayoutPanelPrices.Controls.Add(this.label85, 0, 3);
+            this.clivageTableLayoutPanelPrices.Controls.Add(this.label88, 1, 0);
+            this.clivageTableLayoutPanelPrices.Controls.Add(this.label89, 0, 0);
+            this.clivageTableLayoutPanelPrices.Controls.Add(this.label90, 0, 2);
+            this.clivageTableLayoutPanelPrices.Controls.Add(this.label91, 0, 1);
+            this.clivageTableLayoutPanelPrices.Controls.Add(this.textBox290, 1, 1);
+            this.clivageTableLayoutPanelPrices.Controls.Add(this.textBox291, 1, 2);
+            this.clivageTableLayoutPanelPrices.Controls.Add(this.textBox292, 1, 3);
+            this.clivageTableLayoutPanelPrices.Location = new System.Drawing.Point(640, 58);
+            this.clivageTableLayoutPanelPrices.Name = "clivageTableLayoutPanelPrices";
+            this.clivageTableLayoutPanelPrices.RowCount = 4;
+            this.clivageTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.clivageTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.clivageTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.clivageTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.clivageTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.clivageTableLayoutPanelPrices.Size = new System.Drawing.Size(156, 103);
+            this.clivageTableLayoutPanelPrices.TabIndex = 7;
             // 
             // label85
             // 
@@ -4204,28 +4271,45 @@
             this.textBox292.Text = "47";
             this.textBox292.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tableLayoutPanel13
+            // ClivageTable
             // 
-            this.tableLayoutPanel13.ColumnCount = 2;
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel13.Controls.Add(this.clivageStonesCounterLabel, 0, 0);
-            this.tableLayoutPanel13.Controls.Add(this.clivageStonesCounterValueLabel, 1, 0);
-            this.tableLayoutPanel13.Controls.Add(this.clivageCaratCountLabel, 0, 1);
-            this.tableLayoutPanel13.Controls.Add(this.clivageCaratCountValueLabel, 1, 1);
-            this.tableLayoutPanel13.Controls.Add(this.clivageAveragePriceLabel, 0, 2);
-            this.tableLayoutPanel13.Controls.Add(this.clivageAveragePriceValueLabel, 1, 2);
-            this.tableLayoutPanel13.Controls.Add(this.clivageTotalLabel, 0, 3);
-            this.tableLayoutPanel13.Controls.Add(this.clivageTotalValueLabel, 1, 3);
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(15, 58);
-            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
-            this.tableLayoutPanel13.RowCount = 4;
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(165, 103);
-            this.tableLayoutPanel13.TabIndex = 6;
+            this.ClivageTable.ColumnCount = 2;
+            this.ClivageTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.ClivageTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.ClivageTable.Controls.Add(this.clivageCaratCountValueTextbox, 1, 1);
+            this.ClivageTable.Controls.Add(this.clivageStonesCounterLabel, 0, 0);
+            this.ClivageTable.Controls.Add(this.clivageStonesCounterValueLabel, 1, 0);
+            this.ClivageTable.Controls.Add(this.clivageCaratCountLabel, 0, 1);
+            this.ClivageTable.Controls.Add(this.clivageAveragePriceLabel, 0, 2);
+            this.ClivageTable.Controls.Add(this.clivageAveragePriceValueLabel, 1, 2);
+            this.ClivageTable.Controls.Add(this.clivageTotalLabel, 0, 3);
+            this.ClivageTable.Controls.Add(this.clivageTotalValueLabel, 1, 3);
+            this.ClivageTable.Location = new System.Drawing.Point(15, 58);
+            this.ClivageTable.Name = "ClivageTable";
+            this.ClivageTable.RowCount = 4;
+            this.ClivageTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ClivageTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ClivageTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ClivageTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ClivageTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ClivageTable.Size = new System.Drawing.Size(165, 103);
+            this.ClivageTable.TabIndex = 6;
+            // 
+            // clivageCaratCountValueTextbox
+            // 
+            this.clivageCaratCountValueTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.clivageCaratCountValueTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.clivageCaratCountValueTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.clivageCaratCountValueTextbox.Location = new System.Drawing.Point(99, 25);
+            this.clivageCaratCountValueTextbox.Margin = new System.Windows.Forms.Padding(0);
+            this.clivageCaratCountValueTextbox.Multiline = true;
+            this.clivageCaratCountValueTextbox.Name = "clivageCaratCountValueTextbox";
+            this.clivageCaratCountValueTextbox.Size = new System.Drawing.Size(66, 25);
+            this.clivageCaratCountValueTextbox.TabIndex = 10;
+            this.clivageCaratCountValueTextbox.Tag = "Clivage";
+            this.clivageCaratCountValueTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.clivageCaratCountValueTextbox.TextChanged += new System.EventHandler(this.CaratCountValueTextbox_TextChanged);
+            this.clivageCaratCountValueTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SmallItemCalcTextBox_KeyPress);
             // 
             // clivageStonesCounterLabel
             // 
@@ -4267,19 +4351,6 @@
             this.clivageCaratCountLabel.Size = new System.Drawing.Size(99, 25);
             this.clivageCaratCountLabel.TabIndex = 2;
             this.clivageCaratCountLabel.Text = "Carats Valued";
-            // 
-            // clivageCaratCountValueLabel
-            // 
-            this.clivageCaratCountValueLabel.AutoSize = true;
-            this.clivageCaratCountValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.clivageCaratCountValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.clivageCaratCountValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clivageCaratCountValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clivageCaratCountValueLabel.Location = new System.Drawing.Point(99, 25);
-            this.clivageCaratCountValueLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.clivageCaratCountValueLabel.Name = "clivageCaratCountValueLabel";
-            this.clivageCaratCountValueLabel.Size = new System.Drawing.Size(66, 25);
-            this.clivageCaratCountValueLabel.TabIndex = 3;
             // 
             // clivageAveragePriceLabel
             // 
@@ -4359,6 +4430,7 @@
             this.clivageTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.clivageTableLayoutPanel.Size = new System.Drawing.Size(156, 103);
             this.clivageTableLayoutPanel.TabIndex = 5;
+            this.clivageTableLayoutPanel.Tag = "Clivage";
             // 
             // clivageClarityLabel3
             // 
@@ -4439,6 +4511,7 @@
             this.textBox134.Size = new System.Drawing.Size(72, 19);
             this.textBox134.TabIndex = 14;
             this.textBox134.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox134.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox142
             // 
@@ -4452,6 +4525,7 @@
             this.textBox142.Size = new System.Drawing.Size(72, 19);
             this.textBox142.TabIndex = 22;
             this.textBox142.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox142.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox150
             // 
@@ -4465,47 +4539,49 @@
             this.textBox150.Size = new System.Drawing.Size(72, 22);
             this.textBox150.TabIndex = 30;
             this.textBox150.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox150.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // rejectionsGroupBox
             // 
             this.rejectionsGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.rejectionsGroupBox.Controls.Add(this.pricesRejectionsTableLayoutPanel);
+            this.rejectionsGroupBox.Controls.Add(this.rejectionsTableLayoutPanelPrices);
             this.rejectionsGroupBox.Controls.Add(this.rejectionsTableLayoutPanel);
-            this.rejectionsGroupBox.Controls.Add(this.tableLayoutPanel16);
+            this.rejectionsGroupBox.Controls.Add(this.RejectionsTable);
             this.rejectionsGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rejectionsGroupBox.Location = new System.Drawing.Point(12, 1411);
             this.rejectionsGroupBox.Name = "rejectionsGroupBox";
             this.rejectionsGroupBox.Size = new System.Drawing.Size(1030, 178);
             this.rejectionsGroupBox.TabIndex = 28;
             this.rejectionsGroupBox.TabStop = false;
+            this.rejectionsGroupBox.Tag = "Rejections";
             this.rejectionsGroupBox.Text = "REJECTIONS";
             // 
-            // pricesRejectionsTableLayoutPanel
+            // rejectionsTableLayoutPanelPrices
             // 
-            this.pricesRejectionsTableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.rejectionsTableLayoutPanelPrices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pricesRejectionsTableLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pricesRejectionsTableLayoutPanel.ColumnCount = 2;
-            this.pricesRejectionsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.pricesRejectionsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.pricesRejectionsTableLayoutPanel.Controls.Add(this.label92, 0, 3);
-            this.pricesRejectionsTableLayoutPanel.Controls.Add(this.label93, 1, 0);
-            this.pricesRejectionsTableLayoutPanel.Controls.Add(this.label94, 0, 0);
-            this.pricesRejectionsTableLayoutPanel.Controls.Add(this.label95, 0, 2);
-            this.pricesRejectionsTableLayoutPanel.Controls.Add(this.label96, 0, 1);
-            this.pricesRejectionsTableLayoutPanel.Controls.Add(this.textBox135, 1, 1);
-            this.pricesRejectionsTableLayoutPanel.Controls.Add(this.textBox136, 1, 2);
-            this.pricesRejectionsTableLayoutPanel.Controls.Add(this.textBox295, 1, 3);
-            this.pricesRejectionsTableLayoutPanel.Location = new System.Drawing.Point(640, 58);
-            this.pricesRejectionsTableLayoutPanel.Name = "pricesRejectionsTableLayoutPanel";
-            this.pricesRejectionsTableLayoutPanel.RowCount = 4;
-            this.pricesRejectionsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesRejectionsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesRejectionsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesRejectionsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesRejectionsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesRejectionsTableLayoutPanel.Size = new System.Drawing.Size(156, 103);
-            this.pricesRejectionsTableLayoutPanel.TabIndex = 8;
+            this.rejectionsTableLayoutPanelPrices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.rejectionsTableLayoutPanelPrices.ColumnCount = 2;
+            this.rejectionsTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.rejectionsTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.rejectionsTableLayoutPanelPrices.Controls.Add(this.label92, 0, 3);
+            this.rejectionsTableLayoutPanelPrices.Controls.Add(this.label93, 1, 0);
+            this.rejectionsTableLayoutPanelPrices.Controls.Add(this.label94, 0, 0);
+            this.rejectionsTableLayoutPanelPrices.Controls.Add(this.label95, 0, 2);
+            this.rejectionsTableLayoutPanelPrices.Controls.Add(this.label96, 0, 1);
+            this.rejectionsTableLayoutPanelPrices.Controls.Add(this.textBox135, 1, 1);
+            this.rejectionsTableLayoutPanelPrices.Controls.Add(this.textBox136, 1, 2);
+            this.rejectionsTableLayoutPanelPrices.Controls.Add(this.textBox295, 1, 3);
+            this.rejectionsTableLayoutPanelPrices.Location = new System.Drawing.Point(640, 58);
+            this.rejectionsTableLayoutPanelPrices.Name = "rejectionsTableLayoutPanelPrices";
+            this.rejectionsTableLayoutPanelPrices.RowCount = 4;
+            this.rejectionsTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.rejectionsTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.rejectionsTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.rejectionsTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.rejectionsTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.rejectionsTableLayoutPanelPrices.Size = new System.Drawing.Size(156, 103);
+            this.rejectionsTableLayoutPanelPrices.TabIndex = 8;
             // 
             // label92
             // 
@@ -4640,6 +4716,7 @@
             this.rejectionsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.rejectionsTableLayoutPanel.Size = new System.Drawing.Size(156, 103);
             this.rejectionsTableLayoutPanel.TabIndex = 7;
+            this.rejectionsTableLayoutPanel.Tag = "Rejections";
             // 
             // label97
             // 
@@ -4720,6 +4797,7 @@
             this.textBox137.Size = new System.Drawing.Size(72, 19);
             this.textBox137.TabIndex = 14;
             this.textBox137.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox137.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox293
             // 
@@ -4733,6 +4811,7 @@
             this.textBox293.Size = new System.Drawing.Size(72, 19);
             this.textBox293.TabIndex = 22;
             this.textBox293.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox293.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox294
             // 
@@ -4746,29 +4825,47 @@
             this.textBox294.Size = new System.Drawing.Size(72, 22);
             this.textBox294.TabIndex = 30;
             this.textBox294.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox294.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
-            // tableLayoutPanel16
+            // RejectionsTable
             // 
-            this.tableLayoutPanel16.ColumnCount = 2;
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel16.Controls.Add(this.rejectStonesCounterLabel, 0, 0);
-            this.tableLayoutPanel16.Controls.Add(this.rejectStonesCounterValueLabel, 1, 0);
-            this.tableLayoutPanel16.Controls.Add(this.rejectCaratCountLabel, 0, 1);
-            this.tableLayoutPanel16.Controls.Add(this.rejectCaratCountValueLabel, 1, 1);
-            this.tableLayoutPanel16.Controls.Add(this.rejectAveragePriceLabel, 0, 2);
-            this.tableLayoutPanel16.Controls.Add(this.rejectAveragePriceValueLabel, 1, 2);
-            this.tableLayoutPanel16.Controls.Add(this.rejectTotalLabel, 0, 3);
-            this.tableLayoutPanel16.Controls.Add(this.rejectTotalValueLabel, 1, 3);
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(15, 58);
-            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
-            this.tableLayoutPanel16.RowCount = 4;
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(165, 103);
-            this.tableLayoutPanel16.TabIndex = 6;
+            this.RejectionsTable.ColumnCount = 2;
+            this.RejectionsTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.RejectionsTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.RejectionsTable.Controls.Add(this.rejectionsCaratCountValueTextbox, 1, 1);
+            this.RejectionsTable.Controls.Add(this.rejectStonesCounterLabel, 0, 0);
+            this.RejectionsTable.Controls.Add(this.rejectStonesCounterValueLabel, 1, 0);
+            this.RejectionsTable.Controls.Add(this.rejectCaratCountLabel, 0, 1);
+            this.RejectionsTable.Controls.Add(this.rejectAveragePriceLabel, 0, 2);
+            this.RejectionsTable.Controls.Add(this.rejectAveragePriceValueLabel, 1, 2);
+            this.RejectionsTable.Controls.Add(this.rejectTotalLabel, 0, 3);
+            this.RejectionsTable.Controls.Add(this.rejectTotalValueLabel, 1, 3);
+            this.RejectionsTable.Location = new System.Drawing.Point(15, 58);
+            this.RejectionsTable.Name = "RejectionsTable";
+            this.RejectionsTable.RowCount = 4;
+            this.RejectionsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.RejectionsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.RejectionsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.RejectionsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.RejectionsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.RejectionsTable.Size = new System.Drawing.Size(165, 103);
+            this.RejectionsTable.TabIndex = 6;
+            // 
+            // rejectionsCaratCountValueTextbox
+            // 
+            this.rejectionsCaratCountValueTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.rejectionsCaratCountValueTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rejectionsCaratCountValueTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rejectionsCaratCountValueTextbox.Location = new System.Drawing.Point(99, 25);
+            this.rejectionsCaratCountValueTextbox.Margin = new System.Windows.Forms.Padding(0);
+            this.rejectionsCaratCountValueTextbox.Multiline = true;
+            this.rejectionsCaratCountValueTextbox.Name = "rejectionsCaratCountValueTextbox";
+            this.rejectionsCaratCountValueTextbox.Size = new System.Drawing.Size(66, 25);
+            this.rejectionsCaratCountValueTextbox.TabIndex = 10;
+            this.rejectionsCaratCountValueTextbox.Tag = "Rejections";
+            this.rejectionsCaratCountValueTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.rejectionsCaratCountValueTextbox.TextChanged += new System.EventHandler(this.CaratCountValueTextbox_TextChanged);
+            this.rejectionsCaratCountValueTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SmallItemCalcTextBox_KeyPress);
             // 
             // rejectStonesCounterLabel
             // 
@@ -4810,19 +4907,6 @@
             this.rejectCaratCountLabel.Size = new System.Drawing.Size(99, 25);
             this.rejectCaratCountLabel.TabIndex = 2;
             this.rejectCaratCountLabel.Text = "Carats Valued";
-            // 
-            // rejectCaratCountValueLabel
-            // 
-            this.rejectCaratCountValueLabel.AutoSize = true;
-            this.rejectCaratCountValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.rejectCaratCountValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rejectCaratCountValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rejectCaratCountValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rejectCaratCountValueLabel.Location = new System.Drawing.Point(99, 25);
-            this.rejectCaratCountValueLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.rejectCaratCountValueLabel.Name = "rejectCaratCountValueLabel";
-            this.rejectCaratCountValueLabel.Size = new System.Drawing.Size(66, 25);
-            this.rejectCaratCountValueLabel.TabIndex = 3;
             // 
             // rejectAveragePriceLabel
             // 
@@ -4881,8 +4965,8 @@
             // boartGroupBox
             // 
             this.boartGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.boartGroupBox.Controls.Add(this.pricesBoartTableLayoutPanel);
-            this.boartGroupBox.Controls.Add(this.tableLayoutPanel17);
+            this.boartGroupBox.Controls.Add(this.boartTableLayoutPanelPrices);
+            this.boartGroupBox.Controls.Add(this.BoartTable);
             this.boartGroupBox.Controls.Add(this.boartTableLayoutPanel);
             this.boartGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boartGroupBox.Location = new System.Drawing.Point(12, 1595);
@@ -4890,28 +4974,29 @@
             this.boartGroupBox.Size = new System.Drawing.Size(1030, 178);
             this.boartGroupBox.TabIndex = 29;
             this.boartGroupBox.TabStop = false;
+            this.boartGroupBox.Tag = "Boart";
             this.boartGroupBox.Text = "BOART";
             // 
-            // pricesBoartTableLayoutPanel
+            // boartTableLayoutPanelPrices
             // 
-            this.pricesBoartTableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.boartTableLayoutPanelPrices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pricesBoartTableLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pricesBoartTableLayoutPanel.ColumnCount = 2;
-            this.pricesBoartTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.pricesBoartTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.pricesBoartTableLayoutPanel.Controls.Add(this.label102, 1, 0);
-            this.pricesBoartTableLayoutPanel.Controls.Add(this.label103, 0, 0);
-            this.pricesBoartTableLayoutPanel.Controls.Add(this.label104, 0, 1);
-            this.pricesBoartTableLayoutPanel.Controls.Add(this.textBox296, 1, 1);
-            this.pricesBoartTableLayoutPanel.Location = new System.Drawing.Point(640, 58);
-            this.pricesBoartTableLayoutPanel.Name = "pricesBoartTableLayoutPanel";
-            this.pricesBoartTableLayoutPanel.RowCount = 2;
-            this.pricesBoartTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesBoartTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesBoartTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesBoartTableLayoutPanel.Size = new System.Drawing.Size(156, 58);
-            this.pricesBoartTableLayoutPanel.TabIndex = 7;
+            this.boartTableLayoutPanelPrices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.boartTableLayoutPanelPrices.ColumnCount = 2;
+            this.boartTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.boartTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.boartTableLayoutPanelPrices.Controls.Add(this.label102, 1, 0);
+            this.boartTableLayoutPanelPrices.Controls.Add(this.label103, 0, 0);
+            this.boartTableLayoutPanelPrices.Controls.Add(this.label104, 0, 1);
+            this.boartTableLayoutPanelPrices.Controls.Add(this.textBox296, 1, 1);
+            this.boartTableLayoutPanelPrices.Location = new System.Drawing.Point(640, 58);
+            this.boartTableLayoutPanelPrices.Name = "boartTableLayoutPanelPrices";
+            this.boartTableLayoutPanelPrices.RowCount = 2;
+            this.boartTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.boartTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.boartTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.boartTableLayoutPanelPrices.Size = new System.Drawing.Size(156, 58);
+            this.boartTableLayoutPanelPrices.TabIndex = 7;
             // 
             // label102
             // 
@@ -4966,29 +5051,46 @@
             this.textBox296.Text = "1.2";
             this.textBox296.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tableLayoutPanel17
+            // BoartTable
             // 
-            this.tableLayoutPanel17.ColumnCount = 2;
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel17.Controls.Add(this.boartStonesCounterLabel, 0, 0);
-            this.tableLayoutPanel17.Controls.Add(this.boartStonesCounterValueLabel, 1, 0);
-            this.tableLayoutPanel17.Controls.Add(this.boartCaratCountLabel, 0, 1);
-            this.tableLayoutPanel17.Controls.Add(this.boartCaratCountValueLabel, 1, 1);
-            this.tableLayoutPanel17.Controls.Add(this.boartAveragePriceLabel, 0, 2);
-            this.tableLayoutPanel17.Controls.Add(this.boartAveragePriceValueLabel, 1, 2);
-            this.tableLayoutPanel17.Controls.Add(this.boartTotalLabel, 0, 3);
-            this.tableLayoutPanel17.Controls.Add(this.boartTotalValueLabel, 1, 3);
-            this.tableLayoutPanel17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(15, 58);
-            this.tableLayoutPanel17.Name = "tableLayoutPanel17";
-            this.tableLayoutPanel17.RowCount = 4;
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(165, 103);
-            this.tableLayoutPanel17.TabIndex = 6;
+            this.BoartTable.ColumnCount = 2;
+            this.BoartTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.BoartTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.BoartTable.Controls.Add(this.boartCaratCountValueTextbox, 1, 1);
+            this.BoartTable.Controls.Add(this.boartStonesCounterLabel, 0, 0);
+            this.BoartTable.Controls.Add(this.boartStonesCounterValueLabel, 1, 0);
+            this.BoartTable.Controls.Add(this.boartCaratCountLabel, 0, 1);
+            this.BoartTable.Controls.Add(this.boartAveragePriceLabel, 0, 2);
+            this.BoartTable.Controls.Add(this.boartAveragePriceValueLabel, 1, 2);
+            this.BoartTable.Controls.Add(this.boartTotalLabel, 0, 3);
+            this.BoartTable.Controls.Add(this.boartTotalValueLabel, 1, 3);
+            this.BoartTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoartTable.Location = new System.Drawing.Point(15, 58);
+            this.BoartTable.Name = "BoartTable";
+            this.BoartTable.RowCount = 4;
+            this.BoartTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.BoartTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.BoartTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.BoartTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.BoartTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.BoartTable.Size = new System.Drawing.Size(165, 103);
+            this.BoartTable.TabIndex = 6;
+            // 
+            // boartCaratCountValueTextbox
+            // 
+            this.boartCaratCountValueTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.boartCaratCountValueTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.boartCaratCountValueTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.boartCaratCountValueTextbox.Location = new System.Drawing.Point(99, 25);
+            this.boartCaratCountValueTextbox.Margin = new System.Windows.Forms.Padding(0);
+            this.boartCaratCountValueTextbox.Multiline = true;
+            this.boartCaratCountValueTextbox.Name = "boartCaratCountValueTextbox";
+            this.boartCaratCountValueTextbox.Size = new System.Drawing.Size(66, 25);
+            this.boartCaratCountValueTextbox.TabIndex = 10;
+            this.boartCaratCountValueTextbox.Tag = "Boart";
+            this.boartCaratCountValueTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.boartCaratCountValueTextbox.TextChanged += new System.EventHandler(this.CaratCountValueTextbox_TextChanged);
+            this.boartCaratCountValueTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SmallItemCalcTextBox_KeyPress);
             // 
             // boartStonesCounterLabel
             // 
@@ -5030,19 +5132,6 @@
             this.boartCaratCountLabel.Size = new System.Drawing.Size(99, 25);
             this.boartCaratCountLabel.TabIndex = 2;
             this.boartCaratCountLabel.Text = "Carats Valued";
-            // 
-            // boartCaratCountValueLabel
-            // 
-            this.boartCaratCountValueLabel.AutoSize = true;
-            this.boartCaratCountValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.boartCaratCountValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.boartCaratCountValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.boartCaratCountValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boartCaratCountValueLabel.Location = new System.Drawing.Point(99, 25);
-            this.boartCaratCountValueLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.boartCaratCountValueLabel.Name = "boartCaratCountValueLabel";
-            this.boartCaratCountValueLabel.Size = new System.Drawing.Size(66, 25);
-            this.boartCaratCountValueLabel.TabIndex = 3;
             // 
             // boartAveragePriceLabel
             // 
@@ -5116,6 +5205,7 @@
             this.boartTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.boartTableLayoutPanel.Size = new System.Drawing.Size(156, 58);
             this.boartTableLayoutPanel.TabIndex = 5;
+            this.boartTableLayoutPanel.Tag = "Boart";
             // 
             // boartColourLabel
             // 
@@ -5168,12 +5258,13 @@
             this.textBox138.Size = new System.Drawing.Size(72, 23);
             this.textBox138.TabIndex = 14;
             this.textBox138.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox138.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // brownGroupBox
             // 
             this.brownGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.brownGroupBox.Controls.Add(this.pricesBrownZTableLayoutPanel);
-            this.brownGroupBox.Controls.Add(this.tableLayoutPanel20);
+            this.brownGroupBox.Controls.Add(this.brownZTableLayoutPanelPrices);
+            this.brownGroupBox.Controls.Add(this.BrownZTable);
             this.brownGroupBox.Controls.Add(this.brownZTableLayoutPanel);
             this.brownGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.brownGroupBox.Location = new System.Drawing.Point(12, 1779);
@@ -5181,43 +5272,44 @@
             this.brownGroupBox.Size = new System.Drawing.Size(1030, 178);
             this.brownGroupBox.TabIndex = 30;
             this.brownGroupBox.TabStop = false;
+            this.brownGroupBox.Tag = "BrownZ";
             this.brownGroupBox.Text = "BROWN Z";
             // 
-            // pricesBrownZTableLayoutPanel
+            // brownZTableLayoutPanelPrices
             // 
-            this.pricesBrownZTableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.brownZTableLayoutPanelPrices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pricesBrownZTableLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pricesBrownZTableLayoutPanel.ColumnCount = 5;
-            this.pricesBrownZTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.pricesBrownZTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.pricesBrownZTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.pricesBrownZTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.pricesBrownZTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.label106, 1, 0);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.label107, 3, 0);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.label108, 2, 0);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.label109, 0, 0);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.label110, 4, 0);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.label111, 0, 2);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.label112, 0, 1);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.textBox297, 1, 1);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.textBox298, 2, 1);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.textBox299, 3, 1);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.textBox300, 4, 1);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.textBox301, 1, 2);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.textBox302, 2, 2);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.textBox303, 3, 2);
-            this.pricesBrownZTableLayoutPanel.Controls.Add(this.textBox304, 4, 2);
-            this.pricesBrownZTableLayoutPanel.Location = new System.Drawing.Point(640, 58);
-            this.pricesBrownZTableLayoutPanel.Name = "pricesBrownZTableLayoutPanel";
-            this.pricesBrownZTableLayoutPanel.RowCount = 3;
-            this.pricesBrownZTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesBrownZTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesBrownZTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pricesBrownZTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pricesBrownZTableLayoutPanel.Size = new System.Drawing.Size(370, 103);
-            this.pricesBrownZTableLayoutPanel.TabIndex = 7;
+            this.brownZTableLayoutPanelPrices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.brownZTableLayoutPanelPrices.ColumnCount = 5;
+            this.brownZTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.brownZTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.brownZTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.brownZTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.brownZTableLayoutPanelPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.label106, 1, 0);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.label107, 3, 0);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.label108, 2, 0);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.label109, 0, 0);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.label110, 4, 0);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.label111, 0, 2);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.label112, 0, 1);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.textBox297, 1, 1);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.textBox298, 2, 1);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.textBox299, 3, 1);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.textBox300, 4, 1);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.textBox301, 1, 2);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.textBox302, 2, 2);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.textBox303, 3, 2);
+            this.brownZTableLayoutPanelPrices.Controls.Add(this.textBox304, 4, 2);
+            this.brownZTableLayoutPanelPrices.Location = new System.Drawing.Point(640, 58);
+            this.brownZTableLayoutPanelPrices.Name = "brownZTableLayoutPanelPrices";
+            this.brownZTableLayoutPanelPrices.RowCount = 3;
+            this.brownZTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.brownZTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.brownZTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.brownZTableLayoutPanelPrices.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.brownZTableLayoutPanelPrices.Size = new System.Drawing.Size(370, 103);
+            this.brownZTableLayoutPanelPrices.TabIndex = 7;
             // 
             // label106
             // 
@@ -5426,28 +5518,45 @@
             this.textBox304.Text = "200";
             this.textBox304.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tableLayoutPanel20
+            // BrownZTable
             // 
-            this.tableLayoutPanel20.ColumnCount = 2;
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel20.Controls.Add(this.brownStonesCounterLabel, 0, 0);
-            this.tableLayoutPanel20.Controls.Add(this.brownStonesCounterValueLabel, 1, 0);
-            this.tableLayoutPanel20.Controls.Add(this.brownCaratCountLabel, 0, 1);
-            this.tableLayoutPanel20.Controls.Add(this.brownCaratCountValueLabel, 1, 1);
-            this.tableLayoutPanel20.Controls.Add(this.brownAveragePriceLabel, 0, 2);
-            this.tableLayoutPanel20.Controls.Add(this.brownAveragePriceValueLabel, 1, 2);
-            this.tableLayoutPanel20.Controls.Add(this.brownTotalLabel, 0, 3);
-            this.tableLayoutPanel20.Controls.Add(this.brownTotalValueLabel, 1, 3);
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(15, 58);
-            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
-            this.tableLayoutPanel20.RowCount = 4;
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(165, 103);
-            this.tableLayoutPanel20.TabIndex = 6;
+            this.BrownZTable.ColumnCount = 2;
+            this.BrownZTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.BrownZTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.BrownZTable.Controls.Add(this.brownZCaratCountValueTextbox, 1, 1);
+            this.BrownZTable.Controls.Add(this.brownStonesCounterLabel, 0, 0);
+            this.BrownZTable.Controls.Add(this.brownStonesCounterValueLabel, 1, 0);
+            this.BrownZTable.Controls.Add(this.brownCaratCountLabel, 0, 1);
+            this.BrownZTable.Controls.Add(this.brownAveragePriceLabel, 0, 2);
+            this.BrownZTable.Controls.Add(this.brownAveragePriceValueLabel, 1, 2);
+            this.BrownZTable.Controls.Add(this.brownTotalLabel, 0, 3);
+            this.BrownZTable.Controls.Add(this.brownTotalValueLabel, 1, 3);
+            this.BrownZTable.Location = new System.Drawing.Point(15, 58);
+            this.BrownZTable.Name = "BrownZTable";
+            this.BrownZTable.RowCount = 4;
+            this.BrownZTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.BrownZTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.BrownZTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.BrownZTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.BrownZTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.BrownZTable.Size = new System.Drawing.Size(165, 103);
+            this.BrownZTable.TabIndex = 6;
+            // 
+            // brownZCaratCountValueTextbox
+            // 
+            this.brownZCaratCountValueTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.brownZCaratCountValueTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.brownZCaratCountValueTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.brownZCaratCountValueTextbox.Location = new System.Drawing.Point(99, 25);
+            this.brownZCaratCountValueTextbox.Margin = new System.Windows.Forms.Padding(0);
+            this.brownZCaratCountValueTextbox.Multiline = true;
+            this.brownZCaratCountValueTextbox.Name = "brownZCaratCountValueTextbox";
+            this.brownZCaratCountValueTextbox.Size = new System.Drawing.Size(66, 25);
+            this.brownZCaratCountValueTextbox.TabIndex = 10;
+            this.brownZCaratCountValueTextbox.Tag = "BrownZ";
+            this.brownZCaratCountValueTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.brownZCaratCountValueTextbox.TextChanged += new System.EventHandler(this.CaratCountValueTextbox_TextChanged);
+            this.brownZCaratCountValueTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SmallItemCalcTextBox_KeyPress);
             // 
             // brownStonesCounterLabel
             // 
@@ -5489,19 +5598,6 @@
             this.brownCaratCountLabel.Size = new System.Drawing.Size(99, 25);
             this.brownCaratCountLabel.TabIndex = 2;
             this.brownCaratCountLabel.Text = "Carats Valued";
-            // 
-            // brownCaratCountValueLabel
-            // 
-            this.brownCaratCountValueLabel.AutoSize = true;
-            this.brownCaratCountValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.brownCaratCountValueLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.brownCaratCountValueLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.brownCaratCountValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brownCaratCountValueLabel.Location = new System.Drawing.Point(99, 25);
-            this.brownCaratCountValueLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.brownCaratCountValueLabel.Name = "brownCaratCountValueLabel";
-            this.brownCaratCountValueLabel.Size = new System.Drawing.Size(66, 25);
-            this.brownCaratCountValueLabel.TabIndex = 3;
             // 
             // brownAveragePriceLabel
             // 
@@ -5590,6 +5686,7 @@
             this.brownZTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.brownZTableLayoutPanel.Size = new System.Drawing.Size(370, 103);
             this.brownZTableLayoutPanel.TabIndex = 5;
+            this.brownZTableLayoutPanel.Tag = "BrownZ";
             // 
             // brownColourLabel1
             // 
@@ -5698,6 +5795,7 @@
             this.textBox139.Size = new System.Drawing.Size(67, 28);
             this.textBox139.TabIndex = 14;
             this.textBox139.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox139.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox140
             // 
@@ -5711,6 +5809,7 @@
             this.textBox140.Size = new System.Drawing.Size(67, 28);
             this.textBox140.TabIndex = 15;
             this.textBox140.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox140.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox141
             // 
@@ -5724,6 +5823,7 @@
             this.textBox141.Size = new System.Drawing.Size(67, 28);
             this.textBox141.TabIndex = 16;
             this.textBox141.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox141.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox143
             // 
@@ -5737,6 +5837,7 @@
             this.textBox143.Size = new System.Drawing.Size(72, 28);
             this.textBox143.TabIndex = 17;
             this.textBox143.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox143.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox148
             // 
@@ -5750,6 +5851,7 @@
             this.textBox148.Size = new System.Drawing.Size(67, 29);
             this.textBox148.TabIndex = 22;
             this.textBox148.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox148.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox149
             // 
@@ -5763,6 +5865,7 @@
             this.textBox149.Size = new System.Drawing.Size(67, 29);
             this.textBox149.TabIndex = 23;
             this.textBox149.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox149.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox151
             // 
@@ -5776,6 +5879,7 @@
             this.textBox151.Size = new System.Drawing.Size(67, 29);
             this.textBox151.TabIndex = 24;
             this.textBox151.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox151.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBox152
             // 
@@ -5789,6 +5893,7 @@
             this.textBox152.Size = new System.Drawing.Size(72, 29);
             this.textBox152.TabIndex = 25;
             this.textBox152.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox152.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // SmallItemCalc
             // 
@@ -5815,66 +5920,66 @@
             this.summeryTable.ResumeLayout(false);
             this.summeryTable.PerformLayout();
             this.ZHighGroupBox.ResumeLayout(false);
-            this.pricesZHighTableLayoutPanel.ResumeLayout(false);
-            this.pricesZHighTableLayoutPanel.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.ZHighTableLayoutPanelPrices.ResumeLayout(false);
+            this.ZHighTableLayoutPanelPrices.PerformLayout();
+            this.ZHighTable.ResumeLayout(false);
+            this.ZHighTable.PerformLayout();
             this.ZHighTableLayoutPanel.ResumeLayout(false);
             this.ZHighTableLayoutPanel.PerformLayout();
             this.crystalsGroupBox.ResumeLayout(false);
-            this.pricesCrystalsTableLayoutPanel.ResumeLayout(false);
-            this.pricesCrystalsTableLayoutPanel.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
+            this.crystalsTableLayoutPanelPrices.ResumeLayout(false);
+            this.crystalsTableLayoutPanelPrices.PerformLayout();
+            this.CrystalsTable.ResumeLayout(false);
+            this.CrystalsTable.PerformLayout();
             this.crystalsLableLayoutPanel.ResumeLayout(false);
             this.crystalsLableLayoutPanel.PerformLayout();
             this.ZLowGroupBox.ResumeLayout(false);
-            this.pricesZLowTableLayoutPanel.ResumeLayout(false);
-            this.pricesZLowTableLayoutPanel.PerformLayout();
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
+            this.ZLowTableLayoutPanelPrices.ResumeLayout(false);
+            this.ZLowTableLayoutPanelPrices.PerformLayout();
+            this.ZLowTable.ResumeLayout(false);
+            this.ZLowTable.PerformLayout();
             this.ZLowTableLayoutPanel.ResumeLayout(false);
             this.ZLowTableLayoutPanel.PerformLayout();
             this.makeableGroupBox.ResumeLayout(false);
-            this.pricesMakeableTableLayoutPanel.ResumeLayout(false);
-            this.pricesMakeableTableLayoutPanel.PerformLayout();
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel9.PerformLayout();
+            this.makeableTableLayoutPanelPrices.ResumeLayout(false);
+            this.makeableTableLayoutPanelPrices.PerformLayout();
+            this.MakeableTable.ResumeLayout(false);
+            this.MakeableTable.PerformLayout();
             this.makeableTableLayoutPanel.ResumeLayout(false);
             this.makeableTableLayoutPanel.PerformLayout();
             this.spottedZGroupBox.ResumeLayout(false);
-            this.pricesSpottedTableLayoutPanel.ResumeLayout(false);
-            this.pricesSpottedTableLayoutPanel.PerformLayout();
-            this.tableLayoutPanel11.ResumeLayout(false);
-            this.tableLayoutPanel11.PerformLayout();
+            this.spottedTableLayoutPanelPrices.ResumeLayout(false);
+            this.spottedTableLayoutPanelPrices.PerformLayout();
+            this.SpottedTable.ResumeLayout(false);
+            this.SpottedTable.PerformLayout();
             this.spottedTableLayoutPanel.ResumeLayout(false);
             this.spottedTableLayoutPanel.PerformLayout();
             this.clivageGroupBox.ResumeLayout(false);
-            this.pricesClivageTableLayoutPanel.ResumeLayout(false);
-            this.pricesClivageTableLayoutPanel.PerformLayout();
-            this.tableLayoutPanel13.ResumeLayout(false);
-            this.tableLayoutPanel13.PerformLayout();
+            this.clivageTableLayoutPanelPrices.ResumeLayout(false);
+            this.clivageTableLayoutPanelPrices.PerformLayout();
+            this.ClivageTable.ResumeLayout(false);
+            this.ClivageTable.PerformLayout();
             this.clivageTableLayoutPanel.ResumeLayout(false);
             this.clivageTableLayoutPanel.PerformLayout();
             this.rejectionsGroupBox.ResumeLayout(false);
-            this.pricesRejectionsTableLayoutPanel.ResumeLayout(false);
-            this.pricesRejectionsTableLayoutPanel.PerformLayout();
+            this.rejectionsTableLayoutPanelPrices.ResumeLayout(false);
+            this.rejectionsTableLayoutPanelPrices.PerformLayout();
             this.rejectionsTableLayoutPanel.ResumeLayout(false);
             this.rejectionsTableLayoutPanel.PerformLayout();
-            this.tableLayoutPanel16.ResumeLayout(false);
-            this.tableLayoutPanel16.PerformLayout();
+            this.RejectionsTable.ResumeLayout(false);
+            this.RejectionsTable.PerformLayout();
             this.boartGroupBox.ResumeLayout(false);
-            this.pricesBoartTableLayoutPanel.ResumeLayout(false);
-            this.pricesBoartTableLayoutPanel.PerformLayout();
-            this.tableLayoutPanel17.ResumeLayout(false);
-            this.tableLayoutPanel17.PerformLayout();
+            this.boartTableLayoutPanelPrices.ResumeLayout(false);
+            this.boartTableLayoutPanelPrices.PerformLayout();
+            this.BoartTable.ResumeLayout(false);
+            this.BoartTable.PerformLayout();
             this.boartTableLayoutPanel.ResumeLayout(false);
             this.boartTableLayoutPanel.PerformLayout();
             this.brownGroupBox.ResumeLayout(false);
-            this.pricesBrownZTableLayoutPanel.ResumeLayout(false);
-            this.pricesBrownZTableLayoutPanel.PerformLayout();
-            this.tableLayoutPanel20.ResumeLayout(false);
-            this.tableLayoutPanel20.PerformLayout();
+            this.brownZTableLayoutPanelPrices.ResumeLayout(false);
+            this.brownZTableLayoutPanelPrices.PerformLayout();
+            this.BrownZTable.ResumeLayout(false);
+            this.BrownZTable.PerformLayout();
             this.brownZTableLayoutPanel.ResumeLayout(false);
             this.brownZTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -5904,7 +6009,7 @@
         private System.Windows.Forms.Label ctsValValueLabel;
         private System.Windows.Forms.Label noStonesValueLabel;
         private System.Windows.Forms.GroupBox ZHighGroupBox;
-        private System.Windows.Forms.TableLayoutPanel pricesZHighTableLayoutPanel;
+        private System.Windows.Forms.TableLayoutPanel ZHighTableLayoutPanelPrices;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -5923,11 +6028,10 @@
         private System.Windows.Forms.TextBox textBox163;
         private System.Windows.Forms.TextBox textBox164;
         private System.Windows.Forms.TextBox textBox172;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel ZHighTable;
         private System.Windows.Forms.Label crystalsStonesCounterLabel;
         private System.Windows.Forms.Label crystalStonesCountValueLabel;
         private System.Windows.Forms.Label crystalCaratCountLabel;
-        private System.Windows.Forms.Label crystalCaratCountValueLabel;
         private System.Windows.Forms.Label crystalAveragePriceLabel;
         private System.Windows.Forms.Label crystalAveragePriceValueLabel;
         private System.Windows.Forms.Label crystalTotalLabel;
@@ -5952,7 +6056,7 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.GroupBox crystalsGroupBox;
-        private System.Windows.Forms.TableLayoutPanel pricesCrystalsTableLayoutPanel;
+        private System.Windows.Forms.TableLayoutPanel crystalsTableLayoutPanelPrices;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -5971,11 +6075,10 @@
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel CrystalsTable;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
@@ -6000,7 +6103,7 @@
         private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.TextBox textBox30;
         private System.Windows.Forms.GroupBox ZLowGroupBox;
-        private System.Windows.Forms.TableLayoutPanel pricesZLowTableLayoutPanel;
+        private System.Windows.Forms.TableLayoutPanel ZLowTableLayoutPanelPrices;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
@@ -6019,11 +6122,10 @@
         private System.Windows.Forms.TextBox textBox38;
         private System.Windows.Forms.TextBox textBox39;
         private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TableLayoutPanel ZLowTable;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
@@ -6048,7 +6150,7 @@
         private System.Windows.Forms.TextBox textBox49;
         private System.Windows.Forms.TextBox textBox50;
         private System.Windows.Forms.GroupBox makeableGroupBox;
-        private System.Windows.Forms.TableLayoutPanel pricesMakeableTableLayoutPanel;
+        private System.Windows.Forms.TableLayoutPanel makeableTableLayoutPanelPrices;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
@@ -6067,11 +6169,10 @@
         private System.Windows.Forms.TextBox textBox58;
         private System.Windows.Forms.TextBox textBox59;
         private System.Windows.Forms.TextBox textBox60;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.TableLayoutPanel MakeableTable;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
@@ -6096,7 +6197,7 @@
         private System.Windows.Forms.TextBox textBox69;
         private System.Windows.Forms.TextBox textBox70;
         private System.Windows.Forms.GroupBox spottedZGroupBox;
-        private System.Windows.Forms.TableLayoutPanel pricesSpottedTableLayoutPanel;
+        private System.Windows.Forms.TableLayoutPanel spottedTableLayoutPanelPrices;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.Label label83;
@@ -6107,11 +6208,10 @@
         private System.Windows.Forms.TextBox textBox286;
         private System.Windows.Forms.TextBox textBox287;
         private System.Windows.Forms.TextBox textBox289;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.TableLayoutPanel SpottedTable;
         private System.Windows.Forms.Label spottedZStonesCounterLabel;
         private System.Windows.Forms.Label spottedZStonesCounterValueLabel;
         private System.Windows.Forms.Label spottedZCaratCountLabel;
-        private System.Windows.Forms.Label spottedZCaratCountValueLabel;
         private System.Windows.Forms.Label spottedZAveragePriceLabel;
         private System.Windows.Forms.Label spottedZAveragePriceValueLabel;
         private System.Windows.Forms.Label spottedZTotalLabel;
@@ -6128,7 +6228,7 @@
         private System.Windows.Forms.TextBox textBox131;
         private System.Windows.Forms.TextBox textBox133;
         private System.Windows.Forms.GroupBox clivageGroupBox;
-        private System.Windows.Forms.TableLayoutPanel pricesClivageTableLayoutPanel;
+        private System.Windows.Forms.TableLayoutPanel clivageTableLayoutPanelPrices;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Label label88;
         private System.Windows.Forms.Label label89;
@@ -6137,11 +6237,10 @@
         private System.Windows.Forms.TextBox textBox290;
         private System.Windows.Forms.TextBox textBox291;
         private System.Windows.Forms.TextBox textBox292;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
+        private System.Windows.Forms.TableLayoutPanel ClivageTable;
         private System.Windows.Forms.Label clivageStonesCounterLabel;
         private System.Windows.Forms.Label clivageStonesCounterValueLabel;
         private System.Windows.Forms.Label clivageCaratCountLabel;
-        private System.Windows.Forms.Label clivageCaratCountValueLabel;
         private System.Windows.Forms.Label clivageAveragePriceLabel;
         private System.Windows.Forms.Label clivageAveragePriceValueLabel;
         private System.Windows.Forms.Label clivageTotalLabel;
@@ -6156,7 +6255,7 @@
         private System.Windows.Forms.TextBox textBox142;
         private System.Windows.Forms.TextBox textBox150;
         private System.Windows.Forms.GroupBox rejectionsGroupBox;
-        private System.Windows.Forms.TableLayoutPanel pricesRejectionsTableLayoutPanel;
+        private System.Windows.Forms.TableLayoutPanel rejectionsTableLayoutPanelPrices;
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label94;
@@ -6174,26 +6273,24 @@
         private System.Windows.Forms.TextBox textBox137;
         private System.Windows.Forms.TextBox textBox293;
         private System.Windows.Forms.TextBox textBox294;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
+        private System.Windows.Forms.TableLayoutPanel RejectionsTable;
         private System.Windows.Forms.Label rejectStonesCounterLabel;
         private System.Windows.Forms.Label rejectStonesCounterValueLabel;
         private System.Windows.Forms.Label rejectCaratCountLabel;
-        private System.Windows.Forms.Label rejectCaratCountValueLabel;
         private System.Windows.Forms.Label rejectAveragePriceLabel;
         private System.Windows.Forms.Label rejectAveragePriceValueLabel;
         private System.Windows.Forms.Label rejectTotalLabel;
         private System.Windows.Forms.Label rejectTotalValueLabel;
         private System.Windows.Forms.GroupBox boartGroupBox;
-        private System.Windows.Forms.TableLayoutPanel pricesBoartTableLayoutPanel;
+        private System.Windows.Forms.TableLayoutPanel boartTableLayoutPanelPrices;
         private System.Windows.Forms.Label label102;
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.Label label104;
         private System.Windows.Forms.TextBox textBox296;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
+        private System.Windows.Forms.TableLayoutPanel BoartTable;
         private System.Windows.Forms.Label boartStonesCounterLabel;
         private System.Windows.Forms.Label boartStonesCounterValueLabel;
         private System.Windows.Forms.Label boartCaratCountLabel;
-        private System.Windows.Forms.Label boartCaratCountValueLabel;
         private System.Windows.Forms.Label boartAveragePriceLabel;
         private System.Windows.Forms.Label boartAveragePriceValueLabel;
         private System.Windows.Forms.Label boartTotalLabel;
@@ -6204,7 +6301,7 @@
         private System.Windows.Forms.Label boartClarityLabel;
         private System.Windows.Forms.TextBox textBox138;
         private System.Windows.Forms.GroupBox brownGroupBox;
-        private System.Windows.Forms.TableLayoutPanel pricesBrownZTableLayoutPanel;
+        private System.Windows.Forms.TableLayoutPanel brownZTableLayoutPanelPrices;
         private System.Windows.Forms.Label label106;
         private System.Windows.Forms.Label label107;
         private System.Windows.Forms.Label label108;
@@ -6220,11 +6317,10 @@
         private System.Windows.Forms.TextBox textBox302;
         private System.Windows.Forms.TextBox textBox303;
         private System.Windows.Forms.TextBox textBox304;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
+        private System.Windows.Forms.TableLayoutPanel BrownZTable;
         private System.Windows.Forms.Label brownStonesCounterLabel;
         private System.Windows.Forms.Label brownStonesCounterValueLabel;
         private System.Windows.Forms.Label brownCaratCountLabel;
-        private System.Windows.Forms.Label brownCaratCountValueLabel;
         private System.Windows.Forms.Label brownAveragePriceLabel;
         private System.Windows.Forms.Label brownAveragePriceValueLabel;
         private System.Windows.Forms.Label brownTotalLabel;
@@ -6245,5 +6341,14 @@
         private System.Windows.Forms.TextBox textBox149;
         private System.Windows.Forms.TextBox textBox151;
         private System.Windows.Forms.TextBox textBox152;
+        private System.Windows.Forms.TextBox crystalsCaratCountValueTextbox;
+        private System.Windows.Forms.TextBox ZHighCaratCountValueTextbox;
+        private System.Windows.Forms.TextBox ZLowCaratCountValueTextbox;
+        private System.Windows.Forms.TextBox makeableCaratCountValueTextbox;
+        private System.Windows.Forms.TextBox spottedCaratCountValueTextbox;
+        private System.Windows.Forms.TextBox clivageCaratCountValueTextbox;
+        private System.Windows.Forms.TextBox rejectionsCaratCountValueTextbox;
+        private System.Windows.Forms.TextBox boartCaratCountValueTextbox;
+        private System.Windows.Forms.TextBox brownZCaratCountValueTextbox;
     }
 }
