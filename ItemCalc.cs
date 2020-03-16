@@ -61,8 +61,6 @@ namespace DCI_Calculator
             rejectionsTableLayoutPanelPrices.Show();
             BoartGroupBox.Size = new Size(1242, 178);
             boartTableLayoutPanelPrices.Show();
-            BrownZGroupBox.Size = new Size(1242, 178);
-            brownZTableLayoutPanelPrices.Show();
         }
 
         private void PriceListHide()
@@ -83,8 +81,6 @@ namespace DCI_Calculator
             RejectionsGroupBox.Size = new Size(740, 178);
             boartTableLayoutPanelPrices.Hide();
             BoartGroupBox.Size = new Size(740, 178);
-            brownZTableLayoutPanelPrices.Hide();
-            BrownZGroupBox.Size = new Size(740, 178);
         }
 
         #endregion
@@ -124,7 +120,7 @@ namespace DCI_Calculator
             //TODO check prices table was found!
             var priceTextbox = (TextBox)pricesTable.GetControlFromPosition(col, row);
             
-            if(priceTextbox.Text != "")
+            if (priceTextbox.Text != "")
             {
                 price = Convert.ToDouble(priceTextbox.Text);
             }
@@ -139,8 +135,6 @@ namespace DCI_Calculator
                 label.Text = stonesSize.items[key].TotalValue.ToString();
 
                 UpdateTotals();
-
-               // Summary.ActiveForm.Update();
             }
 
             else
@@ -162,24 +156,75 @@ namespace DCI_Calculator
             }
         }
 
-        private void ItemCalcTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBox_KeyDown(object sender, KeyEventArgs e)
         {
-            /*double diff;
-            if (e.KeyChar == 13)
+            e.Handled = true;
+            var textbox = (TextBox)sender;
+            var table = (TableLayoutPanel)textbox.Parent;
+            int row = table.GetRow(textbox);
+            int col = table.GetColumn(textbox);
+
+            if ((e.KeyCode == Keys.Down) || (e.KeyCode == Keys.Enter))
             {
-                diff = stonesSize.CheckEnteredWeight();
-
-                this.diffSumValueLabel.Text = diff.ToString();
-
-                if (diff > 0)
+                if (row < table.RowCount - 1) //if we are not on the last row
                 {
-                    MessageBox.Show("More Carats Valued than on Summary");
+                    var nextTextbox = table.GetControlFromPosition(col, row + 1);
+                    nextTextbox.Focus();
                 }
-            }*/
-            
-            AllowOnlyNumbers(e);
+            }
+
+            if ((e.KeyCode == Keys.Right) || (e.KeyCode == Keys.RShiftKey))
+            {
+                if (col < table.ColumnCount - 1) //if we are not on the last column
+                {
+                    var nextTextbox = table.GetControlFromPosition(col + 1, row);
+                    nextTextbox.Focus();
+                }
+            }
+
+            if (e.KeyCode == Keys.Up)
+            {
+                if (row > 1) //if we are not on the first row
+                {
+                    var nextTextbox = table.GetControlFromPosition(col, row - 1);
+                    nextTextbox.Focus();
+                }
+            }
+
+            if (e.KeyCode == Keys.Left)
+            {
+                if (col > 1) //if we are not on the first column
+                {
+                    var nextTextbox = table.GetControlFromPosition(col - 1, row);
+                    nextTextbox.Focus();
+                }
+            }        
         }
 
+
+        private void ItemCalcTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                e.Handled = true;
+                var textbox = (TextBox)sender;
+                var table = (TableLayoutPanel)textbox.Parent;
+                int row = table.GetRow(textbox);
+                int col = table.GetColumn(textbox);
+                if (row < table.RowCount - 1) //if we are not on the last row
+                {
+                    var nextTextbox = table.GetControlFromPosition(col, row + 1);
+                    nextTextbox.Focus();
+                }
+            }
+            
+            else
+            {
+                AllowOnlyNumbers(e);
+            }
+        }
+
+        #region CaratCountTextBox_KeyPress
         private void CrystalsCaratCountTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)
@@ -253,16 +298,9 @@ namespace DCI_Calculator
             if (e.KeyChar == 13)
             {
                 e.Handled = true;
-                brownZCaratCountValueTextbox.Focus();
             }
         }
-        private void BrownZCaratCountTextBox_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 13)
-            {
-                e.Handled = true;
-            }
-        }
+        #endregion
 
         private void InsertingWeightsItem(StoneModel m, double w)
         {

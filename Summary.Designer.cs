@@ -111,8 +111,8 @@
             this.caratsLabelTotal10GRto4CT = new System.Windows.Forms.Label();
             this.totalLabelTotal10GRto4CT = new System.Windows.Forms.Label();
             this.avPriceLabelTotal10GRto4CT = new System.Windows.Forms.Label();
-            this.labelTotalCarats10GRto10CT = new System.Windows.Forms.Label();
-            this.labelTotal10GRto10CT = new System.Windows.Forms.Label();
+            this.labelTotalCarats10GRto4CT = new System.Windows.Forms.Label();
+            this.labelTotal10GRto4CT = new System.Windows.Forms.Label();
             this.totalPriceLabel10GR = new System.Windows.Forms.Label();
             this.caratsLabel10GR = new System.Windows.Forms.Label();
             this.totalLabel10GR = new System.Windows.Forms.Label();
@@ -281,8 +281,8 @@
             this.summaryTable.Controls.Add(this.caratsLabelTotal10GRto4CT, 4, 12);
             this.summaryTable.Controls.Add(this.totalLabelTotal10GRto4CT, 3, 12);
             this.summaryTable.Controls.Add(this.avPriceLabelTotal10GRto4CT, 2, 12);
-            this.summaryTable.Controls.Add(this.labelTotalCarats10GRto10CT, 1, 12);
-            this.summaryTable.Controls.Add(this.labelTotal10GRto10CT, 0, 12);
+            this.summaryTable.Controls.Add(this.labelTotalCarats10GRto4CT, 1, 12);
+            this.summaryTable.Controls.Add(this.labelTotal10GRto4CT, 0, 12);
             this.summaryTable.Controls.Add(this.totalPriceLabel10GR, 5, 11);
             this.summaryTable.Controls.Add(this.caratsLabel10GR, 4, 11);
             this.summaryTable.Controls.Add(this.totalLabel10GR, 3, 11);
@@ -536,6 +536,7 @@
             this.textBoxminus3plus1.Name = "textBoxminus3plus1";
             this.textBoxminus3plus1.Size = new System.Drawing.Size(98, 22);
             this.textBoxminus3plus1.TabIndex = 146;
+            this.textBoxminus3plus1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxminus3plus1.TextChanged += new System.EventHandler(this.textBoxMinus3plus1_TextChanged);
             this.textBoxminus3plus1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -620,6 +621,7 @@
             this.textBoxminus5plus3.Name = "textBoxminus5plus3";
             this.textBoxminus5plus3.Size = new System.Drawing.Size(98, 22);
             this.textBoxminus5plus3.TabIndex = 140;
+            this.textBoxminus5plus3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxminus5plus3.TextChanged += new System.EventHandler(this.textBoxMinus5plus3_TextChanged);
             this.textBoxminus5plus3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -704,6 +706,7 @@
             this.textBoxminus7plus5.Name = "textBoxminus7plus5";
             this.textBoxminus7plus5.Size = new System.Drawing.Size(98, 22);
             this.textBoxminus7plus5.TabIndex = 134;
+            this.textBoxminus7plus5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxminus7plus5.TextChanged += new System.EventHandler(this.textBoxMinus7plus5_TextChanged);
             this.textBoxminus7plus5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -788,6 +791,7 @@
             this.textBoxminus9plus7.Name = "textBoxminus9plus7";
             this.textBoxminus9plus7.Size = new System.Drawing.Size(98, 22);
             this.textBoxminus9plus7.TabIndex = 128;
+            this.textBoxminus9plus7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxminus9plus7.TextChanged += new System.EventHandler(this.textBoxMinus9plus7_TextChanged);
             this.textBoxminus9plus7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -872,6 +876,7 @@
             this.textBox4perCT.Name = "textBox4perCT";
             this.textBox4perCT.Size = new System.Drawing.Size(98, 22);
             this.textBox4perCT.TabIndex = 122;
+            this.textBox4perCT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox4perCT.TextChanged += new System.EventHandler(this.textBoxPCT4_TextChanged);
             this.textBox4perCT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -956,6 +961,7 @@
             this.textBox2perCT.Name = "textBox2perCT";
             this.textBox2perCT.Size = new System.Drawing.Size(98, 22);
             this.textBox2perCT.TabIndex = 116;
+            this.textBox2perCT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox2perCT.TextChanged += new System.EventHandler(this.textBoxPCT2_TextChanged);
             this.textBox2perCT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -971,6 +977,7 @@
             this.totalPriceLabelTotal13plus.Name = "totalPriceLabelTotal13plus";
             this.totalPriceLabelTotal13plus.Size = new System.Drawing.Size(102, 18);
             this.totalPriceLabelTotal13plus.TabIndex = 114;
+            this.totalPriceLabelTotal13plus.Tag = "Total13plus";
             this.totalPriceLabelTotal13plus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // caratsLabelTotal13plus
@@ -985,6 +992,7 @@
             this.caratsLabelTotal13plus.Name = "caratsLabelTotal13plus";
             this.caratsLabelTotal13plus.Size = new System.Drawing.Size(98, 18);
             this.caratsLabelTotal13plus.TabIndex = 113;
+            this.caratsLabelTotal13plus.Tag = "Total13plus";
             this.caratsLabelTotal13plus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // totalLabelTotal13plus
@@ -999,6 +1007,7 @@
             this.totalLabelTotal13plus.Name = "totalLabelTotal13plus";
             this.totalLabelTotal13plus.Size = new System.Drawing.Size(111, 18);
             this.totalLabelTotal13plus.TabIndex = 112;
+            this.totalLabelTotal13plus.Tag = "Total13plus";
             this.totalLabelTotal13plus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // avPriceLabelTotal13plus
@@ -1013,6 +1022,7 @@
             this.avPriceLabelTotal13plus.Name = "avPriceLabelTotal13plus";
             this.avPriceLabelTotal13plus.Size = new System.Drawing.Size(98, 18);
             this.avPriceLabelTotal13plus.TabIndex = 111;
+            this.avPriceLabelTotal13plus.Tag = "Total13plus";
             this.avPriceLabelTotal13plus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelTotalCarats13plus
@@ -1027,6 +1037,7 @@
             this.labelTotalCarats13plus.Name = "labelTotalCarats13plus";
             this.labelTotalCarats13plus.Size = new System.Drawing.Size(98, 18);
             this.labelTotalCarats13plus.TabIndex = 110;
+            this.labelTotalCarats13plus.Tag = "Total13plus";
             this.labelTotalCarats13plus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelTotal13plus
@@ -1041,6 +1052,7 @@
             this.labelTotal13plus.Name = "labelTotal13plus";
             this.labelTotal13plus.Size = new System.Drawing.Size(156, 18);
             this.labelTotal13plus.TabIndex = 109;
+            this.labelTotal13plus.Tag = "Total13plus";
             this.labelTotal13plus.Text = "Total +13";
             this.labelTotal13plus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -1107,6 +1119,7 @@
             this.textBox3GR.Name = "textBox3GR";
             this.textBox3GR.Size = new System.Drawing.Size(98, 22);
             this.textBox3GR.TabIndex = 104;
+            this.textBox3GR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox3GR.TextChanged += new System.EventHandler(this.textBox3GR_TextChanged);
             this.textBox3GR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             this.textBox3GR.MouseEnter += new System.EventHandler(this.label3GR_MouseEnter);
@@ -1193,10 +1206,9 @@
             this.textBox4GR.Name = "textBox4GR";
             this.textBox4GR.Size = new System.Drawing.Size(98, 22);
             this.textBox4GR.TabIndex = 98;
+            this.textBox4GR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox4GR.TextChanged += new System.EventHandler(this.textBox4GR_TextChanged);
             this.textBox4GR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
-            this.textBox4GR.MouseEnter += new System.EventHandler(this.label4GR_MouseEnter);
-            this.textBox4GR.MouseLeave += new System.EventHandler(this.label4GR_MouseLeave);
             // 
             // label4GR
             // 
@@ -1279,6 +1291,7 @@
             this.textBox5GR.Name = "textBox5GR";
             this.textBox5GR.Size = new System.Drawing.Size(98, 22);
             this.textBox5GR.TabIndex = 92;
+            this.textBox5GR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox5GR.TextChanged += new System.EventHandler(this.textBox5GR_TextChanged);
             this.textBox5GR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -1363,6 +1376,7 @@
             this.textBox6GR.Name = "textBox6GR";
             this.textBox6GR.Size = new System.Drawing.Size(98, 22);
             this.textBox6GR.TabIndex = 86;
+            this.textBox6GR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox6GR.TextChanged += new System.EventHandler(this.textBox6GR_TextChanged);
             this.textBox6GR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -1451,6 +1465,7 @@
             this.textBox8GR.Name = "textBox8GR";
             this.textBox8GR.Size = new System.Drawing.Size(98, 22);
             this.textBox8GR.TabIndex = 80;
+            this.textBox8GR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox8GR.TextChanged += new System.EventHandler(this.textBox8GR_TextChanged);
             this.textBox8GR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -1485,6 +1500,7 @@
             this.totalPriceLabelTotal10GRto4CT.Name = "totalPriceLabelTotal10GRto4CT";
             this.totalPriceLabelTotal10GRto4CT.Size = new System.Drawing.Size(102, 18);
             this.totalPriceLabelTotal10GRto4CT.TabIndex = 78;
+            this.totalPriceLabelTotal10GRto4CT.Tag = "Total10GRto4CT";
             this.totalPriceLabelTotal10GRto4CT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // caratsLabelTotal10GRto4CT
@@ -1499,6 +1515,7 @@
             this.caratsLabelTotal10GRto4CT.Name = "caratsLabelTotal10GRto4CT";
             this.caratsLabelTotal10GRto4CT.Size = new System.Drawing.Size(98, 18);
             this.caratsLabelTotal10GRto4CT.TabIndex = 77;
+            this.caratsLabelTotal10GRto4CT.Tag = "Total10GRto4CT";
             this.caratsLabelTotal10GRto4CT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // totalLabelTotal10GRto4CT
@@ -1513,6 +1530,7 @@
             this.totalLabelTotal10GRto4CT.Name = "totalLabelTotal10GRto4CT";
             this.totalLabelTotal10GRto4CT.Size = new System.Drawing.Size(111, 18);
             this.totalLabelTotal10GRto4CT.TabIndex = 76;
+            this.totalLabelTotal10GRto4CT.Tag = "Total10GRto4CT";
             this.totalLabelTotal10GRto4CT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // avPriceLabelTotal10GRto4CT
@@ -1527,36 +1545,39 @@
             this.avPriceLabelTotal10GRto4CT.Name = "avPriceLabelTotal10GRto4CT";
             this.avPriceLabelTotal10GRto4CT.Size = new System.Drawing.Size(98, 18);
             this.avPriceLabelTotal10GRto4CT.TabIndex = 75;
+            this.avPriceLabelTotal10GRto4CT.Tag = "Total10GRto4CT";
             this.avPriceLabelTotal10GRto4CT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelTotalCarats10GRto10CT
+            // labelTotalCarats10GRto4CT
             // 
-            this.labelTotalCarats10GRto10CT.AutoSize = true;
-            this.labelTotalCarats10GRto10CT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.labelTotalCarats10GRto10CT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTotalCarats10GRto10CT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalCarats10GRto10CT.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelTotalCarats10GRto10CT.Location = new System.Drawing.Point(160, 267);
-            this.labelTotalCarats10GRto10CT.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
-            this.labelTotalCarats10GRto10CT.Name = "labelTotalCarats10GRto10CT";
-            this.labelTotalCarats10GRto10CT.Size = new System.Drawing.Size(98, 18);
-            this.labelTotalCarats10GRto10CT.TabIndex = 74;
-            this.labelTotalCarats10GRto10CT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelTotalCarats10GRto4CT.AutoSize = true;
+            this.labelTotalCarats10GRto4CT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelTotalCarats10GRto4CT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelTotalCarats10GRto4CT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalCarats10GRto4CT.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelTotalCarats10GRto4CT.Location = new System.Drawing.Point(160, 267);
+            this.labelTotalCarats10GRto4CT.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
+            this.labelTotalCarats10GRto4CT.Name = "labelTotalCarats10GRto4CT";
+            this.labelTotalCarats10GRto4CT.Size = new System.Drawing.Size(98, 18);
+            this.labelTotalCarats10GRto4CT.TabIndex = 74;
+            this.labelTotalCarats10GRto4CT.Tag = "Total10GRto4CT";
+            this.labelTotalCarats10GRto4CT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelTotal10GRto10CT
+            // labelTotal10GRto4CT
             // 
-            this.labelTotal10GRto10CT.AutoSize = true;
-            this.labelTotal10GRto10CT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.labelTotal10GRto10CT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTotal10GRto10CT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotal10GRto10CT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.labelTotal10GRto10CT.Location = new System.Drawing.Point(2, 267);
-            this.labelTotal10GRto10CT.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
-            this.labelTotal10GRto10CT.Name = "labelTotal10GRto10CT";
-            this.labelTotal10GRto10CT.Size = new System.Drawing.Size(156, 18);
-            this.labelTotal10GRto10CT.TabIndex = 73;
-            this.labelTotal10GRto10CT.Text = "Total 10GR-4CT";
-            this.labelTotal10GRto10CT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelTotal10GRto4CT.AutoSize = true;
+            this.labelTotal10GRto4CT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelTotal10GRto4CT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelTotal10GRto4CT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotal10GRto4CT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.labelTotal10GRto4CT.Location = new System.Drawing.Point(2, 267);
+            this.labelTotal10GRto4CT.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
+            this.labelTotal10GRto4CT.Name = "labelTotal10GRto4CT";
+            this.labelTotal10GRto4CT.Size = new System.Drawing.Size(156, 18);
+            this.labelTotal10GRto4CT.TabIndex = 73;
+            this.labelTotal10GRto4CT.Tag = "Total10GRto4CT";
+            this.labelTotal10GRto4CT.Text = "Total 10GR-4CT";
+            this.labelTotal10GRto4CT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // totalPriceLabel10GR
             // 
@@ -1621,6 +1642,7 @@
             this.textBox10GR.Name = "textBox10GR";
             this.textBox10GR.Size = new System.Drawing.Size(98, 22);
             this.textBox10GR.TabIndex = 68;
+            this.textBox10GR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox10GR.TextChanged += new System.EventHandler(this.textBox10GR_TextChanged);
             this.textBox10GR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -1705,6 +1727,7 @@
             this.textBox3CT.Name = "textBox3CT";
             this.textBox3CT.Size = new System.Drawing.Size(98, 22);
             this.textBox3CT.TabIndex = 62;
+            this.textBox3CT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox3CT.TextChanged += new System.EventHandler(this.textBox3CT_TextChanged);
             this.textBox3CT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -1789,6 +1812,7 @@
             this.textBox4CT.Name = "textBox4CT";
             this.textBox4CT.Size = new System.Drawing.Size(98, 22);
             this.textBox4CT.TabIndex = 56;
+            this.textBox4CT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox4CT.TextChanged += new System.EventHandler(this.textBox4CT_TextChanged);
             this.textBox4CT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -1822,6 +1846,7 @@
             this.totalPriceLabelTotal5to10CT.Name = "totalPriceLabelTotal5to10CT";
             this.totalPriceLabelTotal5to10CT.Size = new System.Drawing.Size(102, 18);
             this.totalPriceLabelTotal5to10CT.TabIndex = 54;
+            this.totalPriceLabelTotal5to10CT.Tag = "Total5to10CT";
             this.totalPriceLabelTotal5to10CT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // caratsLabelTotal5to10CT
@@ -1836,6 +1861,7 @@
             this.caratsLabelTotal5to10CT.Name = "caratsLabelTotal5to10CT";
             this.caratsLabelTotal5to10CT.Size = new System.Drawing.Size(98, 18);
             this.caratsLabelTotal5to10CT.TabIndex = 53;
+            this.caratsLabelTotal5to10CT.Tag = "Total5to10CT";
             this.caratsLabelTotal5to10CT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // totalLabelTotal5to10CT
@@ -1850,6 +1876,7 @@
             this.totalLabelTotal5to10CT.Name = "totalLabelTotal5to10CT";
             this.totalLabelTotal5to10CT.Size = new System.Drawing.Size(111, 18);
             this.totalLabelTotal5to10CT.TabIndex = 52;
+            this.totalLabelTotal5to10CT.Tag = "Total5to10CT";
             this.totalLabelTotal5to10CT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // avPriceLabelTotal5to10CT
@@ -1864,6 +1891,7 @@
             this.avPriceLabelTotal5to10CT.Name = "avPriceLabelTotal5to10CT";
             this.avPriceLabelTotal5to10CT.Size = new System.Drawing.Size(98, 18);
             this.avPriceLabelTotal5to10CT.TabIndex = 51;
+            this.avPriceLabelTotal5to10CT.Tag = "Total5to10CT";
             this.avPriceLabelTotal5to10CT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelTotalCarats5to10CT
@@ -1878,6 +1906,7 @@
             this.labelTotalCarats5to10CT.Name = "labelTotalCarats5to10CT";
             this.labelTotalCarats5to10CT.Size = new System.Drawing.Size(98, 18);
             this.labelTotalCarats5to10CT.TabIndex = 50;
+            this.labelTotalCarats5to10CT.Tag = "Total5to10CT";
             this.labelTotalCarats5to10CT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelTotal5to10CT
@@ -1892,6 +1921,7 @@
             this.labelTotal5to10CT.Name = "labelTotal5to10CT";
             this.labelTotal5to10CT.Size = new System.Drawing.Size(156, 18);
             this.labelTotal5to10CT.TabIndex = 49;
+            this.labelTotal5to10CT.Tag = "Total5to10CT";
             this.labelTotal5to10CT.Text = "Total 5-10CT";
             this.labelTotal5to10CT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -1958,6 +1988,7 @@
             this.textBox5CT.Name = "textBox5CT";
             this.textBox5CT.Size = new System.Drawing.Size(98, 22);
             this.textBox5CT.TabIndex = 44;
+            this.textBox5CT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox5CT.TextChanged += new System.EventHandler(this.textBox5CT_TextChanged);
             this.textBox5CT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -2042,6 +2073,7 @@
             this.textBox6CT.Name = "textBox6CT";
             this.textBox6CT.Size = new System.Drawing.Size(98, 22);
             this.textBox6CT.TabIndex = 38;
+            this.textBox6CT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox6CT.TextChanged += new System.EventHandler(this.textBox6CT_TextChanged);
             this.textBox6CT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -2126,6 +2158,7 @@
             this.textBox7CT.Name = "textBox7CT";
             this.textBox7CT.Size = new System.Drawing.Size(98, 22);
             this.textBox7CT.TabIndex = 32;
+            this.textBox7CT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox7CT.TextChanged += new System.EventHandler(this.textBox7CT_TextChanged);
             this.textBox7CT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -2210,6 +2243,7 @@
             this.textBox8CT.Name = "textBox8CT";
             this.textBox8CT.Size = new System.Drawing.Size(98, 22);
             this.textBox8CT.TabIndex = 26;
+            this.textBox8CT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox8CT.TextChanged += new System.EventHandler(this.textBox8CT_TextChanged);
             this.textBox8CT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -2294,6 +2328,7 @@
             this.textBox9CT.Name = "textBox9CT";
             this.textBox9CT.Size = new System.Drawing.Size(98, 22);
             this.textBox9CT.TabIndex = 20;
+            this.textBox9CT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox9CT.TextChanged += new System.EventHandler(this.textBox9CT_TextChanged);
             this.textBox9CT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -2378,6 +2413,7 @@
             this.textBox10CT.Name = "textBox10CT";
             this.textBox10CT.Size = new System.Drawing.Size(98, 22);
             this.textBox10CT.TabIndex = 14;
+            this.textBox10CT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox10CT.TextChanged += new System.EventHandler(this.textBox10CT_TextChanged);
             this.textBox10CT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -2556,6 +2592,7 @@
             this.specialsTextBox.Name = "specialsTextBox";
             this.specialsTextBox.Size = new System.Drawing.Size(98, 22);
             this.specialsTextBox.TabIndex = 12;
+            this.specialsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.specialsTextBox.TextChanged += new System.EventHandler(this.specialsTextBox_TextChanged);
             this.specialsTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SummaryTextBox_KeyPress);
             // 
@@ -2612,7 +2649,7 @@
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 100);
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(949, 316);
+            this.ClientSize = new System.Drawing.Size(966, 316);
             this.Controls.Add(this.headingLabel);
             this.Controls.Add(this.summaryTable);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -2724,8 +2761,8 @@
         private System.Windows.Forms.Label caratsLabelTotal10GRto4CT;
         private System.Windows.Forms.Label totalLabelTotal10GRto4CT;
         private System.Windows.Forms.Label avPriceLabelTotal10GRto4CT;
-        private System.Windows.Forms.Label labelTotalCarats10GRto10CT;
-        private System.Windows.Forms.Label labelTotal10GRto10CT;
+        private System.Windows.Forms.Label labelTotalCarats10GRto4CT;
+        private System.Windows.Forms.Label labelTotal10GRto4CT;
         private System.Windows.Forms.Label totalPriceLabel10GR;
         private System.Windows.Forms.Label caratsLabel10GR;
         private System.Windows.Forms.Label totalLabel10GR;

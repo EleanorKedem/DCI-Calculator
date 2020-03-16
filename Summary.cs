@@ -18,14 +18,17 @@ namespace DCI_Calculator
     public partial class Summary : Form
     {
         private int [] subtotalRows;
-        
+        private int[] standaloneRows;
+
+
         public Parcel parcel;
         public String valuer;
 
         public Summary()
         {
             InitializeComponent();
-            subtotalRows = new int[] {8,12,18};
+            subtotalRows = new int[] { 8, 12, 18 };
+            standaloneRows = new int[] { 1, 13 };
             this.headingLabel.Text = ParcelCalc.SetValueMine + "  Production " + ParcelCalc.SetValueProdction + "  Valuation Summary";
         }
 
@@ -36,7 +39,9 @@ namespace DCI_Calculator
 
         private void SummaryUpdate()
         {
-            for(int row=1, size = 0; row<summaryTable.RowCount; ++row, ++size)
+            UpdateGrandTotal();
+            UpdateSubTotals();
+            for (int row=1, size = 0; row<summaryTable.RowCount; ++row)
             {
                 if (subtotalRows.Contains(row))
                 {
@@ -55,10 +60,28 @@ namespace DCI_Calculator
                         label = summaryTable.GetControlFromPosition(5, row); //percent of value
                         label.Text = parcel.MyParcel[(StoneSize)size].PercentValue.ToString("0.##") + "%";
                     }
+
+                    ++size;
                 }
             }
+        }
 
-            UpdateGrandTotal();
+        private void UpdateSubTotals()
+        {
+            foreach(int i in subtotalRows)
+            {
+                var subtotalLabel = (Label)summaryTable.GetControlFromPosition(1, i); //carats column
+                StoneSubgroup group = (StoneSubgroup)Enum.Parse(typeof(StoneSubgroup), subtotalLabel.Tag.ToString());
+                subtotalLabel.Text = parcel.CalculateSubtotalWeight(group).ToString();
+                subtotalLabel = (Label)summaryTable.GetControlFromPosition(2, i); //average price column
+                subtotalLabel.Text = parcel.CalculateSubtotalAverageValue(group).ToString(); 
+                subtotalLabel = (Label)summaryTable.GetControlFromPosition(3, i); //value column
+                subtotalLabel.Text = parcel.CalculateSubtotalValue(group).ToString(); 
+                subtotalLabel = (Label)summaryTable.GetControlFromPosition(4, i); //percent of weight column
+                subtotalLabel.Text = parcel.CalculateSubtotalPercentWeight(group).ToString() + "%";
+                subtotalLabel = (Label)summaryTable.GetControlFromPosition(5, i); //percent of value column
+                subtotalLabel.Text = parcel.CalculateSubtotalPercentValue(group).ToString() + "%";
+            }
         }
 
         private void UpdateGrandTotal ()
@@ -66,7 +89,7 @@ namespace DCI_Calculator
             this.labelGrandTotalCarats.Text = parcel.CalculateTotalWeight().ToString("0.##");
             this.labelGrandTotalValue.Text = "$ " + parcel.CalculateTotalValue().ToString("0.##");
             this.labelGrandTotalAvPrice.Text = "$ " + parcel.CalculateAverageValue().ToString("0.##");
-            this.labelGrandTotalPrice.Text = parcel.SumPercentValue().ToString("0.##");
+            this.labelGrandTotalPrice.Text = parcel.SumPercentValue().ToString("0.##") + "%";
         }
 
         private void UpdatePercent()
@@ -126,6 +149,7 @@ namespace DCI_Calculator
                 nextTextbox.Focus();
 
                 UpdateGrandTotal(); //at the moment this line is redundant
+                UpdateSubTotals(); //at the moment this line is redundant
             }
             else
             {
@@ -142,6 +166,7 @@ namespace DCI_Calculator
             }
 
             UpdateGrandTotal();
+            UpdateSubTotals();
         }
 
         #region TextBoxChange
@@ -544,6 +569,16 @@ namespace DCI_Calculator
         }
 
         #endregion
+
+        /*====================================================================================================
+         * 
+         * 
+         * TODO make sure we don't open double instances from the same form - focus on a form that was already
+         * opened - one form per size!!
+         * 
+         * 
+         * ===================================================================================================
+         */
 
         private void specialsLabel_Click(object sender, EventArgs e)
         {

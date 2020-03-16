@@ -30,6 +30,16 @@ namespace DCI_Calculator
         minus5plus3,
         minus3plus1
     }
+
+    public enum StoneSubgroup
+    {
+        Specials,
+        Total5to10CT,
+        Total10GRto4CT,
+        GR8,
+        Total13plus,
+        TotalSmall
+    }
     public enum StoneModel
     {
         Crystals,

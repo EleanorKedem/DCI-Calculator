@@ -9,6 +9,7 @@ namespace DCI_Calculator
     public class SizeAssortment
     {
         private StoneSize key;
+        private StoneSubgroup group;
         private double totalWeight;
         private double insertedWeight; //TODO with enter or with kill check if all weight was inserted
         private double totalValue;
@@ -39,6 +40,37 @@ namespace DCI_Calculator
         {
             items = new SortedList<StoneModel, Item>();
             key = k;
+            switch(k)
+            {
+                case StoneSize.Specials:
+                    group = StoneSubgroup.Specials;
+                    break;
+                case StoneSize.CT10:
+                case StoneSize.CT9:
+                case StoneSize.CT8:
+                case StoneSize.CT7:
+                case StoneSize.CT6:
+                case StoneSize.CT5:
+                    group = StoneSubgroup.Total5to10CT;
+                    break;
+                case StoneSize.CT4:
+                case StoneSize.CT3:
+                case StoneSize.GR10:
+                    group = StoneSubgroup.Total10GRto4CT;
+                    break;
+                case StoneSize.GR8:
+                    group = StoneSubgroup.GR8;
+                    break;
+                case StoneSize.GR6:
+                case StoneSize.GR5:
+                case StoneSize.GR4:
+                case StoneSize.GR3:
+                    group = StoneSubgroup.Total13plus;
+                    break;
+                default:
+                    group = StoneSubgroup.TotalSmall;
+                    break;
+            }
             totalWeight = w;
             insertedWeight = 0;
             totalValue = 0;
@@ -52,6 +84,37 @@ namespace DCI_Calculator
         {
             items = new SortedList<StoneModel, Item>();
             key = k;
+            switch (k)
+            {
+                case StoneSize.Specials:
+                    group = StoneSubgroup.Specials;
+                    break;
+                case StoneSize.CT10:
+                case StoneSize.CT9:
+                case StoneSize.CT8:
+                case StoneSize.CT7:
+                case StoneSize.CT6:
+                case StoneSize.CT5:
+                    group = StoneSubgroup.Total5to10CT;
+                    break;
+                case StoneSize.CT4:
+                case StoneSize.CT3:
+                case StoneSize.GR10:
+                    group = StoneSubgroup.Total10GRto4CT;
+                    break;
+                case StoneSize.GR8:
+                    group = StoneSubgroup.GR8;
+                    break;
+                case StoneSize.GR6:
+                case StoneSize.GR5:
+                case StoneSize.GR4:
+                case StoneSize.GR3:
+                    group = StoneSubgroup.Total13plus;
+                    break;
+                default:
+                    group = StoneSubgroup.TotalSmall;
+                    break;
+            }
             totalWeight = w;
             insertedWeight = 0;
             totalValue = 0;
@@ -69,6 +132,12 @@ namespace DCI_Calculator
         {
             get { return key; }
             set { key = value; }
+        }
+
+        public StoneSubgroup Group
+        {
+            get { return group; }
+            set { group = value; }
         }
 
         public double TotalWeight

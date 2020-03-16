@@ -16,11 +16,13 @@ namespace DCI_Calculator
         private String productionNum;
 
         public SortedList<StoneSize, SizeAssortment> MyParcel;
+        public SortedList<StoneSubgroup, SizeAssortment> SubTotals; //TODO check how to update and use
 
         #region Constructors
         public Parcel()
         {
             MyParcel = new SortedList<StoneSize, SizeAssortment>();
+            SubTotals = new SortedList<StoneSubgroup, SizeAssortment>();
             totalValue = 0;
             totalWeight = 0;
             averageValue = 0;
@@ -32,6 +34,7 @@ namespace DCI_Calculator
             country = c;
             productionNum = p;
             MyParcel = new SortedList<StoneSize, SizeAssortment>();
+            SubTotals = new SortedList<StoneSubgroup, SizeAssortment>();
             totalValue = 0;
             totalWeight = 0;
             averageValue = 0;
@@ -108,6 +111,69 @@ namespace DCI_Calculator
         #endregion
 
         #region MembersCalculations
+        public double CalculateSubtotalWeight(StoneSubgroup group)
+        {
+            double sum = 0;
+            foreach(StoneSize key in MyParcel.Keys)
+            {
+                if(MyParcel[key].Group == group)
+                {
+                    sum += MyParcel[key].TotalWeight;
+                }
+            }
+
+            return sum;
+        }
+
+        public double CalculateSubtotalValue(StoneSubgroup group)
+        {
+            double sum = 0;
+            foreach (StoneSize key in MyParcel.Keys)
+            {
+                if (MyParcel[key].Group == group)
+                {
+                    sum += MyParcel[key].TotalValue;
+                }
+            }
+
+            return sum;
+        }
+
+        public double CalculateSubtotalAverageValue(StoneSubgroup group)
+        {
+            double sum = CalculateSubtotalWeight(group);
+            if(sum!=0)
+            {
+                sum = (CalculateSubtotalValue(group)) / sum;
+            }
+
+            return sum;
+        }
+
+        public double CalculateSubtotalPercentValue(StoneSubgroup group)
+        {
+            double sum = 0;
+            foreach (StoneSize key in MyParcel.Keys)
+            {
+                if (MyParcel[key].Group == group)
+                {
+                    sum += MyParcel[key].PercentValue;
+                }
+            }
+            return sum;
+        }
+        public double CalculateSubtotalPercentWeight(StoneSubgroup group)
+        {
+            double sum = 0;
+            foreach (StoneSize key in MyParcel.Keys)
+            {
+                if (MyParcel[key].Group == group)
+                {
+                    sum += MyParcel[key].PercentWeight;
+                }
+            }
+            return sum;
+        }
         public double CalculateTotalWeight()
         {
             totalWeight = 0;
@@ -175,9 +241,19 @@ namespace DCI_Calculator
 
         public void UpdatePercentValue()
         {
-            foreach (SizeAssortment value in MyParcel.Values)
+            if (totalValue != 0)
             {
-                value.PercentValue = (value.TotalValue/totalValue)*100;
+                foreach (SizeAssortment value in MyParcel.Values)
+                {
+                    value.PercentValue = (value.TotalValue / totalValue) * 100;
+                }
+            }
+            else
+            {
+                foreach (SizeAssortment value in MyParcel.Values)
+                {
+                    value.PercentValue = 0;
+                }
             }
         }
 
