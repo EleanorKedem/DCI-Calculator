@@ -580,7 +580,7 @@ namespace DCI_Calculator
          * ===================================================================================================
          */
 
-        private void specialsLabel_Click(object sender, EventArgs e)
+        private void SpecialsLabel_Click(object sender, EventArgs e)
         {
             var label = (Label)sender;
             StoneSize key = (StoneSize)Enum.Parse(typeof(StoneSize), label.Tag.ToString());
@@ -598,7 +598,7 @@ namespace DCI_Calculator
             }            
         }
 
-        private void itemLabel_Click(object sender, EventArgs e)
+        private void ItemLabel_Click(object sender, EventArgs e)
         {
             var label = (Label)sender;
             StoneSize key = (StoneSize)Enum.Parse(typeof(StoneSize), label.Tag.ToString());
@@ -616,7 +616,7 @@ namespace DCI_Calculator
             }
         }
 
-        private void smallItemLabel_Click(object sender, EventArgs e)
+        private void SmallItemLabel_Click(object sender, EventArgs e)
         {
             var label = (Label)sender;
             StoneSize key = (StoneSize)Enum.Parse(typeof(StoneSize), label.Tag.ToString());
@@ -624,6 +624,23 @@ namespace DCI_Calculator
             if (parcel.MyParcel.ContainsKey(key) && (parcel.MyParcel[key].TotalWeight > 0))
             {
                 SmallItemCalc item = new SmallItemCalc(parcel.MyParcel[key]);
+                item.Show();
+            }
+
+
+            else
+            {
+                MessageBox.Show("Value not inserted for the chosen size");
+            }
+        }
+        private void MelesItemLabel_Click(object sender, EventArgs e)
+        {
+            var label = (Label)sender;
+            StoneSize key = (StoneSize)Enum.Parse(typeof(StoneSize), label.Tag.ToString());
+
+            if (parcel.MyParcel.ContainsKey(key) && (parcel.MyParcel[key].TotalWeight > 0))
+            {
+                MelesItemCalc item = new MelesItemCalc(parcel.MyParcel[key]);
                 item.Show();
             }
 

@@ -129,6 +129,10 @@ namespace DCI_Calculator
             {
                 price = Convert.ToDouble(priceTextbox.Text);
             }
+            else
+            {
+                price = 0;
+            }
             if (stonesSize.items.ContainsKey(key))
             {
                 stonesSize.items[key].AddStones(position, stonesNum, price);

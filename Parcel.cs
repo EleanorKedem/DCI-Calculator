@@ -169,6 +169,7 @@ namespace DCI_Calculator
             {
                 if (MyParcel[key].Group == group)
                 {
+                    CalculatePercent(MyParcel[key]);
                     sum += MyParcel[key].PercentWeight;
                 }
             }

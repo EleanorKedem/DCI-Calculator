@@ -554,7 +554,7 @@
             this.labelminus3plus1.Tag = "minus3plus1";
             this.labelminus3plus1.Text = "-3 +1";
             this.labelminus3plus1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelminus3plus1.Click += new System.EventHandler(this.smallItemLabel_Click);
+            this.labelminus3plus1.Click += new System.EventHandler(this.MelesItemLabel_Click);
             this.labelminus3plus1.MouseEnter += new System.EventHandler(this.labelminus3plus1_MouseEnter);
             this.labelminus3plus1.MouseLeave += new System.EventHandler(this.labelminus3plus1_MouseLeave);
             // 
@@ -639,7 +639,7 @@
             this.labelminus5plus3.Tag = "minus5plus3";
             this.labelminus5plus3.Text = "-5 +3";
             this.labelminus5plus3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelminus5plus3.Click += new System.EventHandler(this.smallItemLabel_Click);
+            this.labelminus5plus3.Click += new System.EventHandler(this.MelesItemLabel_Click);
             this.labelminus5plus3.MouseEnter += new System.EventHandler(this.labelminus5plus3_MouseEnter);
             this.labelminus5plus3.MouseLeave += new System.EventHandler(this.labelminus5plus3_MouseLeave);
             // 
@@ -724,7 +724,7 @@
             this.labelminus7plus5.Tag = "minus7plus5";
             this.labelminus7plus5.Text = "-7 +5";
             this.labelminus7plus5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelminus7plus5.Click += new System.EventHandler(this.smallItemLabel_Click);
+            this.labelminus7plus5.Click += new System.EventHandler(this.MelesItemLabel_Click);
             this.labelminus7plus5.MouseEnter += new System.EventHandler(this.labelminus7plus5_MouseEnter);
             this.labelminus7plus5.MouseLeave += new System.EventHandler(this.labelminus7plus5_MouseLeave);
             // 
@@ -809,7 +809,7 @@
             this.labelminus9plus7.Tag = "minus9plus7";
             this.labelminus9plus7.Text = "-9 +7";
             this.labelminus9plus7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelminus9plus7.Click += new System.EventHandler(this.smallItemLabel_Click);
+            this.labelminus9plus7.Click += new System.EventHandler(this.MelesItemLabel_Click);
             this.labelminus9plus7.MouseEnter += new System.EventHandler(this.labelminus9plus7_MouseEnter);
             this.labelminus9plus7.MouseLeave += new System.EventHandler(this.labelminus9plus7_MouseLeave);
             // 
@@ -894,7 +894,7 @@
             this.label4perCT.Tag = "PCT4";
             this.label4perCT.Text = "4 per CT / +9";
             this.label4perCT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4perCT.Click += new System.EventHandler(this.smallItemLabel_Click);
+            this.label4perCT.Click += new System.EventHandler(this.MelesItemLabel_Click);
             this.label4perCT.MouseEnter += new System.EventHandler(this.label4perCT_MouseEnter);
             this.label4perCT.MouseLeave += new System.EventHandler(this.label4perCT_MouseLeave);
             // 
@@ -1139,7 +1139,7 @@
             this.label3GR.Tag = "GR3";
             this.label3GR.Text = "3GR";
             this.label3GR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3GR.Click += new System.EventHandler(this.smallItemLabel_Click);
+            this.label3GR.Click += new System.EventHandler(this.SmallItemLabel_Click);
             this.label3GR.MouseEnter += new System.EventHandler(this.label3GR_MouseEnter);
             this.label3GR.MouseLeave += new System.EventHandler(this.label3GR_MouseLeave);
             // 
@@ -1224,7 +1224,7 @@
             this.label4GR.Tag = "GR4";
             this.label4GR.Text = "4GR";
             this.label4GR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4GR.Click += new System.EventHandler(this.smallItemLabel_Click);
+            this.label4GR.Click += new System.EventHandler(this.SmallItemLabel_Click);
             this.label4GR.MouseEnter += new System.EventHandler(this.label4GR_MouseEnter);
             this.label4GR.MouseLeave += new System.EventHandler(this.label4GR_MouseLeave);
             // 
@@ -1309,7 +1309,7 @@
             this.label5GR.Tag = "GR5";
             this.label5GR.Text = "5GR";
             this.label5GR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5GR.Click += new System.EventHandler(this.smallItemLabel_Click);
+            this.label5GR.Click += new System.EventHandler(this.SmallItemLabel_Click);
             this.label5GR.MouseEnter += new System.EventHandler(this.label5GR_MouseEnter);
             this.label5GR.MouseLeave += new System.EventHandler(this.label5GR_MouseLeave);
             // 
@@ -1394,7 +1394,7 @@
             this.label6GR.Tag = "GR6";
             this.label6GR.Text = "6GR";
             this.label6GR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6GR.Click += new System.EventHandler(this.smallItemLabel_Click);
+            this.label6GR.Click += new System.EventHandler(this.SmallItemLabel_Click);
             this.label6GR.MouseEnter += new System.EventHandler(this.label6GR_MouseEnter);
             this.label6GR.MouseLeave += new System.EventHandler(this.label6GR_MouseLeave);
             // 
@@ -1484,7 +1484,7 @@
             this.label8GR.Tag = "GR8";
             this.label8GR.Text = "8GR";
             this.label8GR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label8GR.Click += new System.EventHandler(this.itemLabel_Click);
+            this.label8GR.Click += new System.EventHandler(this.ItemLabel_Click);
             this.label8GR.MouseEnter += new System.EventHandler(this.label8GR_MouseEnter);
             this.label8GR.MouseLeave += new System.EventHandler(this.label8GR_MouseLeave);
             // 
@@ -1660,7 +1660,7 @@
             this.label10GR.Tag = "GR10";
             this.label10GR.Text = "10GR";
             this.label10GR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label10GR.Click += new System.EventHandler(this.itemLabel_Click);
+            this.label10GR.Click += new System.EventHandler(this.ItemLabel_Click);
             this.label10GR.MouseEnter += new System.EventHandler(this.label10GR_MouseEnter);
             this.label10GR.MouseLeave += new System.EventHandler(this.label10GR_MouseLeave);
             // 
@@ -1745,7 +1745,7 @@
             this.label3CT.Tag = "CT3";
             this.label3CT.Text = "3CT";
             this.label3CT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3CT.Click += new System.EventHandler(this.itemLabel_Click);
+            this.label3CT.Click += new System.EventHandler(this.ItemLabel_Click);
             this.label3CT.MouseEnter += new System.EventHandler(this.label3CT_MouseEnter);
             this.label3CT.MouseLeave += new System.EventHandler(this.label3CT_MouseLeave);
             // 
@@ -1830,7 +1830,7 @@
             this.label4CT.Tag = "CT4";
             this.label4CT.Text = "4CT";
             this.label4CT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4CT.Click += new System.EventHandler(this.itemLabel_Click);
+            this.label4CT.Click += new System.EventHandler(this.ItemLabel_Click);
             this.label4CT.MouseEnter += new System.EventHandler(this.label4CT_MouseEnter);
             this.label4CT.MouseLeave += new System.EventHandler(this.label4CT_MouseLeave);
             // 
@@ -2006,7 +2006,7 @@
             this.label5CT.Tag = "CT5";
             this.label5CT.Text = "5CT";
             this.label5CT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5CT.Click += new System.EventHandler(this.itemLabel_Click);
+            this.label5CT.Click += new System.EventHandler(this.ItemLabel_Click);
             this.label5CT.MouseEnter += new System.EventHandler(this.label5CT_MouseEnter);
             this.label5CT.MouseLeave += new System.EventHandler(this.label5CT_MouseLeave);
             // 
@@ -2091,7 +2091,7 @@
             this.label6CT.Tag = "CT6";
             this.label6CT.Text = "6CT";
             this.label6CT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6CT.Click += new System.EventHandler(this.itemLabel_Click);
+            this.label6CT.Click += new System.EventHandler(this.ItemLabel_Click);
             this.label6CT.MouseEnter += new System.EventHandler(this.label6CT_MouseEnter);
             this.label6CT.MouseLeave += new System.EventHandler(this.label6CT_MouseLeave);
             // 
@@ -2176,7 +2176,7 @@
             this.label7CT.Tag = "CT7";
             this.label7CT.Text = "7CT";
             this.label7CT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7CT.Click += new System.EventHandler(this.itemLabel_Click);
+            this.label7CT.Click += new System.EventHandler(this.ItemLabel_Click);
             this.label7CT.MouseEnter += new System.EventHandler(this.label7CT_MouseEnter);
             this.label7CT.MouseLeave += new System.EventHandler(this.label7CT_MouseLeave);
             // 
@@ -2261,7 +2261,7 @@
             this.label8CT.Tag = "CT8";
             this.label8CT.Text = "8CT";
             this.label8CT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label8CT.Click += new System.EventHandler(this.itemLabel_Click);
+            this.label8CT.Click += new System.EventHandler(this.ItemLabel_Click);
             this.label8CT.MouseEnter += new System.EventHandler(this.label8CT_MouseEnter);
             this.label8CT.MouseLeave += new System.EventHandler(this.label8CT_MouseLeave);
             // 
@@ -2346,7 +2346,7 @@
             this.label9CT.Tag = "CT9";
             this.label9CT.Text = "9CT";
             this.label9CT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label9CT.Click += new System.EventHandler(this.itemLabel_Click);
+            this.label9CT.Click += new System.EventHandler(this.ItemLabel_Click);
             this.label9CT.MouseEnter += new System.EventHandler(this.label9CT_MouseEnter);
             this.label9CT.MouseLeave += new System.EventHandler(this.label9CT_MouseLeave);
             // 
@@ -2488,7 +2488,7 @@
             this.specialsLabel.Tag = "Specials";
             this.specialsLabel.Text = "Specials";
             this.specialsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.specialsLabel.Click += new System.EventHandler(this.specialsLabel_Click);
+            this.specialsLabel.Click += new System.EventHandler(this.SpecialsLabel_Click);
             this.specialsLabel.MouseEnter += new System.EventHandler(this.specialsLabel_MouseEnter);
             this.specialsLabel.MouseLeave += new System.EventHandler(this.specialsLabel_MouseLeave);
             // 
@@ -2611,7 +2611,7 @@
             this.label10CT.Tag = "CT10";
             this.label10CT.Text = "10CT";
             this.label10CT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label10CT.Click += new System.EventHandler(this.itemLabel_Click);
+            this.label10CT.Click += new System.EventHandler(this.ItemLabel_Click);
             this.label10CT.MouseEnter += new System.EventHandler(this.label10CT_MouseEnter);
             this.label10CT.MouseLeave += new System.EventHandler(this.label10CT_MouseLeave);
             // 
@@ -2629,7 +2629,7 @@
             this.label2perCT.Tag = "PCT2";
             this.label2perCT.Text = "2 per CT / +11";
             this.label2perCT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2perCT.Click += new System.EventHandler(this.smallItemLabel_Click);
+            this.label2perCT.Click += new System.EventHandler(this.SmallItemLabel_Click);
             this.label2perCT.MouseEnter += new System.EventHandler(this.label2perCT_MouseEnter);
             this.label2perCT.MouseLeave += new System.EventHandler(this.label2perCT_MouseLeave);
             // 
