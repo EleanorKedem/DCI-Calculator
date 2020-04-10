@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Linq;
+using System.IO;
 
 /// <summary>
 /// TODO enter command moves focus to the next line
@@ -830,5 +830,28 @@ namespace DCI_Calculator
         }
         #endregion
 
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFile = new SaveFileDialog();
+
+            if(saveFile.ShowDialog() == DialogResult.OK)
+            {
+                using(Stream s = File.Open(saveFile.FileName, FileMode.OpenOrCreate))
+                using(StreamWriter sw = new StreamWriter(s))
+                {
+                    sw.Write(parcel);
+                }
+            }
+        }
+
+        private void openButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sendButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

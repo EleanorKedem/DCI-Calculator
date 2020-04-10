@@ -48,6 +48,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -133,11 +137,6 @@
     <Compile Include="Summary.Designer.cs">
       <DependentUpon>Summary.cs</DependentUpon>
     </Compile>
-    <Compile Include="_Credentials_tempDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_Credentials_tempDataSet.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,7 +179,9 @@
     <EmbeddedResource Include="StoneSelector.resx">
       <DependentUpon>StoneSelector.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Summary.resx" />
+    <EmbeddedResource Include="Summary.resx">
+      <DependentUpon>Summary.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="bin\Debug\DCI Calculator.exe.config" />
     <None Include="obj\Debug\DCI Calculator.csproj.GenerateResource.cache" />
     <None Include="obj\Debug\DCI Calculator.csprojAssemblyReference.cache" />
@@ -195,17 +196,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="_Credentials_tempDataSet.xsc">
-      <DependentUpon>_Credentials_tempDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="_Credentials_tempDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_Credentials_tempDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_Credentials_tempDataSet.xss">
-      <DependentUpon>_Credentials_tempDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -220,13 +210,6 @@
     </Content>
     <Content Include="bin\Debug\DCI Calculator.exe" />
     <Content Include="bin\Debug\DCI Calculator.pdb" />
-    <Content Include="Credentials-temp.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Credentials-temp_log.ldf">
-      <DependentUpon>Credentials-temp.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="obj\Debug\DCI Calculator.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\DCI Calculator.exe" />
     <Content Include="obj\Debug\DCI Calculator.pdb" />

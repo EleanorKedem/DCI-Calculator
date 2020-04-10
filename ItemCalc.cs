@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace DCI_Calculator
 {
     public partial class ItemCalc : Form
     {
+        MySqlConnection priceBookConn;
+        string connString;
+
         bool showPriceList;
         SizeAssortment stonesSize;
 
@@ -24,6 +28,7 @@ namespace DCI_Calculator
             this.stonesLabel.Text = stonesSize.Key.ToString() + " Valuation    " + ParcelCalc.SetValueMine;
             this.totalCtsValueLabel.Text = stonesSize.TotalWeight.ToString();
             this.diffSumValueLabel.Text = stonesSize.CheckEnteredWeight().ToString();
+            this.LoadDataBase();
             this.Show();
             PriceListHide();
         }
@@ -45,43 +50,110 @@ namespace DCI_Calculator
 
         private void PriceListShow()
         {
-            CrystalsGroupBox.Size = new Size(1242, 178);
-            crystalsTableLayoutPanelPrices.Show();
-            ZMB50GroupBox.Size = new Size(1242, 178);
-            MB50TableLayoutPanelPrices.Show();
-            ZMB40GroupBox.Size = new Size(1242, 178);
-            MB40TableLayoutPanelPrices.Show();
-            MakeableGroupBox.Size = new Size(1242, 178);
-            makeableTableLayoutPanelPrices.Show();
-            SpottedZGroupBox.Size = new Size(1242, 178);
-            spottedTableLayoutPanelPrices.Show();
-            ClivageGroupBox.Size = new Size(1242, 178);
-            clivageTableLayoutPanelPrices.Show();
-            RejectionsGroupBox.Size = new Size(1242, 178);
-            rejectionsTableLayoutPanelPrices.Show();
-            BoartGroupBox.Size = new Size(1242, 178);
-            boartTableLayoutPanelPrices.Show();
+            crystalsGroupBox.Size = new Size(1242, 178);
+            CrystalsTableLayoutPanelPrices.Show();
+            sawableHighGroupBox.Size = new Size(1242, 178);
+            SawableHighTableLayoutPanelPrices.Show();
+            sawableLowGroupBox.Size = new Size(1242, 178);
+            SawableLowTableLayoutPanelPrices.Show();
+            makeableHighGroupBox.Size = new Size(1242, 178);
+            MakeableHighTableLayoutPanelPrices.Show();
+            makeableLowGroupBox.Size = new Size(1242, 178);
+            MakeableLowTableLayoutPanelPrices.Show();
+            spottedZGroupBox.Size = new Size(1242, 178);
+            SpottedZTableLayoutPanelPrices.Show();
+            clivageGroupBox.Size = new Size(1242, 178);
+            ClivageTableLayoutPanelPrices.Show();
+            rejectionsGroupBox.Size = new Size(1242, 178);
+            RejectionsTableLayoutPanelPrices.Show();
+            boartGroupBox.Size = new Size(1242, 178);
+            BoartTableLayoutPanelPrices.Show();
         }
 
         private void PriceListHide()
         {
-            crystalsTableLayoutPanelPrices.Hide();
-            CrystalsGroupBox.Size = new Size(740, 178);
-            MB50TableLayoutPanelPrices.Hide();
-            ZMB50GroupBox.Size = new Size(740, 178);
-            MB40TableLayoutPanelPrices.Hide();
-            ZMB40GroupBox.Size = new Size(740, 178);
-            makeableTableLayoutPanelPrices.Hide();
-            MakeableGroupBox.Size = new Size(740, 178);
-            spottedTableLayoutPanelPrices.Hide();
-            SpottedZGroupBox.Size = new Size(740, 178);
-            clivageTableLayoutPanelPrices.Hide();
-            ClivageGroupBox.Size = new Size(740, 178);
-            rejectionsTableLayoutPanelPrices.Hide();
-            RejectionsGroupBox.Size = new Size(740, 178);
-            boartTableLayoutPanelPrices.Hide();
-            BoartGroupBox.Size = new Size(740, 178);
+            CrystalsTableLayoutPanelPrices.Hide();
+            crystalsGroupBox.Size = new Size(740, 178);
+            SawableHighTableLayoutPanelPrices.Hide();
+            sawableHighGroupBox.Size = new Size(740, 178);
+            SawableLowTableLayoutPanelPrices.Hide();
+            sawableLowGroupBox.Size = new Size(740, 178);
+            MakeableHighTableLayoutPanelPrices.Hide();
+            makeableHighGroupBox.Size = new Size(740, 178);
+            MakeableLowTableLayoutPanelPrices.Hide();
+            makeableLowGroupBox.Size = new Size(740, 178);
+            SpottedZTableLayoutPanelPrices.Hide();
+            spottedZGroupBox.Size = new Size(740, 178);
+            ClivageTableLayoutPanelPrices.Hide();
+            clivageGroupBox.Size = new Size(740, 178);
+            RejectionsTableLayoutPanelPrices.Hide();
+            rejectionsGroupBox.Size = new Size(740, 178);
+            BoartTableLayoutPanelPrices.Hide();
+            boartGroupBox.Size = new Size(740, 178);
         }
+
+        private void LoadDataBase()
+        {
+            connString = "SERVER = 109.203.118.107; PORT = 3306; DATABASE = eleanor_DCI; UID = eleanor_eleanor; PASSWORD = SfZGV@UCxVx-;";
+
+            try
+            {
+                //TODO add using when creating the new connection in order to verify the connection closes
+                priceBookConn = new MySqlConnection();
+                priceBookConn.ConnectionString = connString;
+                priceBookConn.Open();
+
+                foreach (var g in this.Controls.OfType<GroupBox>())
+                {
+                    String name = g.Tag + "TableLayoutPanelPrices";
+                    var pricesTable = (TableLayoutPanel)g.Controls[name];
+                    DataTable priceBookTable = new DataTable();
+                    string query;
+
+                    switch (g.Tag)
+                    {
+                        case "Crystals":
+                        case "SawableHigh":
+                        case "SawableLow":
+                        case "MakeableHigh":
+                        case "MakeableLow":
+                            query = "Select D, E_F, G, H, I, J_K, cape from _itemCalc WHERE size = '" + stonesSize.Key.ToString() + "' and model = '" + g.Tag + "'";
+                            break;
+                        case "SpottedZ":
+                        case "Clivage":
+                            query = "Select 1CR, 2CR, 3CR, cape from _itemCalc WHERE size = '" + stonesSize.Key.ToString() + "' and model = '" + g.Tag + "'";
+                            break;
+                        case "Rejections":
+                            query = "Select Rejection from _itemCalc WHERE size = '" + stonesSize.Key.ToString() + "' and model = '" + g.Tag + "'";
+                            break;
+                        case "Boart":
+                            query = "Select Boart from _itemCalc WHERE size = '" + stonesSize.Key.ToString() + "' and model = '" + g.Tag + "'";
+                            break;
+                        default:
+                            query = "";
+                            break;
+                    }
+                    MySqlCommand priceBookCmd = new MySqlCommand(query, priceBookConn);
+                    MySqlDataAdapter priceBookData = new MySqlDataAdapter(priceBookCmd);
+                    priceBookData.Fill(priceBookTable);
+                    for (int row = 1; row < pricesTable.RowCount; ++row)
+                    {
+                        for (int col = 1; col < pricesTable.ColumnCount; ++col) 
+                        {
+                            TextBox price = (TextBox)pricesTable.GetControlFromPosition(col, row);
+                            price.Text = priceBookTable.Rows[row - 1][col-1].ToString();
+                        }
+                    }
+                }
+            }
+
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            priceBookConn.Close();
+        }
+
 
         #endregion
 
@@ -245,27 +317,35 @@ namespace DCI_Calculator
                 */
 
                 e.Handled = true;
-                MB50CaratCountValueTextbox.Focus();
+                sawableHighCaratCountValueTextbox.Focus();
             }
         }
 
-        private void ZMB50CaratCountTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void SawableHighCaratCountTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)
             {
                 e.Handled = true;
-                MB40CaratCountValueTextbox.Focus();
+                sawableLowCaratCountValueTextbox.Focus();
             }
         }
-        private void ZMB40CaratCountTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void SawableLowCaratCountTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)
             {
                 e.Handled = true;
-                makeableCaratCountValueTextbox.Focus();
+                makeableHighCaratCountValueTextbox.Focus();
             }
         }
-        private void MakeableCaratCountTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void MakeableHighCaratCountTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                e.Handled = true;
+                makeableLowCaratCountValueTextbox.Focus();
+            }
+        }
+        private void MakeableLowCaratCountTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)
             {

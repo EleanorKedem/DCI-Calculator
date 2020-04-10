@@ -43,21 +43,18 @@ namespace DCI_Calculator
     public enum StoneModel
     {
         Crystals,
-        ZMB50,
+        SawableHigh,
+        SawableLow,
         ZHigh,
-        ZMB40,
         ZLow,
-        SelectZ,
-        Sawable,
         Makeable,
+        MakeableHigh,
+        MakeableLow,
         SpottedZ,
         Spotted,
-        SpottedMB,
         Clivage,
         Rejections,
-        Boart,
-        BrownZ,
-        BrownSawable
+        Boart
     }
 
     public enum StoneClarity

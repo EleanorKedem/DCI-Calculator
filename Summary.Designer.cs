@@ -187,6 +187,9 @@
             this.label10CT = new System.Windows.Forms.Label();
             this.label2perCT = new System.Windows.Forms.Label();
             this.headingLabel = new System.Windows.Forms.Label();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.openButton = new System.Windows.Forms.Button();
+            this.sendButton = new System.Windows.Forms.Button();
             this.summaryTable.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -2642,6 +2645,42 @@
             this.headingLabel.Size = new System.Drawing.Size(0, 25);
             this.headingLabel.TabIndex = 1;
             // 
+            // saveButton
+            // 
+            this.saveButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.saveButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("saveButton.BackgroundImage")));
+            this.saveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.saveButton.Location = new System.Drawing.Point(766, 45);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(35, 35);
+            this.saveButton.TabIndex = 2;
+            this.saveButton.UseVisualStyleBackColor = false;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // openButton
+            // 
+            this.openButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.openButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("openButton.BackgroundImage")));
+            this.openButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.openButton.Location = new System.Drawing.Point(808, 45);
+            this.openButton.Name = "openButton";
+            this.openButton.Size = new System.Drawing.Size(35, 35);
+            this.openButton.TabIndex = 3;
+            this.openButton.UseVisualStyleBackColor = false;
+            this.openButton.Click += new System.EventHandler(this.openButton_Click);
+            // 
+            // sendButton
+            // 
+            this.sendButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sendButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sendButton.BackgroundImage")));
+            this.sendButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.sendButton.Location = new System.Drawing.Point(850, 45);
+            this.sendButton.Name = "sendButton";
+            this.sendButton.Size = new System.Drawing.Size(35, 35);
+            this.sendButton.TabIndex = 4;
+            this.sendButton.UseVisualStyleBackColor = false;
+            this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
+            // 
             // Summary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2650,6 +2689,9 @@
             this.AutoScrollMargin = new System.Drawing.Size(0, 100);
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(966, 316);
+            this.Controls.Add(this.sendButton);
+            this.Controls.Add(this.openButton);
+            this.Controls.Add(this.saveButton);
             this.Controls.Add(this.headingLabel);
             this.Controls.Add(this.summaryTable);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -2823,5 +2865,8 @@
         private System.Windows.Forms.Label avPriceLabel2perCT;
         private System.Windows.Forms.TextBox textBox2perCT;
         private System.Windows.Forms.Label label2perCT;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button openButton;
+        private System.Windows.Forms.Button sendButton;
     }
 }
