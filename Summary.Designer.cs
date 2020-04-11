@@ -195,6 +195,7 @@
             // 
             // summaryTable
             // 
+            this.summaryTable.AutoSize = true;
             this.summaryTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
             this.summaryTable.ColumnCount = 6;
             this.summaryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.53554F));
@@ -2688,7 +2689,7 @@
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 100);
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(966, 316);
+            this.ClientSize = new System.Drawing.Size(966, 600);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.openButton);
             this.Controls.Add(this.saveButton);
